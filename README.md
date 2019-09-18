@@ -79,6 +79,8 @@ sudo apt-get install libbluetooth-dev
 
 ```
 
+<br />
+
 ## GNUstep编译选项
 
 我们通过执行以下命令来观察Objective-C编译时所需要的编译选项：`gnustep-config --objc-flags`
@@ -89,6 +91,8 @@ sudo apt-get install libbluetooth-dev
 export GCC_PATH=/usr/lib/gcc/arm-linux-gnueabihf/8/
 gcc test.m -std=gnu11 -Os  -MMD -MP -DGNUSTEP -DGNUSTEP_BASE_LIBRARY=1 -DGNU_RUNTIME=1 -DGNUSTEP_BASE_LIBRARY=1 -fno-strict-aliasing -pthread -fPIC -Wall -DGSWARN -DGSDIAGNOSE -Wno-import -fgnu-runtime -fconstant-string-class=NSConstantString  -I. -I/usr/local/include/GNUstep -I/usr/include/GNUstep -I${GCC_PATH}include/  -rdynamic -L/root/GNUstep/Library/Libraries -L/usr/local/lib -L/usr/lib -lobjc -lm -lgnustep-base -o test
 ```
+
+<br />
 
 ## GTK+ 3编译选项
 
