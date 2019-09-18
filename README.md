@@ -84,6 +84,7 @@ sudo apt-get install libbluetooth-dev
 ## GNUstep编译选项
 
 我们通过执行以下命令来观察Objective-C编译时所需要的编译选项：`gnustep-config --objc-flags`
+
 执行以下命令查看Objective-C连接时所需要的加载选项：`gnustep-config --objc-libs`
 
 整理之后：
