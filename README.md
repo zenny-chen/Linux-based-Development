@@ -45,6 +45,7 @@ Linux（主要基于Debian系）系统下的开发资料
 1. [类Unix系统中如何获取另一个程序的输出内容](https://baike.baidu.com/item/popen)
 1. [使用popen执行shell命令并获取返回结果](https://www.cnblogs.com/hiawind/p/9089288.html)
 1. [C语言中的系统库system函数](https://baike.baidu.com/item/system/15078602?fr=aladdin)
+1. C语言将控制台输出内容转存到指定文件：`freopen(filePath, "w", stdout);`。用完之后再用`fclose`关闭文件即可。在转存过程中，控制台内容仍然会输出。
 1. [gdb到底是怎样实现的？](https://www.toutiao.com/a6699652803918299655)
 1. [聊聊文件IO](https://www.toutiao.com/a6700806648274878987)
 1. [epoll原理简介](https://www.toutiao.com/a6701457609444033031)
@@ -104,4 +105,33 @@ gcc test.m -std=gnu11 -Os  -MMD -MP -DGNUSTEP -DGNUSTEP_BASE_LIBRARY=1 -DGNU_RUN
 export ABI_NAME=${HOSTTYPE}-${OSTYPE}
 gcc main.c -std=gnu11 -I/usr/include/glib-2.0/ -I/usr/include/atk-1.0/ -I/usr/include/gdk-pixbuf-2.0/ -I/usr/include/cairo/ -I/usr/include/pango-1.0/ -I/usr/lib/${ABI_NAME}/glib-2.0/include/ -I/usr/include/gtk-3.0/ -L/usr/lib/${ABI_NAME}/ -lgtk-3 -lgobject-2.0 -lpangocairo-1.0 -lgio-2.0 -latk-1.0 -lgdk-3 -lglib-2.0    -o gtk-test
 ```
+
+<br />
+
+### 安装LLVM-Clang
+
+```shell
+sudo apt-get install llvm
+
+sudo apt-get install clang
+
+sudo apt-get install libdispatch-dev
+```
+从GCC 8起，Clang 6起可以使用`-std=gnu17`标准。
+
+<br />
+
+### C语言中，在控制台中读取一行输入命令字符串
+
+```c
+    char *contents = NULL;
+    size_t initLen = 0;
+    // contents最后会包含一个换行符，这也就是意味着如果用户仅输入一个回车，
+    // 那么contents中就一个换行符，长度为1。
+    ssize_t contentLength = getline(&contents, &initLen, stdin);
+    printf("Content length is: %zd, content is: %s", contentLength, contents);
+```
+以上代码只需要包含`<stdio.h>`头文件即可。这里需要注意的是，getline的第二个参数不能为空。
+
+<br />
 
