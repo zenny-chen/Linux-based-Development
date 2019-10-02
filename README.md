@@ -48,6 +48,7 @@ Linux（主要基于Debian系）系统下的开发资料
 1. [聊聊文件IO](https://www.toutiao.com/a6700806648274878987)
 1. [分钟搞懂Linux中直接I/O原理](https://www.toutiao.com/a6701654059910169091/)
 1. [epoll原理简介](https://www.toutiao.com/a6701457609444033031)
+1. [如果这篇文章说不清epoll的本质，那就过来掐死我吧！](https://www.toutiao.com/a6683264188661367309)
 1. [非阻塞 I/O 和多路复用+select、poll、epoll模型详解](https://www.toutiao.com/i6554223409138500110)
 1. [kqueue用法简介](https://www.cnblogs.com/luminocean/p/5631336.html)
 1. [使用 kqueue 在 FreeBSD 上开发高性能应用服务器](https://www.ibm.com/developerworks/cn/aix/library/1105_huangrg_kqueue/)
