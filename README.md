@@ -48,11 +48,23 @@ Linux（主要基于Debian系）系统下的开发资料
 1. [聊聊文件IO](https://www.toutiao.com/a6700806648274878987)
 1. [分钟搞懂Linux中直接I/O原理](https://www.toutiao.com/a6701654059910169091/)
 1. [epoll原理简介](https://www.toutiao.com/a6701457609444033031)
+1. [非阻塞 I/O 和多路复用+select、poll、epoll模型详解](https://www.toutiao.com/i6554223409138500110)
 1. [kqueue用法简介](https://www.cnblogs.com/luminocean/p/5631336.html)
 1. [使用 kqueue 在 FreeBSD 上开发高性能应用服务器](https://www.ibm.com/developerworks/cn/aix/library/1105_huangrg_kqueue/)
-
+1. [使程序在Linux下后台运行 （关掉终端继续让程序运行的方法）](https://www.cnblogs.com/little-ant/p/3952424.html)
+1. Linux下生成动态库使用` -fPIC -shared`编译选项，并且动态库的命名规则为：lib<lib-name>.so。加载动态库时使用`export LD_LIBRARY_PATH=`导出动态库所在路径。
+1. [Ubuntu系统下通过Clang编译器编写Objective-C](https://blog.csdn.net/zenny_chen/article/details/52507022)
+1. Ubuntu下安装libz库：`sudo apt-get install zlib1g-dev`，然后使用`-lz`去连接。
+1. Ubuntu下安装BSD库：`sudo apt-get install libbsd-dev`，然后使用`-lbsd`去连接。此外，在`<bsd/stdlib.h>`中可使用 **arc4random** 等函数。
+1. Ubuntu下安装glib库：`sudo apt-get install libglib2.0-dev`。主要头文件为：`<glib.h>`。使用`pkg-config --cflags glib-2.0`可观察详细编译选项；使用`pkg-config --libs glib-2.0`可详细查看需要连接的库。如果我们要使用gobject库，那么将上述查看编译和连接选项的库名改为`gobject-2.0`即可。gobject库的头文件为：`<glib-object.h>`。
+1. [GLib开源项目](https://gitlab.gnome.org/GNOME/glib)
+1. Ubuntu下查看当前所有可安装的软件包：`dpkg -l`。
 
 <br/>
+
+如果在Ubuntu上安装GCC或使用`sudo apt-get install build-essential`失败，则需要先执行一下`sudo apt-get update`，更新之后再执行安装命令。
+
+<br />
 
 ## Raspbian系统下所需要安装的开发工具
 ```bash
