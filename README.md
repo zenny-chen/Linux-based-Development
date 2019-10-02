@@ -42,14 +42,15 @@ Linux（主要基于Debian系）系统下的开发资料
 1. [Linux 下的进程间通信：共享存储](https://www.toutiao.com/a6688140435799409160)
 1. [Linux 获取本机IP、MAC地址用法大全](https://www.cnblogs.com/fnlingnzb-learner/p/6427786.html)
 1. [Arm Cortex-M低功耗模式基础](https://www.toutiao.com/a6690433824859357709)
-1. [类Unix系统中如何获取另一个程序的输出内容](https://baike.baidu.com/item/popen)
-1. [使用popen执行shell命令并获取返回结果](https://www.cnblogs.com/hiawind/p/9089288.html)
-1. [C语言中的系统库system函数](https://baike.baidu.com/item/system/15078602?fr=aladdin)
-1. C语言将控制台输出内容转存到指定文件：`freopen(filePath, "w", stdout);`。用完之后再用`fclose`关闭文件即可。在转存过程中，控制台内容仍然会输出。
-1. [gdb到底是怎样实现的？](https://www.toutiao.com/a6699652803918299655)
+1. [Linux内核中的软中断、tasklet和工作队列](http://blog.csdn.net/T146lLa128XX0x/article/details/79070798)
+1. [How To Install LLVM and Clang on CentOS 6](https://www.vultr.com/docs/how-to-install-llvm-and-clang-on-centos-6)
+1. [在Centos-5下安装Objective-C的编译环境](http://blog.csdn.net/Robincui2011/article/details/6785987)
 1. [聊聊文件IO](https://www.toutiao.com/a6700806648274878987)
-1. [epoll原理简介](https://www.toutiao.com/a6701457609444033031)
 1. [分钟搞懂Linux中直接I/O原理](https://www.toutiao.com/a6701654059910169091/)
+1. [epoll原理简介](https://www.toutiao.com/a6701457609444033031)
+1. [kqueue用法简介](https://www.cnblogs.com/luminocean/p/5631336.html)
+1. [使用 kqueue 在 FreeBSD 上开发高性能应用服务器](https://www.ibm.com/developerworks/cn/aix/library/1105_huangrg_kqueue/)
+
 
 <br/>
 
