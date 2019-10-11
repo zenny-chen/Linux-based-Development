@@ -34,6 +34,7 @@ Linux（主要基于Debian系）系统下的开发资料
 1. 在各类make工具中， **`CC`** 表示C语言编译器， **`CXX`** 表示C++语言编译器。
 1. [What are the environment variables by default?](https://unix.stackexchange.com/questions/329429/what-are-the-environment-variables-by-default)
 1. [树莓派Virtual keyboard activation](https://raspberrypi.stackexchange.com/questions/41150/virtual-keyboard-activation)
+1. [树莓派引脚编号说明](https://www.toutiao.com/a6746428899854385668/)
 1. Raspbian安装OpenGL ES与EGL：`sudo apt-get install libva-egl1 libegl1-mesa-drivers gegl libgles2-mesa-dev libglfw-dev`
 1. [Only OpenGL ES 1.1 and not 2.0 on Raspberry Pi 3](https://stackoverflow.com/questions/48136077/only-opengl-es-1-1-and-not-2-0-on-raspberry-pi-3)
 1. [Raspberry Pi VideoCore APIs](https://elinux.org/Raspberry_Pi_VideoCore_APIs)
