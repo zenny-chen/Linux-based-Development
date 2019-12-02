@@ -63,6 +63,7 @@ Linux（主要基于Debian系）系统下的开发资料
 1. [GLib开源项目](https://gitlab.gnome.org/GNOME/glib)
 1. Ubuntu下查看当前所有可安装的软件包：`dpkg -l`。
 1. [Download C# Mono](https://www.mono-project.com/download/stable/#download-lin)（安装完整的Mono：`sudo apt-get install mono-complete`。安装Monodevelop IDE：`sudo apt-get install monodevelop`。不过在树莓派上无法安装Monodevelop IDE，因此直接编译C#代码使用`mcs`命令，可直接生成可执行代码。）
+1. [.net、mono和C#](https://www.cnblogs.com/kekec/p/7237156.html)
 
 <br/>
 
