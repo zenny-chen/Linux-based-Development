@@ -32,6 +32,7 @@ Linux（主要基于Debian系）系统下的开发资料
 1. [cmake 简介](https://www.cnblogs.com/lidabo/p/7359422.html)
 1. [Android NDK 开发之 CMake 必知必会](https://blog.csdn.net/zhying719/article/details/82657519)
 1. [GNU Make in Detail for Beginners](https://opensourceforu.com/2012/06/gnu-make-in-detail-for-beginners/)
+1. [linux下的C语言开发（makefile编写详解）](https://www.toutiao.com/i6763898618379239950/)
 1. 在各类make工具中， **`CC`** 表示C语言编译器， **`CXX`** 表示C++语言编译器。
 1. [What are the environment variables by default?](https://unix.stackexchange.com/questions/329429/what-are-the-environment-variables-by-default)
 1. [树莓派Virtual keyboard activation](https://raspberrypi.stackexchange.com/questions/41150/virtual-keyboard-activation)
