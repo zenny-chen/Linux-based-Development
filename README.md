@@ -57,6 +57,7 @@ Linux（主要基于Debian系）系统下的开发资料
 1. [Linux内核中的软中断、tasklet和工作队列](http://blog.csdn.net/T146lLa128XX0x/article/details/79070798)
 1. [How To Install LLVM and Clang on CentOS 6](https://www.vultr.com/docs/how-to-install-llvm-and-clang-on-centos-6)
 1. [在Centos-5下安装Objective-C的编译环境](http://blog.csdn.net/Robincui2011/article/details/6785987)
+1. [浅谈 Linux下的零拷贝机制](https://www.toutiao.com/i6462135845481611790/)
 1. [聊聊文件IO](https://www.toutiao.com/a6700806648274878987)
 1. [分钟搞懂Linux中直接I/O原理](https://www.toutiao.com/a6701654059910169091/)
 1. [epoll原理简介](https://www.toutiao.com/a6701457609444033031)
