@@ -4,6 +4,15 @@ Linux（主要基于Debian系）系统下的开发资料
 <br />
 
 1. [程序员学习道路第一条，学会Git,一学就会](https://www.toutiao.com/a6694015880218542606)
+1. [Linux 下载文件命令](https://blog.csdn.net/hitabc141592/article/details/7561239)
+1. [Linux curl命令详解](https://www.cnblogs.com/duhuo/p/5695256.html)
+1. [Linux下的tar压缩解压缩命令详解](https://www.cnblogs.com/qq78292959/archive/2011/07/06/2099427.html)
+1. Linux下使用zip来压缩文件夹：`zip -r dst_file.zip src_folder_path`
+1. [Linux下的mv命令](https://www.cnblogs.com/peida/archive/2012/10/27/2743022.html)
+1. [vi 常用命令行](https://www.cnblogs.com/sunormoon/archive/2012/02/10/2345326.html)（文件保存退出一般使用`:x`命令）
+1. [Linux文件查找命令](https://blog.csdn.net/qq_27517377/article/details/78870293)
+1. [Linux系统下查看文件与磁盘空间大小](https://www.cnblogs.com/adolfmc/archive/2013/02/16/2913801.html)
+1. [Linux的秘密：这才是find的正确使用姿势](https://www.toutiao.com/i6549496730935624195/)
 1. [Sound recording program using Nano](https://raspberrypi.stackexchange.com/questions/15018/sound-recording-program-using-nano)
 1. [Install alsa-utils on Ubuntu: sudo apt-get install alsa-utils](https://www.devmanuals.net/install/ubuntu/ubuntu-12-04-lts-precise-pangolin/install-alsa-utils.html)
 1. [Sound Recording & Play on Raspberry Pi Using ALSA in C](https://stackoverflow.com/questions/38615396/sound-recording-play-on-raspberry-pi-using-alsa-in-c)
