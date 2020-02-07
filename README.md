@@ -13,6 +13,7 @@ Linux（主要基于Debian系）系统下的开发资料
 1. [Linux文件查找命令](https://blog.csdn.net/qq_27517377/article/details/78870293)
 1. [Linux系统下查看文件与磁盘空间大小](https://www.cnblogs.com/adolfmc/archive/2013/02/16/2913801.html)
 1. [Linux的秘密：这才是find的正确使用姿势](https://www.toutiao.com/i6549496730935624195/)
+1. [apt和apt-get之间的区别解释](https://www.toutiao.com/i6734877338686718477/)
 1. [Sound recording program using Nano](https://raspberrypi.stackexchange.com/questions/15018/sound-recording-program-using-nano)
 1. [Install alsa-utils on Ubuntu: sudo apt-get install alsa-utils](https://www.devmanuals.net/install/ubuntu/ubuntu-12-04-lts-precise-pangolin/install-alsa-utils.html)
 1. [Sound Recording & Play on Raspberry Pi Using ALSA in C](https://stackoverflow.com/questions/38615396/sound-recording-play-on-raspberry-pi-using-alsa-in-c)
