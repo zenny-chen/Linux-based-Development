@@ -40,6 +40,7 @@ Linux（主要基于Debian系）系统下的开发资料
 1. [gtk 实现键盘按键的读取](https://blog.csdn.net/shibixiao/article/details/4861117)（最后可以将"key-press-event"添加到window对象上以实现全局侦听）
 1. [GTK进阶学习：鼠标事件](http://www.mamicode.com/info-detail-445416.html)
 1. [cmake 简介](https://www.cnblogs.com/lidabo/p/7359422.html)
+1. [cmake构建时指定编译器架构(x86 or x64)]()
 1. [Android NDK 开发之 CMake 必知必会](https://blog.csdn.net/zhying719/article/details/82657519)
 1. [GNU Make in Detail for Beginners](https://opensourceforu.com/2012/06/gnu-make-in-detail-for-beginners/)
 1. [linux下的C语言开发（makefile编写详解）](https://www.toutiao.com/i6763898618379239950/)
