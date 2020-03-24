@@ -3,88 +3,88 @@ Linux（主要基于Debian系）系统下的开发资料
 
 <br />
 
-1. [程序员学习道路第一条，学会Git,一学就会](https://www.toutiao.com/a6694015880218542606)
-1. [一篇文章，教你学会Git](https://www.toutiao.com/a6774284445873603083/)
-1. [Linux 下载文件命令](https://blog.csdn.net/hitabc141592/article/details/7561239)
-1. [Linux curl命令详解](https://www.cnblogs.com/duhuo/p/5695256.html)
-1. [Linux下的tar压缩解压缩命令详解](https://www.cnblogs.com/qq78292959/archive/2011/07/06/2099427.html)
-1. Linux下使用zip来压缩文件夹：`zip -r dst_file.zip src_folder_path`
-1. [Linux下的mv命令](https://www.cnblogs.com/peida/archive/2012/10/27/2743022.html)
-1. [vi 常用命令行](https://www.cnblogs.com/sunormoon/archive/2012/02/10/2345326.html)（文件保存退出一般使用`:x`命令）
-1. [Linux文件查找命令](https://blog.csdn.net/qq_27517377/article/details/78870293)
-1. [Linux系统下查看文件与磁盘空间大小](https://www.cnblogs.com/adolfmc/archive/2013/02/16/2913801.html)
-1. [Linux的秘密：这才是find的正确使用姿势](https://www.toutiao.com/i6549496730935624195/)
-1. [apt和apt-get之间的区别解释](https://www.toutiao.com/i6734877338686718477/)
-1. [Sound recording program using Nano](https://raspberrypi.stackexchange.com/questions/15018/sound-recording-program-using-nano)
-1. [Install alsa-utils on Ubuntu: sudo apt-get install alsa-utils](https://www.devmanuals.net/install/ubuntu/ubuntu-12-04-lts-precise-pangolin/install-alsa-utils.html)
-1. [Sound Recording & Play on Raspberry Pi Using ALSA in C](https://stackoverflow.com/questions/38615396/sound-recording-play-on-raspberry-pi-using-alsa-in-c)
-1. [使用ALSA检查声卡驱动](https://www.alsa-project.org/wiki/SoundcardTesting)（在Linux下，**alsamixer** 工具在 `/usr/bin/alsamixer`下，使用F6可切换声卡。也可以使用 `arecord -l` 命令来列出支持麦克风声卡的驱动。）
-1. [【Linux&音频】Alsa音频编程【精华】](https://www.cnblogs.com/lifan3a/articles/5481993.html)
-1. [教程】树莓派设置3.5mm接口输出音频](https://www.jianshu.com/p/674145fe98fa)
-1. [树莓派之蓝牙编程](https://blog.csdn.net/qq_25005909/article/details/77512903)
-1. [树莓派连接USB转串口的使用](https://blog.csdn.net/fhqlongteng/article/details/80417028)
-1. [用树莓派玩转蓝牙](https://www.cnblogs.com/vamei/p/6753531.html)
-1. [树莓派 3B+ 原生蓝牙与手机通讯（BlueTooth SPP）方法和步骤](https://blog.csdn.net/wanyeye/article/details/52909869)
-1. [Linux(RaspberryPi)上使用BLE低功耗蓝牙](https://blog.csdn.net/qq_33433070/article/details/78668105)
-1. [Creating BLE GATT Server (UART Service) on Raspberry Pi](https://scribles.net/creating-ble-gatt-server-uart-service-on-raspberry-pi/)
-1. [Chapter 4. Bluetooth programming in C with BlueZ](https://people.csail.mit.edu/albert/bluez-intro/c404.html)（安装蓝牙开发库：`sudo apt-get install libbluetooth-dev`）
-1.  [linux Bluetooth programming in c](https://stackoverflow.com/questions/11408609/linux-bluetooth-programming-in-c)
-1. [Generic Attribute Profile (GATT)](http://dev.ti.com/tirex/content/simplelink_cc2640r2_sdk_1_40_00_45/docs/blestack/ble_user_guide/html/ble-stack-3.x/gatt.html)
-1. [BLE master/slave, GATT client/server, and data RX/TX basics](https://www.silabs.com/community/wireless/bluetooth/knowledge-base.entry.html/2015/08/06/_reference_ble_mas-gviy)
-1. 含有调用`hci_le_set_advertise_enable` API的代码必须使用`sudo`来运行，否则会出现“认证失败”的错误码。
-1. [bleno で Raspberry Pi を BLE Peripheral として動かしてみる](https://qiita.com/comachi/items/c494e0d6c6d1775a3748)
-1. [Bluetooth GATT: How to Design Custom Services & Characteristics \[MIDI device use case\]](https://www.novelbits.io/bluetooth-gatt-services-characteristics/)
-1. [串口通讯的原理、代码实现及注释](https://www.toutiao.com/a6729730596051878404)
-1. [ubuntu安装最新版node和npm](https://www.jianshu.com/p/f2592d106aac)
-1. [Linux下使用游戏手柄](https://blog.csdn.net/qq_25556149/article/details/79730217)
-1. [蓝牙hid协议源码解析](https://blog.csdn.net/u012439416/article/details/54348438)
-1. [gtk 实现键盘按键的读取](https://blog.csdn.net/shibixiao/article/details/4861117)（最后可以将"key-press-event"添加到window对象上以实现全局侦听）
-1. [GTK进阶学习：鼠标事件](http://www.mamicode.com/info-detail-445416.html)
-1. [cmake 简介](https://www.cnblogs.com/lidabo/p/7359422.html)
-1. [cmake构建时指定编译器架构(x86 or x64)](https://www.cnblogs.com/lidabo/p/12017014.html)
-1. [Android NDK 开发之 CMake 必知必会](https://blog.csdn.net/zhying719/article/details/82657519)
-1. CMake下开启汇编文件的编译：类Unix下使用GAS为 `ENABLE_LANGUAGE(ASM)`；Visual Studio下使用MASM为 `ENABLE_LANGUAGE(ASM_MASM)`。
-1. [GNU Make in Detail for Beginners](https://opensourceforu.com/2012/06/gnu-make-in-detail-for-beginners/)
-1. [linux下的C语言开发（makefile编写详解）](https://www.toutiao.com/i6763898618379239950/)
-1. 在各类make工具中， **`CC`** 表示C语言编译器， **`CXX`** 表示C++语言编译器。
-1. [What are the environment variables by default?](https://unix.stackexchange.com/questions/329429/what-are-the-environment-variables-by-default)
-1. [树莓派Virtual keyboard activation](https://raspberrypi.stackexchange.com/questions/41150/virtual-keyboard-activation)
-1. [树莓派引脚编号说明](https://www.toutiao.com/a6746428899854385668/)
-1. Raspbian安装OpenGL ES与EGL：`sudo apt-get install libva-egl1 libegl1-mesa-drivers gegl libgles2-mesa-dev libglfw-dev`
-1. [Only OpenGL ES 1.1 and not 2.0 on Raspberry Pi 3](https://stackoverflow.com/questions/48136077/only-opengl-es-1-1-and-not-2-0-on-raspberry-pi-3)
-1. [Raspberry Pi VideoCore APIs](https://elinux.org/Raspberry_Pi_VideoCore_APIs)
-1. [linux下获取按键响应事件](https://www.cnblogs.com/yangwindsor/articles/3454955.html)（这种方式是阻塞式的）
-1. [Raspbian下在EGL环境中捕获键盘按键响应事件](https://github.com/AndrewFromMelbourne/raspidmx/blob/master/common/key.c)（Linux下获得鼠标事件可参考Raspbian系统下`/opt/vc/src/hello_pi/hello_triangle2`这一demo。）
-1. [Linux 下的进程间通信：共享存储](https://www.toutiao.com/a6688140435799409160)
-1. [共享内存才是实现进程间通信最简单也是最直接的方法](https://www.toutiao.com/a6736813277818389006/)
-1. [Linux 获取本机IP、MAC地址用法大全](https://www.cnblogs.com/fnlingnzb-learner/p/6427786.html)
-1. [Arm Cortex-M低功耗模式基础](https://www.toutiao.com/a6690433824859357709)
-1. [Linux内核中的软中断、tasklet和工作队列](http://blog.csdn.net/T146lLa128XX0x/article/details/79070798)
-1. [How To Install LLVM and Clang on CentOS 6](https://www.vultr.com/docs/how-to-install-llvm-and-clang-on-centos-6)
-1. [在Centos-5下安装Objective-C的编译环境](http://blog.csdn.net/Robincui2011/article/details/6785987)
-1. [浅谈 Linux下的零拷贝机制](https://www.toutiao.com/i6462135845481611790/)
-1. [聊聊文件IO](https://www.toutiao.com/a6700806648274878987)
-1. [分钟搞懂Linux中直接I/O原理](https://www.toutiao.com/a6701654059910169091/)
-1. [epoll原理简介](https://www.toutiao.com/a6701457609444033031)
-1. [如果这篇文章说不清epoll的本质，那就过来掐死我吧！](https://www.toutiao.com/a6683264188661367309)
-1. [非阻塞 I/O 和多路复用+select、poll、epoll模型详解](https://www.toutiao.com/i6554223409138500110)
-1. [kqueue用法简介](https://www.cnblogs.com/luminocean/p/5631336.html)
-1. [使用 kqueue 在 FreeBSD 上开发高性能应用服务器](https://www.ibm.com/developerworks/cn/aix/library/1105_huangrg_kqueue/)
-1. [使程序在Linux下后台运行 （关掉终端继续让程序运行的方法）](https://www.cnblogs.com/little-ant/p/3952424.html)
-1. Linux下生成动态库使用` -fPIC -shared`编译选项，并且动态库的命名规则为：lib<lib-name>.so。加载动态库时使用`export LD_LIBRARY_PATH=`导出动态库所在路径。
-1. GAS下使用Intel语法汇编并且在寄存器前不添加`%`符号：`.intel_syntax noprefix`。
-1. GCC/Clang编译器下要使用<intrin.h>，则得：`#include <x86intrin.h>`。
-1. [C++ win32和linux获取系统剩余内存](https://blog.csdn.net/q1368232592/article/details/85157823)
-1. [Linux查看物理CPU个数、核数、逻辑CPU个数](https://www.cnblogs.com/bugutian/p/6138880.html)
-1. [Linux如何查看CPU信息，Linux查看CPU个数和核心数，Linux查看CPU使用率和运行位数](https://blog.csdn.net/tiiefu1212/article/details/78623132)
-1. [Ubuntu系统下通过Clang编译器编写Objective-C](https://blog.csdn.net/zenny_chen/article/details/52507022)
-1. Ubuntu下安装libz库：`sudo apt-get install zlib1g-dev`，然后使用`-lz`去连接。
-1. Ubuntu下安装BSD库：`sudo apt-get install libbsd-dev`，然后使用`-lbsd`去连接。此外，在`<bsd/stdlib.h>`中可使用 **arc4random** 等函数。
-1. Ubuntu下安装glib库：`sudo apt-get install libglib2.0-dev`。主要头文件为：`<glib.h>`。使用`pkg-config --cflags glib-2.0`可观察详细编译选项；使用`pkg-config --libs glib-2.0`可详细查看需要连接的库。如果我们要使用gobject库，那么将上述查看编译和连接选项的库名改为`gobject-2.0`即可。gobject库的头文件为：`<glib-object.h>`。
-1. [GLib开源项目](https://gitlab.gnome.org/GNOME/glib)
-1. Ubuntu下查看当前所有可安装的软件包：`dpkg -l`。
-1. [Download C# Mono](https://www.mono-project.com/download/stable/#download-lin)（安装完整的Mono：`sudo apt-get install mono-complete`。安装Monodevelop IDE：`sudo apt-get install monodevelop`。不过在树莓派上无法安装Monodevelop IDE，因此直接编译C#代码使用`mcs`命令，可直接生成可执行代码。对于mcs命令，使用`-unsafe`选项可启用非安全代码。）
-1. [.net、mono和C#](https://www.cnblogs.com/kekec/p/7237156.html)
+- [程序员学习道路第一条，学会Git,一学就会](https://www.toutiao.com/a6694015880218542606)
+- [一篇文章，教你学会Git](https://www.toutiao.com/a6774284445873603083/)
+- [Linux 下载文件命令](https://blog.csdn.net/hitabc141592/article/details/7561239)
+- [Linux curl命令详解](https://www.cnblogs.com/duhuo/p/5695256.html)
+- [Linux下的tar压缩解压缩命令详解](https://www.cnblogs.com/qq78292959/archive/2011/07/06/2099427.html)
+- Linux下使用zip来压缩文件夹：`zip -r dst_file.zip src_folder_path`
+- [Linux下的mv命令](https://www.cnblogs.com/peida/archive/2012/10/27/2743022.html)
+- [vi 常用命令行](https://www.cnblogs.com/sunormoon/archive/2012/02/10/2345326.html)（文件保存退出一般使用`:x`命令）
+- [Linux文件查找命令](https://blog.csdn.net/qq_27517377/article/details/78870293)
+- [Linux系统下查看文件与磁盘空间大小](https://www.cnblogs.com/adolfmc/archive/2013/02/16/2913801.html)
+- [Linux的秘密：这才是find的正确使用姿势](https://www.toutiao.com/i6549496730935624195/)
+- [apt和apt-get之间的区别解释](https://www.toutiao.com/i6734877338686718477/)
+- [Sound recording program using Nano](https://raspberrypi.stackexchange.com/questions/15018/sound-recording-program-using-nano)
+- [Install alsa-utils on Ubuntu: sudo apt-get install alsa-utils](https://www.devmanuals.net/install/ubuntu/ubuntu-12-04-lts-precise-pangolin/install-alsa-utils.html)
+- [Sound Recording & Play on Raspberry Pi Using ALSA in C](https://stackoverflow.com/questions/38615396/sound-recording-play-on-raspberry-pi-using-alsa-in-c)
+- [使用ALSA检查声卡驱动](https://www.alsa-project.org/wiki/SoundcardTesting)（在Linux下，**alsamixer** 工具在 `/usr/bin/alsamixer`下，使用F6可切换声卡。也可以使用 `arecord -l` 命令来列出支持麦克风声卡的驱动。）
+- [【Linux&音频】Alsa音频编程【精华】](https://www.cnblogs.com/lifan3a/articles/5481993.html)
+- [教程】树莓派设置3.5mm接口输出音频](https://www.jianshu.com/p/674145fe98fa)
+- [树莓派之蓝牙编程](https://blog.csdn.net/qq_25005909/article/details/77512903)
+- [树莓派连接USB转串口的使用](https://blog.csdn.net/fhqlongteng/article/details/80417028)
+- [用树莓派玩转蓝牙](https://www.cnblogs.com/vamei/p/6753531.html)
+- [树莓派 3B+ 原生蓝牙与手机通讯（BlueTooth SPP）方法和步骤](https://blog.csdn.net/wanyeye/article/details/52909869)
+- [Linux(RaspberryPi)上使用BLE低功耗蓝牙](https://blog.csdn.net/qq_33433070/article/details/78668105)
+- [Creating BLE GATT Server (UART Service) on Raspberry Pi](https://scribles.net/creating-ble-gatt-server-uart-service-on-raspberry-pi/)
+- [Chapter 4. Bluetooth programming in C with BlueZ](https://people.csail.mit.edu/albert/bluez-intro/c404.html)（安装蓝牙开发库：`sudo apt-get install libbluetooth-dev`）
+-  [linux Bluetooth programming in c](https://stackoverflow.com/questions/11408609/linux-bluetooth-programming-in-c)
+- [Generic Attribute Profile (GATT)](http://dev.ti.com/tirex/content/simplelink_cc2640r2_sdk_1_40_00_45/docs/blestack/ble_user_guide/html/ble-stack-3.x/gatt.html)
+- [BLE master/slave, GATT client/server, and data RX/TX basics](https://www.silabs.com/community/wireless/bluetooth/knowledge-base.entry.html/2015/08/06/_reference_ble_mas-gviy)
+- 含有调用`hci_le_set_advertise_enable` API的代码必须使用`sudo`来运行，否则会出现“认证失败”的错误码。
+- [bleno で Raspberry Pi を BLE Peripheral として動かしてみる](https://qiita.com/comachi/items/c494e0d6c6d1775a3748)
+- [Bluetooth GATT: How to Design Custom Services & Characteristics \[MIDI device use case\]](https://www.novelbits.io/bluetooth-gatt-services-characteristics/)
+- [串口通讯的原理、代码实现及注释](https://www.toutiao.com/a6729730596051878404)
+- [ubuntu安装最新版node和npm](https://www.jianshu.com/p/f2592d106aac)
+- [Linux下使用游戏手柄](https://blog.csdn.net/qq_25556149/article/details/79730217)
+- [蓝牙hid协议源码解析](https://blog.csdn.net/u012439416/article/details/54348438)
+- [gtk 实现键盘按键的读取](https://blog.csdn.net/shibixiao/article/details/4861117)（最后可以将"key-press-event"添加到window对象上以实现全局侦听）
+- [GTK进阶学习：鼠标事件](http://www.mamicode.com/info-detail-445416.html)
+- [cmake 简介](https://www.cnblogs.com/lidabo/p/7359422.html)
+- [cmake构建时指定编译器架构(x86 or x64)](https://www.cnblogs.com/lidabo/p/12017014.html)
+- [Android NDK 开发之 CMake 必知必会](https://blog.csdn.net/zhying719/article/details/82657519)
+- CMake下开启汇编文件的编译：类Unix下使用GAS为 `ENABLE_LANGUAGE(ASM)`；Visual Studio下使用MASM为 `ENABLE_LANGUAGE(ASM_MASM)`。
+- [GNU Make in Detail for Beginners](https://opensourceforu.com/2012/06/gnu-make-in-detail-for-beginners/)
+- [linux下的C语言开发（makefile编写详解）](https://www.toutiao.com/i6763898618379239950/)
+- 在各类make工具中， **`CC`** 表示C语言编译器， **`CXX`** 表示C++语言编译器。
+- [What are the environment variables by default?](https://unix.stackexchange.com/questions/329429/what-are-the-environment-variables-by-default)
+- [树莓派Virtual keyboard activation](https://raspberrypi.stackexchange.com/questions/41150/virtual-keyboard-activation)
+- [树莓派引脚编号说明](https://www.toutiao.com/a6746428899854385668/)
+- Raspbian安装OpenGL ES与EGL：`sudo apt-get install libva-egl1 libegl1-mesa-drivers gegl libgles2-mesa-dev libglfw-dev`
+- [Only OpenGL ES 1.1 and not 2.0 on Raspberry Pi 3](https://stackoverflow.com/questions/48136077/only-opengl-es-1-1-and-not-2-0-on-raspberry-pi-3)
+- [Raspberry Pi VideoCore APIs](https://elinux.org/Raspberry_Pi_VideoCore_APIs)
+- [linux下获取按键响应事件](https://www.cnblogs.com/yangwindsor/articles/3454955.html)（这种方式是阻塞式的）
+- [Raspbian下在EGL环境中捕获键盘按键响应事件](https://github.com/AndrewFromMelbourne/raspidmx/blob/master/common/key.c)（Linux下获得鼠标事件可参考Raspbian系统下`/opt/vc/src/hello_pi/hello_triangle2`这一demo。）
+- [Linux 下的进程间通信：共享存储](https://www.toutiao.com/a6688140435799409160)
+- [共享内存才是实现进程间通信最简单也是最直接的方法](https://www.toutiao.com/a6736813277818389006/)
+- [Linux 获取本机IP、MAC地址用法大全](https://www.cnblogs.com/fnlingnzb-learner/p/6427786.html)
+- [Arm Cortex-M低功耗模式基础](https://www.toutiao.com/a6690433824859357709)
+- [Linux内核中的软中断、tasklet和工作队列](http://blog.csdn.net/T146lLa128XX0x/article/details/79070798)
+- [How To Install LLVM and Clang on CentOS 6](https://www.vultr.com/docs/how-to-install-llvm-and-clang-on-centos-6)
+- [在Centos-5下安装Objective-C的编译环境](http://blog.csdn.net/Robincui2011/article/details/6785987)
+- [浅谈 Linux下的零拷贝机制](https://www.toutiao.com/i6462135845481611790/)
+- [聊聊文件IO](https://www.toutiao.com/a6700806648274878987)
+- [分钟搞懂Linux中直接I/O原理](https://www.toutiao.com/a6701654059910169091/)
+- [epoll原理简介](https://www.toutiao.com/a6701457609444033031)
+- [如果这篇文章说不清epoll的本质，那就过来掐死我吧！](https://www.toutiao.com/a6683264188661367309)
+- [非阻塞 I/O 和多路复用+select、poll、epoll模型详解](https://www.toutiao.com/i6554223409138500110)
+- [kqueue用法简介](https://www.cnblogs.com/luminocean/p/5631336.html)
+- [使用 kqueue 在 FreeBSD 上开发高性能应用服务器](https://www.ibm.com/developerworks/cn/aix/library/1105_huangrg_kqueue/)
+- [使程序在Linux下后台运行 （关掉终端继续让程序运行的方法）](https://www.cnblogs.com/little-ant/p/3952424.html)
+- Linux下生成动态库使用` -fPIC -shared`编译选项，并且动态库的命名规则为：lib<lib-name>.so。加载动态库时使用`export LD_LIBRARY_PATH=`导出动态库所在路径。
+- GAS下使用Intel语法汇编并且在寄存器前不添加`%`符号：`.intel_syntax noprefix`。
+- GCC/Clang编译器下要使用<intrin.h>，则得：`#include <x86intrin.h>`。
+- [C++ win32和linux获取系统剩余内存](https://blog.csdn.net/q1368232592/article/details/85157823)
+- [Linux查看物理CPU个数、核数、逻辑CPU个数](https://www.cnblogs.com/bugutian/p/6138880.html)
+- [Linux如何查看CPU信息，Linux查看CPU个数和核心数，Linux查看CPU使用率和运行位数](https://blog.csdn.net/tiiefu1212/article/details/78623132)
+- [Ubuntu系统下通过Clang编译器编写Objective-C](https://blog.csdn.net/zenny_chen/article/details/52507022)
+- Ubuntu下安装libz库：`sudo apt-get install zlib1g-dev`，然后使用`-lz`去连接。
+- Ubuntu下安装BSD库：`sudo apt-get install libbsd-dev`，然后使用`-lbsd`去连接。此外，在`<bsd/stdlib.h>`中可使用 **arc4random** 等函数。
+- Ubuntu下安装glib库：`sudo apt-get install libglib2.0-dev`。主要头文件为：`<glib.h>`。使用`pkg-config --cflags glib-2.0`可观察详细编译选项；使用`pkg-config --libs glib-2.0`可详细查看需要连接的库。如果我们要使用gobject库，那么将上述查看编译和连接选项的库名改为`gobject-2.0`即可。gobject库的头文件为：`<glib-object.h>`。
+- [GLib开源项目](https://gitlab.gnome.org/GNOME/glib)
+- Ubuntu下查看当前所有可安装的软件包：`dpkg -l`。
+- [Download C# Mono](https://www.mono-project.com/download/stable/#download-lin)（安装完整的Mono：`sudo apt-get install mono-complete`。安装Monodevelop IDE：`sudo apt-get install monodevelop`。不过在树莓派上无法安装Monodevelop IDE，因此直接编译C#代码使用`mcs`命令，可直接生成可执行代码。对于mcs命令，使用`-unsafe`选项可启用非安全代码。）
+- [.net、mono和C#](https://www.cnblogs.com/kekec/p/7237156.html)
 
 <br/>
 
