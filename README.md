@@ -68,6 +68,7 @@ Linux（主要基于Debian系）系统下的开发资料
 - [epoll原理简介](https://www.toutiao.com/a6701457609444033031)
 - [如果这篇文章说不清epoll的本质，那就过来掐死我吧！](https://www.toutiao.com/a6683264188661367309)
 - [非阻塞 I/O 和多路复用+select、poll、epoll模型详解](https://www.toutiao.com/i6554223409138500110)
+- [io_submit：Linux内核新加入的epoll替代方案](https://www.toutiao.com/a6809889593286984206/)
 - [kqueue用法简介](https://www.cnblogs.com/luminocean/p/5631336.html)
 - [使用 kqueue 在 FreeBSD 上开发高性能应用服务器](https://www.ibm.com/developerworks/cn/aix/library/1105_huangrg_kqueue/)
 - [使程序在Linux下后台运行 （关掉终端继续让程序运行的方法）](https://www.cnblogs.com/little-ant/p/3952424.html)
