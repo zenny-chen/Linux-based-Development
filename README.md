@@ -65,7 +65,7 @@ Linux（主要基于Debian系）系统下的开发资料
 - [浅谈 Linux下的零拷贝机制](https://www.toutiao.com/i6462135845481611790/)
 - [聊聊文件IO](https://www.toutiao.com/a6700806648274878987)
 - [分钟搞懂Linux中直接I/O原理](https://www.toutiao.com/a6701654059910169091/)
-- [Memory Allocation Guide](https://stackoverflow.com/questions/885658/is-it-possible-to-allocate-in-user-space-a-non-cacheable-block-of-memory-on-li)
+- [Memory Allocation Guide](https://www.kernel.org/doc/html/latest/core-api/memory-allocation.html)
 - [epoll原理简介](https://www.toutiao.com/a6701457609444033031)
 - [如果这篇文章说不清epoll的本质，那就过来掐死我吧！](https://www.toutiao.com/a6683264188661367309)
 - [非阻塞 I/O 和多路复用+select、poll、epoll模型详解](https://www.toutiao.com/i6554223409138500110)
