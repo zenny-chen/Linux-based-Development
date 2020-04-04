@@ -63,6 +63,7 @@ Linux（主要基于Debian系）系统下的开发资料
 - [How To Install LLVM and Clang on CentOS 6](https://www.vultr.com/docs/how-to-install-llvm-and-clang-on-centos-6)
 - [在Centos-5下安装Objective-C的编译环境](http://blog.csdn.net/Robincui2011/article/details/6785987)
 - [浅谈 Linux下的零拷贝机制](https://www.toutiao.com/i6462135845481611790/)
+- [零拷贝(zero copy)技术你真的懂吗？什么时候需要用到内存映射？](https://www.toutiao.com/a6810663802636337677/)
 - [聊聊文件IO](https://www.toutiao.com/a6700806648274878987)
 - [分钟搞懂Linux中直接I/O原理](https://www.toutiao.com/a6701654059910169091/)
 - [Memory Allocation Guide](https://www.kernel.org/doc/html/latest/core-api/memory-allocation.html)
