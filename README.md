@@ -5,6 +5,7 @@ Linux（主要基于Debian系）系统下的开发资料
 
 - [程序员学习道路第一条，学会Git,一学就会](https://www.toutiao.com/a6694015880218542606)
 - [一篇文章，教你学会Git](https://www.toutiao.com/a6774284445873603083/)
+- [LinuxVersions](https://kernelnewbies.org/LinuxVersions)
 - [Linux 下载文件命令](https://blog.csdn.net/hitabc141592/article/details/7561239)
 - [Linux curl命令详解](https://www.cnblogs.com/duhuo/p/5695256.html)
 - [Linux下的tar压缩解压缩命令详解](https://www.cnblogs.com/qq78292959/archive/2011/07/06/2099427.html)
