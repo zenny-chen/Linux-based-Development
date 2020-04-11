@@ -85,6 +85,7 @@ Linux（主要基于Debian系）系统下的开发资料
 - GCC/Clang编译器下要使用<intrin.h>，则得：`#include <x86intrin.h>`。
 - [Linux查看物理CPU个数、核数、逻辑CPU个数](https://www.cnblogs.com/bugutian/p/6138880.html)
 - [Linux如何查看CPU信息，Linux查看CPU个数和核心数，Linux查看CPU使用率和运行位数](https://blog.csdn.net/tiiefu1212/article/details/78623132)
+- [教你写第一个Linux设备驱动程序](https://www.toutiao.com/a6812972562201444878/)
 - [Ubuntu系统下通过Clang编译器编写Objective-C](https://blog.csdn.net/zenny_chen/article/details/52507022)
 - Ubuntu下安装libz库：`sudo apt-get install zlib1g-dev`，然后使用`-lz`去连接。
 - Ubuntu下安装BSD库：`sudo apt-get install libbsd-dev`，然后使用`-lbsd`去连接。此外，在`<bsd/stdlib.h>`中可使用 **arc4random** 等函数。
