@@ -59,9 +59,6 @@ Linux（主要基于Debian系）系统下的开发资料
 - [Raspbian下在EGL环境中捕获键盘按键响应事件](https://github.com/AndrewFromMelbourne/raspidmx/blob/master/common/key.c)（Linux下获得鼠标事件可参考Raspbian系统下`/opt/vc/src/hello_pi/hello_triangle2`这一demo。）
 - [Linux 下的进程间通信：共享存储](https://www.toutiao.com/a6688140435799409160)
 - [共享内存才是实现进程间通信最简单也是最直接的方法](https://www.toutiao.com/a6736813277818389006/)
-- [Linux 获取本机IP、MAC地址用法大全](https://www.cnblogs.com/fnlingnzb-learner/p/6427786.html)
-- [C++ win32和linux获取系统剩余内存](https://blog.csdn.net/q1368232592/article/details/85157823)
-- [Linux下获取内核版本号的函数](https://blog.csdn.net/ly890700/article/details/53540653)
 - [Arm Cortex-M低功耗模式基础](https://www.toutiao.com/a6690433824859357709)
 - [Linux内核中的软中断、tasklet和工作队列](http://blog.csdn.net/T146lLa128XX0x/article/details/79070798)
 - [How To Install LLVM and Clang on CentOS 6](https://www.vultr.com/docs/how-to-install-llvm-and-clang-on-centos-6)
@@ -72,7 +69,6 @@ Linux（主要基于Debian系）系统下的开发资料
 - [聊聊文件IO](https://www.toutiao.com/a6700806648274878987)
 - [分钟搞懂Linux中直接I/O原理](https://www.toutiao.com/a6701654059910169091/)
 - [高级程序员进阶：了解Linux I/O 调度器，优化系统性能](https://www.toutiao.com/a6735373272432509452/)
-- [Memory Allocation Guide](https://www.kernel.org/doc/html/latest/core-api/memory-allocation.html)
 - [epoll原理简介](https://www.toutiao.com/a6701457609444033031)
 - [如果这篇文章说不清epoll的本质，那就过来掐死我吧！](https://www.toutiao.com/a6683264188661367309)
 - [非阻塞 I/O 和多路复用+select、poll、epoll模型详解](https://www.toutiao.com/i6554223409138500110)
@@ -83,7 +79,13 @@ Linux（主要基于Debian系）系统下的开发资料
 - Linux下生成动态库使用` -fPIC -shared`编译选项，并且动态库的命名规则为：lib<lib-name>.so。加载动态库时使用`export LD_LIBRARY_PATH=`导出动态库所在路径。
 - GAS下使用Intel语法汇编并且在寄存器前不添加`%`符号：`.intel_syntax noprefix`。
 - GCC/Clang编译器下要使用<intrin.h>，则得：`#include <x86intrin.h>`。
+- [Memory Allocation Guide](https://www.kernel.org/doc/html/latest/core-api/memory-allocation.html)
+- [Linux系统监控：虚拟内存](https://www.cnblogs.com/luoahong/articles/7911266.html)
+- [linux虚拟内存，内存及内存管理相关](https://blog.csdn.net/chen_jianjian/article/details/88876392)
 - [How do I call “cpuid” in Linux?](https://stackoverflow.com/questions/14266772/how-do-i-call-cpuid-in-linux)
+- [Linux 获取本机IP、MAC地址用法大全](https://www.cnblogs.com/fnlingnzb-learner/p/6427786.html)
+- [C++ win32和linux获取系统剩余内存](https://blog.csdn.net/q1368232592/article/details/85157823)
+- [Linux下获取内核版本号的函数](https://blog.csdn.net/ly890700/article/details/53540653)
 - [Linux查看物理CPU个数、核数、逻辑CPU个数](https://www.cnblogs.com/bugutian/p/6138880.html)
 - [Linux如何查看CPU信息，Linux查看CPU个数和核心数，Linux查看CPU使用率和运行位数](https://blog.csdn.net/tiiefu1212/article/details/78623132)
 - [教你写第一个Linux设备驱动程序](https://www.toutiao.com/a6812972562201444878/)
