@@ -77,12 +77,12 @@ Linux（主要基于Debian系）系统下的开发资料
 - [使用 kqueue 在 FreeBSD 上开发高性能应用服务器](https://www.ibm.com/developerworks/cn/aix/library/1105_huangrg_kqueue/)
 - [使程序在Linux下后台运行 （关掉终端继续让程序运行的方法）](https://www.cnblogs.com/little-ant/p/3952424.html)
 - Linux下生成动态库使用` -fPIC -shared`编译选项，并且动态库的命名规则为：lib<lib-name>.so。加载动态库时使用`export LD_LIBRARY_PATH=`导出动态库所在路径。
-- GAS下使用Intel语法汇编并且在寄存器前不添加`%`符号：`.intel_syntax noprefix`。
-- GCC/Clang编译器下要使用<intrin.h>，则得：`#include <x86intrin.h>`。
 - [Memory Allocation Guide](https://www.kernel.org/doc/html/latest/core-api/memory-allocation.html)
 - [Linux系统监控：虚拟内存](https://www.cnblogs.com/luoahong/articles/7911266.html)
 - [linux虚拟内存，内存及内存管理相关](https://blog.csdn.net/chen_jianjian/article/details/88876392)
 - [Linux内核Page Cache和Buffer Cache关系及演化历史](https://www.toutiao.com/a6816861382776979976/)
+- GAS下使用Intel语法汇编并且在寄存器前不添加`%`符号：`.intel_syntax noprefix`。
+- GCC/Clang编译器下要使用<intrin.h>，则得：`#include <x86intrin.h>`。
 - [How do I call “cpuid” in Linux?](https://stackoverflow.com/questions/14266772/how-do-i-call-cpuid-in-linux)
 - [Linux 获取本机IP、MAC地址用法大全](https://www.cnblogs.com/fnlingnzb-learner/p/6427786.html)
 - [C++ win32和linux获取系统剩余内存](https://blog.csdn.net/q1368232592/article/details/85157823)
