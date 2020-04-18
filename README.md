@@ -82,6 +82,7 @@ Linux（主要基于Debian系）系统下的开发资料
 - [Memory Allocation Guide](https://www.kernel.org/doc/html/latest/core-api/memory-allocation.html)
 - [Linux系统监控：虚拟内存](https://www.cnblogs.com/luoahong/articles/7911266.html)
 - [linux虚拟内存，内存及内存管理相关](https://blog.csdn.net/chen_jianjian/article/details/88876392)
+- [Linux内核Page Cache和Buffer Cache关系及演化历史](https://www.toutiao.com/a6816861382776979976/)
 - [How do I call “cpuid” in Linux?](https://stackoverflow.com/questions/14266772/how-do-i-call-cpuid-in-linux)
 - [Linux 获取本机IP、MAC地址用法大全](https://www.cnblogs.com/fnlingnzb-learner/p/6427786.html)
 - [C++ win32和linux获取系统剩余内存](https://blog.csdn.net/q1368232592/article/details/85157823)
