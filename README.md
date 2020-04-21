@@ -81,6 +81,7 @@ Linux（主要基于Debian系）系统下的开发资料
 - [Linux系统监控：虚拟内存](https://www.cnblogs.com/luoahong/articles/7911266.html)
 - [linux虚拟内存，内存及内存管理相关](https://blog.csdn.net/chen_jianjian/article/details/88876392)
 - [Linux内核Page Cache和Buffer Cache关系及演化历史](https://www.toutiao.com/a6816861382776979976/)
+- [Linux内核快速处理路径尽量多用slab而慎用kmalloc](https://blog.csdn.net/dog250/article/details/105544111)
 - GAS下使用Intel语法汇编并且在寄存器前不添加`%`符号：`.intel_syntax noprefix`。
 - GCC/Clang编译器下要使用<intrin.h>，则得：`#include <x86intrin.h>`。
 - [How do I call “cpuid” in Linux?](https://stackoverflow.com/questions/14266772/how-do-i-call-cpuid-in-linux)
