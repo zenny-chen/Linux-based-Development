@@ -88,6 +88,7 @@ Linux（主要基于Debian系）系统下的开发资料
 - [Linux 获取本机IP、MAC地址用法大全](https://www.cnblogs.com/fnlingnzb-learner/p/6427786.html)
 - [C++ win32和linux获取系统剩余内存](https://blog.csdn.net/q1368232592/article/details/85157823)
 - [Linux下获取内核版本号的函数](https://blog.csdn.net/ly890700/article/details/53540653)
+- [Linux系统调用--uname()函数及系统下的uname命令](http://blog.chinaunix.net/uid-8996150-id-2011653.html)
 - [Linux查看物理CPU个数、核数、逻辑CPU个数](https://www.cnblogs.com/bugutian/p/6138880.html)
 - [Linux如何查看CPU信息，Linux查看CPU个数和核心数，Linux查看CPU使用率和运行位数](https://blog.csdn.net/tiiefu1212/article/details/78623132)
 - [教你写第一个Linux设备驱动程序](https://www.toutiao.com/a6812972562201444878/)
