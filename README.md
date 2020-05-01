@@ -23,6 +23,7 @@ Linux（主要基于Debian系）系统下的开发资料
 - [使用ALSA检查声卡驱动](https://www.alsa-project.org/wiki/SoundcardTesting)（在Linux下，**alsamixer** 工具在 `/usr/bin/alsamixer`下，使用F6可切换声卡。也可以使用 `arecord -l` 命令来列出支持麦克风声卡的驱动。）
 - [【Linux&音频】Alsa音频编程【精华】](https://www.cnblogs.com/lifan3a/articles/5481993.html)
 - [教程】树莓派设置3.5mm接口输出音频](https://www.jianshu.com/p/674145fe98fa)
+- [树莓派更换软件源](https://www.toutiao.com/a6796581937096950283/)
 - [树莓派之蓝牙编程](https://blog.csdn.net/qq_25005909/article/details/77512903)
 - [树莓派连接USB转串口的使用](https://blog.csdn.net/fhqlongteng/article/details/80417028)
 - [用树莓派玩转蓝牙](https://www.cnblogs.com/vamei/p/6753531.html)
