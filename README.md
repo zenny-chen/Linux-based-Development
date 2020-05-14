@@ -46,7 +46,9 @@ Linux（主要基于Debian系）系统下的开发资料
 - [cmake 简介](https://www.cnblogs.com/lidabo/p/7359422.html)
 - [cmake构建时指定编译器架构(x86 or x64)](https://www.cnblogs.com/lidabo/p/12017014.html)
 - [Android NDK 开发之 CMake 必知必会](https://blog.csdn.net/zhying719/article/details/82657519)
-- CMake下开启汇编文件的编译：类Unix下使用GAS为 `ENABLE_LANGUAGE(ASM)`；Visual Studio下使用MASM为 `ENABLE_LANGUAGE(ASM_MASM)`。
+- CMake中开启汇编文件的编译：类Unix下使用GAS为 `ENABLE_LANGUAGE(ASM)`；Visual Studio下使用MASM为 `ENABLE_LANGUAGE(ASM_MASM)`。
+- CMake中设置CUDA额外编译选项：`TARGET_COMPILE_OPTIONS(project_name PRIVATE $<$<COMPILE_LANGUAGE:CUDA>: --use_fast_math --gpu-architecture=sm35>)`
+- CMake中启用CUDA单独编译（即relocatable device code，-rdc=true）：`SET_TARGET_PROPERTIES(project_name PROPERTIES INTERFACE_LINK_LIBRARIES "" CUDA_SEPARABLE_COMPILATION ON)`
 - [GNU Make in Detail for Beginners](https://opensourceforu.com/2012/06/gnu-make-in-detail-for-beginners/)
 - [linux下的C语言开发（makefile编写详解）](https://www.toutiao.com/i6763898618379239950/)
 - 在各类make工具中， **`CC`** 表示C语言编译器， **`CXX`** 表示C++语言编译器。
