@@ -45,7 +45,10 @@ Linux（主要基于Debian系）系统下的开发资料
 - [GTK进阶学习：鼠标事件](http://www.mamicode.com/info-detail-445416.html)
 - [cmake 简介](https://www.cnblogs.com/lidabo/p/7359422.html)
 - [cmake构建时指定编译器架构(x86 or x64)](https://www.cnblogs.com/lidabo/p/12017014.html)
+- [CMake平台判断](https://blog.csdn.net/bianchengjingling22/article/details/88810593)
 - [Android NDK 开发之 CMake 必知必会](https://blog.csdn.net/zhying719/article/details/82657519)
+- [CMAKE 添加编译选项](https://blog.csdn.net/qinglongzhan/article/details/80743731)
+- [In CMake, how can I test if the compiler is Clang?](https://stackoverflow.com/questions/10046114/in-cmake-how-can-i-test-if-the-compiler-is-clang)
 - CMake中开启汇编文件的编译：类Unix下使用GAS为 `ENABLE_LANGUAGE(ASM)`；Visual Studio下使用MASM为 `ENABLE_LANGUAGE(ASM_MASM)`。
 - CMake中设置CUDA额外编译选项：`TARGET_COMPILE_OPTIONS(project_name PRIVATE $<$<COMPILE_LANGUAGE:CUDA>: --use_fast_math --gpu-architecture=sm35>)`
 - CMake中启用CUDA单独编译（即relocatable device code，-rdc=true）：`SET_TARGET_PROPERTIES(project_name PROPERTIES INTERFACE_LINK_LIBRARIES "" CUDA_SEPARABLE_COMPILATION ON)`
