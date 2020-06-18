@@ -49,6 +49,7 @@ Linux（主要基于Debian系）系统下的开发资料
 - [Android NDK 开发之 CMake 必知必会](https://blog.csdn.net/zhying719/article/details/82657519)
 - [CMAKE 添加编译选项](https://blog.csdn.net/qinglongzhan/article/details/80743731)
 - [In CMake, how can I test if the compiler is Clang?](https://stackoverflow.com/questions/10046114/in-cmake-how-can-i-test-if-the-compiler-is-clang)
+- CMake添加带有字符串的宏定义：`ADD_COMPILE_DEFINITIONS=\"${CMAKE_INSTALL_PREFIX}\")`
 - CMake中开启汇编文件的编译：类Unix下使用GAS为 `ENABLE_LANGUAGE(ASM)`；Visual Studio下使用MASM为 `ENABLE_LANGUAGE(ASM_MASM)`。
 - CMake中设置CUDA额外编译选项：`TARGET_COMPILE_OPTIONS(project_name PRIVATE $<$<COMPILE_LANGUAGE:CUDA>: --use_fast_math --gpu-architecture=sm35>)`
 - CMake中启用CUDA单独编译（即relocatable device code，-rdc=true）：`SET_TARGET_PROPERTIES(project_name PROPERTIES INTERFACE_LINK_LIBRARIES "" CUDA_SEPARABLE_COMPILATION ON)`
