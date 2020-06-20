@@ -55,7 +55,8 @@ Linux（主要基于Debian系）系统下的开发资料
 - CMake中启用CUDA单独编译（即relocatable device code，-rdc=true）：`SET_TARGET_PROPERTIES(project_name PROPERTIES INTERFACE_LINK_LIBRARIES "" CUDA_SEPARABLE_COMPILATION ON)`
 - [GNU Make in Detail for Beginners](https://opensourceforu.com/2012/06/gnu-make-in-detail-for-beginners/)
 - [linux下的C语言开发（makefile编写详解）](https://www.toutiao.com/i6763898618379239950/)
-- 在各类make工具中， **`CC`** 表示C语言编译器， **`CXX`** 表示C++语言编译器。
+- [Makefile编译选项](http://blog.chinaunix.net/uid-24612247-id-176517.html)
+- [https://blog.csdn.net/zygblock/article/details/53330643](https://blog.csdn.net/zygblock/article/details/53330643)
 - [What are the environment variables by default?](https://unix.stackexchange.com/questions/329429/what-are-the-environment-variables-by-default)
 - [树莓派Virtual keyboard activation](https://raspberrypi.stackexchange.com/questions/41150/virtual-keyboard-activation)
 - [树莓派引脚编号说明](https://www.toutiao.com/a6746428899854385668/)
