@@ -85,6 +85,7 @@ Linux（主要基于Debian系）系统下的开发资料
 - [使用 kqueue 在 FreeBSD 上开发高性能应用服务器](https://www.ibm.com/developerworks/cn/aix/library/1105_huangrg_kqueue/)
 - [使程序在Linux下后台运行 （关掉终端继续让程序运行的方法）](https://www.cnblogs.com/little-ant/p/3952424.html)
 - Linux下生成动态库使用` -fPIC -shared`编译选项，并且动态库的命名规则为：lib<lib-name>.so。加载动态库时使用`export LD_LIBRARY_PATH=`导出动态库所在路径。
+- [深入理解 Linux 内核--jemalloc 引起的 TLB shootdown 及优化](https://www.toutiao.com/a6801053138380915211/)
 - [Memory Allocation Guide](https://www.kernel.org/doc/html/latest/core-api/memory-allocation.html)
 - [Linux系统监控：虚拟内存](https://www.cnblogs.com/luoahong/articles/7911266.html)
 - [linux虚拟内存，内存及内存管理相关](https://blog.csdn.net/chen_jianjian/article/details/88876392)
