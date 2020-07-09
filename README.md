@@ -24,6 +24,7 @@ Linux（主要基于Debian系）系统下的开发资料
 - [【Linux&音频】Alsa音频编程【精华】](https://www.cnblogs.com/lifan3a/articles/5481993.html)
 - [教程】树莓派设置3.5mm接口输出音频](https://www.jianshu.com/p/674145fe98fa)
 - [树莓派更换软件源](https://www.toutiao.com/a6796581937096950283/)
+- [树莓派搭建视频监控平台](https://www.toutiao.com/a6847285154025570829/)
 - [树莓派之蓝牙编程](https://blog.csdn.net/qq_25005909/article/details/77512903)
 - [树莓派连接USB转串口的使用](https://blog.csdn.net/fhqlongteng/article/details/80417028)
 - [用树莓派玩转蓝牙](https://www.cnblogs.com/vamei/p/6753531.html)
