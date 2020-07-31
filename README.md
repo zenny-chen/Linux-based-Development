@@ -70,6 +70,7 @@ Linux（主要基于Debian系）系统下的开发资料
 - [共享内存才是实现进程间通信最简单也是最直接的方法](https://www.toutiao.com/a6736813277818389006/)
 - [Linux内核中的软中断、tasklet和工作队列](http://blog.csdn.net/T146lLa128XX0x/article/details/79070798)
 - [Linux内核如何替换内核函数并调用原始函数](https://blog.csdn.net/dog250/article/details/84201114)
+- [怎样Hack Linux的内核符号？](https://blog.csdn.net/sinat_30551659/article/details/107705842)
 - [How To Install LLVM and Clang on CentOS 6](https://www.vultr.com/docs/how-to-install-llvm-and-clang-on-centos-6)
 - [在Centos-5下安装Objective-C的编译环境](http://blog.csdn.net/Robincui2011/article/details/6785987)
 - [浅谈 Linux下的零拷贝机制](https://www.toutiao.com/i6462135845481611790/)
