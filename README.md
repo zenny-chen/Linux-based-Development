@@ -3,8 +3,8 @@ Linux（主要基于Debian系）系统下的开发资料
 
 <br />
 
-- [程序员学习道路第一条，学会Git,一学就会](https://www.toutiao.com/a6694015880218542606)
-- [一篇文章，教你学会Git](https://www.toutiao.com/a6774284445873603083/)
+- [GitLab CI Pipeline Stage Timeout](https://stackoverflow.com/questions/38403681/gitlab-ci-pipeline-stage-timeout)
+- [GitLab CI/CD Set job start timeout](https://forum.gitlab.com/t/set-job-start-timeout/34993)
 - [LinuxVersions](https://kernelnewbies.org/LinuxVersions)
 - [Linux 下载文件命令](https://blog.csdn.net/hitabc141592/article/details/7561239)
 - [Linux curl命令详解](https://www.cnblogs.com/duhuo/p/5695256.html)
@@ -16,7 +16,18 @@ Linux（主要基于Debian系）系统下的开发资料
 - [Linux系统下查看文件与磁盘空间大小](https://www.cnblogs.com/adolfmc/archive/2013/02/16/2913801.html)
 - [Linux的秘密：这才是find的正确使用姿势](https://www.toutiao.com/i6549496730935624195/)
 - [从今往后，谁再告诉你Linux上chmod -R 777解决权限，果断绝交](https://www.toutiao.com/a6811852198561972744/)
+- [漫画 | Unix/Linux 比 Windows 差远了](https://www.toutiao.com/i7044022091791729182/)
 - [apt和apt-get之间的区别解释](https://www.toutiao.com/i6734877338686718477/)
+- [Linux上如何执行java程序](https://www.cnblogs.com/wanglin2016/p/6013010.html)
+- Linux中冒号 **:** 用于分隔路径，点号 **.** 表示当前目录，比如：
+```bash
+export PATH=$JAVA_HOME/bin:$PATH
+export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
+```
+- [linux常见系统环境变量](https://www.cnblogs.com/renping/p/7020354.html)
+- [linux c 编程 环境变量的操作函数](https://blog.csdn.net/q435201823/article/details/107163816)
+- [Linux连不上网解决](https://www.cnblogs.com/lbky/articles/11023246.html)
+- [Linux下实时查看GPU状态](https://blog.csdn.net/zhang_yang_43/article/details/78357458)
 - [Sound recording program using Nano](https://raspberrypi.stackexchange.com/questions/15018/sound-recording-program-using-nano)
 - [Install alsa-utils on Ubuntu: sudo apt-get install alsa-utils](https://www.devmanuals.net/install/ubuntu/ubuntu-12-04-lts-precise-pangolin/install-alsa-utils.html)
 - [Sound Recording & Play on Raspberry Pi Using ALSA in C](https://stackoverflow.com/questions/38615396/sound-recording-play-on-raspberry-pi-using-alsa-in-c)
@@ -35,7 +46,7 @@ Linux（主要基于Debian系）系统下的开发资料
 -  [linux Bluetooth programming in c](https://stackoverflow.com/questions/11408609/linux-bluetooth-programming-in-c)
 - [Generic Attribute Profile (GATT)](http://dev.ti.com/tirex/content/simplelink_cc2640r2_sdk_1_40_00_45/docs/blestack/ble_user_guide/html/ble-stack-3.x/gatt.html)
 - [BLE master/slave, GATT client/server, and data RX/TX basics](https://www.silabs.com/community/wireless/bluetooth/knowledge-base.entry.html/2015/08/06/_reference_ble_mas-gviy)
-- 含有调用`hci_le_set_advertise_enable` API的代码必须使用`sudo`来运行，否则会出现“认证失败”的错误码。
+- 含有调用`hci_le_set_advertise_enable` How do I set a software breakpoint on an ARM processor?API的代码必须使用`sudo`来运行，否则会出现“认证失败”的错误码。
 - [bleno で Raspberry Pi を BLE Peripheral として動かしてみる](https://qiita.com/comachi/items/c494e0d6c6d1775a3748)
 - [Bluetooth GATT: How to Design Custom Services & Characteristics \[MIDI device use case\]](https://www.novelbits.io/bluetooth-gatt-services-characteristics/)
 - [串口通讯的原理、代码实现及注释](https://www.toutiao.com/a6729730596051878404)
@@ -44,22 +55,6 @@ Linux（主要基于Debian系）系统下的开发资料
 - [蓝牙hid协议源码解析](https://blog.csdn.net/u012439416/article/details/54348438)
 - [gtk 实现键盘按键的读取](https://blog.csdn.net/shibixiao/article/details/4861117)（最后可以将"key-press-event"添加到window对象上以实现全局侦听）
 - [GTK进阶学习：鼠标事件](http://www.mamicode.com/info-detail-445416.html)
-- [cmake 简介](https://www.cnblogs.com/lidabo/p/7359422.html)
-- [CMAKE最全实战(1)](https://www.toutiao.com/i6858063275733713416/)
-- [CMAKE最全实战(2)](https://www.toutiao.com/a6859561394904236547/)
-- [cmake构建时指定编译器架构(x86 or x64)](https://www.cnblogs.com/lidabo/p/12017014.html)
-- [CMake平台判断](https://blog.csdn.net/bianchengjingling22/article/details/88810593)
-- [Android NDK 开发之 CMake 必知必会](https://blog.csdn.net/zhying719/article/details/82657519)
-- [CMAKE 添加编译选项](https://blog.csdn.net/qinglongzhan/article/details/80743731)
-- [In CMake, how can I test if the compiler is Clang?](https://stackoverflow.com/questions/10046114/in-cmake-how-can-i-test-if-the-compiler-is-clang)
-- CMake添加带有字符串的宏定义： `ADD_COMPILE_DEFINITIONS(SOME_DIR="${CMAKE_INSTALL_PREFIX}")` 或是  `ADD_COMPILE_DEFINITIONS(SOME_DIR=\"${CMAKE_INSTALL_PREFIX}\")`
-- CMake中开启汇编文件的编译：类Unix下使用GAS为 `ENABLE_LANGUAGE(ASM)`；Visual Studio下使用MASM为 `ENABLE_LANGUAGE(ASM_MASM)`；在Android Studio中使用为x86架构NASM，为：`enable_language(ASM_NASM)`。
-- CMake中设置CUDA额外编译选项：`TARGET_COMPILE_OPTIONS(project_name PRIVATE $<$<COMPILE_LANGUAGE:CUDA>: --use_fast_math --gpu-architecture=sm35>)`
-- CMake中启用CUDA单独编译（即relocatable device code，-rdc=true）：`SET_TARGET_PROPERTIES(project_name PROPERTIES INTERFACE_LINK_LIBRARIES "" CUDA_SEPARABLE_COMPILATION ON)`
-- [GNU Make in Detail for Beginners](https://opensourceforu.com/2012/06/gnu-make-in-detail-for-beginners/)
-- [linux下的C语言开发（makefile编写详解）](https://www.toutiao.com/i6763898618379239950/)
-- [Makefile编译选项](http://blog.chinaunix.net/uid-24612247-id-176517.html)
-- [Makefile编译时怎么打印出变量值](https://blog.csdn.net/zygblock/article/details/53330643)
 - [What are the environment variables by default?](https://unix.stackexchange.com/questions/329429/what-are-the-environment-variables-by-default)
 - [树莓派Virtual keyboard activation](https://raspberrypi.stackexchange.com/questions/41150/virtual-keyboard-activation)
 - [树莓派引脚编号说明](https://www.toutiao.com/a6746428899854385668/)
@@ -68,36 +63,66 @@ Linux（主要基于Debian系）系统下的开发资料
 - [Raspberry Pi VideoCore APIs](https://elinux.org/Raspberry_Pi_VideoCore_APIs)
 - [linux下获取按键响应事件](https://www.cnblogs.com/yangwindsor/articles/3454955.html)（这种方式是阻塞式的）
 - [Raspbian下在EGL环境中捕获键盘按键响应事件](https://github.com/AndrewFromMelbourne/raspidmx/blob/master/common/key.c)（Linux下获得鼠标事件可参考Raspbian系统下`/opt/vc/src/hello_pi/hello_triangle2`这一demo。）
-- [Linux 下的进程间通信：共享存储](https://www.toutiao.com/a6688140435799409160)
+- [Linux下的进程间通信：共享存储](https://www.toutiao.com/a6688140435799409160)
 - [共享内存才是实现进程间通信最简单也是最直接的方法](https://www.toutiao.com/a6736813277818389006/)
+- [Linux共享内存使用常见陷阱与分析](https://zhuanlan.zhihu.com/p/260418383)
 - [Linux内核中的软中断、tasklet和工作队列](http://blog.csdn.net/T146lLa128XX0x/article/details/79070798)
+- [多线程 or 多进程？](https://blog.csdn.net/zy799894671/article/details/18405033)
 - [Linux内核如何替换内核函数并调用原始函数](https://blog.csdn.net/dog250/article/details/84201114)
 - [怎样Hack Linux的内核符号？](https://blog.csdn.net/sinat_30551659/article/details/107705842)
 - [How To Install LLVM and Clang on CentOS 6](https://www.vultr.com/docs/how-to-install-llvm-and-clang-on-centos-6)
 - [在Centos-5下安装Objective-C的编译环境](http://blog.csdn.net/Robincui2011/article/details/6785987)
 - [浅谈 Linux下的零拷贝机制](https://www.toutiao.com/i6462135845481611790/)
 - [零拷贝(zero copy)技术你真的懂吗？什么时候需要用到内存映射？](https://www.toutiao.com/a6810663802636337677/)
+- [Linux——sendfile零拷贝高效率发送文件](https://blog.csdn.net/lemonchi/article/details/81484152)。sendfile高效传输文件，无需内核态到用户态，用户态到内核态copy数据。
+```c
+/**
+NAME
+       sendfile - transfer data between file descriptors
+
+SYNOPSIS
+       #include <sys/sendfile.h>
+*/
+       ssize_t sendfile(int out_fd, int in_fd, off_t *offset, size_t count);
+```
 - [浅谈mmap介绍](https://www.toutiao.com/a6756789193474572808/)
-- [聊聊文件IO](https://www.toutiao.com/a6700806648274878987)
-- [分钟搞懂Linux中直接I/O原理](https://www.toutiao.com/a6701654059910169091/)
-- [高级程序员进阶：了解Linux I/O 调度器，优化系统性能](https://www.toutiao.com/a6735373272432509452/)
-- [epoll原理简介](https://www.toutiao.com/a6701457609444033031)
-- [如果这篇文章说不清epoll的本质，那就过来掐死我吧！](https://www.toutiao.com/a6683264188661367309)
-- [非阻塞 I/O 和多路复用+select、poll、epoll模型详解](https://www.toutiao.com/i6554223409138500110)
-- [io_submit：Linux内核新加入的epoll替代方案](https://www.toutiao.com/a6809889593286984206/)
-- [kqueue用法简介](https://www.cnblogs.com/luminocean/p/5631336.html)
-- [使用kqueue在FreeBSD上开发高性能应用服务器](http://www.ibm.com/developerworks/cn/aix/library/1105_huangrg_kqueue/)
-- [使程序在Linux下后台运行 （关掉终端继续让程序运行的方法）](https://www.cnblogs.com/little-ant/p/3952424.html)
-- Linux下生成动态库使用` -fPIC -shared`编译选项，并且动态库的命名规则为：lib<lib-name>.so。加载动态库时使用`export LD_LIBRARY_PATH=`导出动态库所在路径。
+- [在Linux中利用mmap模拟Windows的VirtualAlloc](https://blog.csdn.net/cjfeii/article/details/9122279)
 - [深入理解 Linux 内核--jemalloc 引起的 TLB shootdown 及优化](https://www.toutiao.com/a6801053138380915211/)
 - [Memory Allocation Guide](https://www.kernel.org/doc/html/latest/core-api/memory-allocation.html)
 - [Linux系统监控：虚拟内存](https://www.cnblogs.com/luoahong/articles/7911266.html)
 - [linux虚拟内存，内存及内存管理相关](https://blog.csdn.net/chen_jianjian/article/details/88876392)
+- [万字长文，别再说你不懂Linux内存管理了（合辑），30 张图给你安排的明明白白](https://mp.weixin.qq.com/s?__biz=MzI3ODQ3OTczMw==&mid=2247493251&idx=1&sn=10d495947c4849c6cf854b15e7f6e7c5&chksm=eb54f099dc23798fce0f5db05e080bb0830133504dcfed325c66c2dcae6f4176b36484225676&mpshare=1&scene=23&srcid=01094DqUSLSGFRKOOLtfpqsU)
+- [深入理解glibc malloc：malloc() 与 free() 原理图解](https://www.toutiao.com/i7046286983177470500/)
 - [Linux内核Page Cache和Buffer Cache关系及演化历史](https://www.toutiao.com/a6816861382776979976/)
+- [DMA，Direct IO和零拷贝](https://www.toutiao.com/i6945819523622666782/)
 - [Linux内核快速处理路径尽量多用slab而慎用kmalloc](https://blog.csdn.net/dog250/article/details/105544111)
+- [聊聊文件IO](https://www.toutiao.com/a6700806648274878987)
+- [存储进阶：怎么才能保证 IO 数据的安全？](https://www.toutiao.com/i6959376691781190151/)
+- [分钟搞懂Linux中直接I/O原理](https://www.toutiao.com/a6701654059910169091/)
+- [高级程序员进阶：了解Linux I/O 调度器，优化系统性能](https://www.toutiao.com/a6735373272432509452/)
+- [epoll原理简介](https://www.toutiao.com/a6701457609444033031)
+- [如果这篇文章说不清epoll的本质，那就过来掐死我吧！](https://www.toutiao.com/a6683264188661367309)
+- [高并发高吞吐IO秘密武器——epoll池化技术](https://www.toutiao.com/i7008441343617794563/)
+- [6种epoll的设计，让你吊打面试官，而且他不能还嘴](https://www.toutiao.com/i7009187407606088223/)
+- [非阻塞 I/O 和多路复用+select、poll、epoll模型详解](https://www.toutiao.com/i6554223409138500110)
+- [io_submit：Linux内核新加入的epoll替代方案](https://www.toutiao.com/a6809889593286984206/)
+- [AIO 的新归宿：io_uring](https://zhuanlan.zhihu.com/p/62682475)
+- [io_uring只适用于存储IO？大错特错](https://www.toutiao.com/i6884987457641644551/)
+- [io_uring vs epoll，谁在网络编程领域更胜一筹？](https://www.toutiao.com/i7045101452641124877/)
+- [Linux下全新的异步I/O：io_uring详解](https://www.toutiao.com/i7011043732220805668/)
+- [linux异步IO编程实例分析](https://www.toutiao.com/a6875582313590325774/)
+- [kqueue用法简介](https://www.cnblogs.com/luminocean/p/5631336.html)
+- [使用kqueue在FreeBSD上开发高性能应用服务器](http://www.ibm.com/developerworks/cn/aix/library/1105_huangrg_kqueue/)
+- [Linux AIO 异步读写](https://www.cnblogs.com/standardzero/p/12552642.html)
+- [最专业的对“鸿蒙”的分析](https://www.toutiao.com/a7039879650885222951/)
+- [使程序在Linux下后台运行 （关掉终端继续让程序运行的方法）](https://www.cnblogs.com/little-ant/p/3952424.html)
+- Linux下生成动态库使用` -fPIC -shared`编译选项，并且动态库的命名规则为：lib<lib-name>.so。加载动态库时使用`export LD_LIBRARY_PATH=`导出动态库所在路径。
+- GCC默认连接静态库使用此连接选项：`-static`。
 - GAS下使用Intel语法汇编并且在寄存器前不添加`%`符号：`.intel_syntax noprefix`。
 - GCC/Clang编译器下要使用<intrin.h>，则得：`#include <x86intrin.h>`。
 - [How do I call “cpuid” in Linux?](https://stackoverflow.com/questions/14266772/how-do-i-call-cpuid-in-linux)
+- [linux下常用的几个时间函数：gettimeofday和clock_gettime](https://blog.csdn.net/fchyang/article/details/81166470)（使用精确时间戳，直接使用`clock_gettime(CLOCK_MONOTONIC, &timespec);`。）
+- [Linux下的sleep()和usleep()的使用和区别](https://www.cnblogs.com/ZhaoxiCheung/p/6792734.html)
 - [Linux 获取本机IP、MAC地址用法大全](https://www.cnblogs.com/fnlingnzb-learner/p/6427786.html)
 - [C++ win32和linux获取系统剩余内存](https://blog.csdn.net/q1368232592/article/details/85157823)
 - Linux获取当前系统分发版本信息：`cat /etc/os-release`
@@ -105,7 +130,11 @@ Linux（主要基于Debian系）系统下的开发资料
 - [Linux系统调用--uname()函数及系统下的uname命令](http://blog.chinaunix.net/uid-8996150-id-2011653.html)
 - [Linux查看物理CPU个数、核数、逻辑CPU个数](https://www.cnblogs.com/bugutian/p/6138880.html)
 - [Linux如何查看CPU信息，Linux查看CPU个数和核心数，Linux查看CPU使用率和运行位数](https://blog.csdn.net/tiiefu1212/article/details/78623132)
+- [获取SYSTEM()执行结果](https://blog.csdn.net/u013625451/article/details/78830104)
+- [linux中open()函数的mode_t 含义](https://blog.csdn.net/sdhgood/article/details/39555311)（**`O_LARGEFILE`** 标志用于指示`off_t`无法容下文件大小而只能用`off64_t`）
 - [教你写第一个Linux设备驱动程序](https://www.toutiao.com/a6812972562201444878/)
+- [How do I set a software breakpoint on an ARM processor?](https://stackoverflow.com/questions/11345371/how-do-i-set-a-software-breakpoint-on-an-arm-processor)
+- 对于不支持硬件断点的ARM Linux可使用`raise(SIGTRAP)`系统调用来触发gdb的断点调试。
 - [Ubuntu系统下通过Clang编译器编写Objective-C](https://blog.csdn.net/zenny_chen/article/details/52507022)
 - Ubuntu下安装libz库：`sudo apt-get install zlib1g-dev`，然后使用`-lz`去连接。
 - Ubuntu下安装BSD库：`sudo apt-get install libbsd-dev`，然后使用`-lbsd`去连接。此外，在`<bsd/stdlib.h>`中可使用 **arc4random** 等函数。
@@ -152,6 +181,52 @@ sudo apt-get install libbluetooth-dev
 
 <br />
 
+## Ubuntu下安装CUDA以及其自带驱动
+
+以下文档文档可供参考：
+- [Ubuntu 卸载 Nvidia 驱动和安装最新驱动](https://blog.csdn.net/wm9028/article/details/110268030)
+- [在linux上安装cuda的时候报错：Existing package manager installation of the driver found.](https://blog.csdn.net/weixin_41010198/article/details/109367449)
+
+1. 先在Ubuntu上卸载原始自带的nVidia驱动，它通常为Linux开源驱动：
+```bash
+sudo apt-get remove --purge nvidia*
+sudo apt autoremove
+sudo apt-get --purge remove "*nvidia*"
+
+# 查看系统中安装了哪些nVidia驱动，如果全都删除的话应该不会有任何库出现
+sudo dpkg --list | grep nvidia-*
+```
+2. 由于安装NV显卡驱动过程中不能使用X Window界面，因此我们必须进入命令行，关闭图形窗口界面。
+首先按下`Ctrl + Alt + F1`进入命令行模式，然后分别输入用户名和密码。
+3. 然后关闭X Server服务：`sudo stop lightdm`
+4. `sudo init 3`
+5. 重新输入用户名和密码。
+6. 运行CUDA安装run文件：`sudo bash NVIDIA-Linux-x86_64-xxx.yy.zz.run`
+7. 最后重启：`sudo reboot`
+
+<br />
+
+## CentOS下安装CUDA驱动
+
+1. 准备环境设置：
+```bash
+chmod -R 777 /home/;chmod -R 777 /opt/;yum -y install gcc kernel-devel kernel-headers;mv /boot/initramfs-$(uname -r).img /boot/initramfs-$(uname -r).img.bak;dracut /boot/initramfs-$(uname -r).img $(uname -r);echo blacklist nouveau >>/usr/lib/modprobe.d/dist-blacklist.conf;echo options nouveau modeset=0 >>/usr/lib/modprobe.d/dist-blacklist.conf
+```
+2. 退出GUI桌面：
+```bash
+systemctl stop gdm.service
+```
+3. 运行安装文件（run文件）：
+```bash
+bash /mnt/andy/soft-all-for-linux/2xianka-install/NVIDIA-Linux-x86_64-390.48.run 
+```
+4. 卸载驱动：
+```bash
+bash /mnt/andy/soft-all-for-linux/2xianka-install/NVIDIA-Linux-x86_64-390.48.run  --uninstall
+```
+
+<br />
+
 ## GNUstep编译选项
 
 我们通过执行以下命令来观察Objective-C编译时所需要的编译选项：`gnustep-config --objc-flags`    
@@ -178,7 +253,27 @@ gcc main.c -std=gnu11 -I/usr/include/glib-2.0/ -I/usr/include/atk-1.0/ -I/usr/in
 
 <br />
 
-### 安装LLVM-Clang
+## C\# mono的使用
+
+先创建一个csharp文件名，比如：**`CSTest.cs`**。然后输入以下代码：
+
+```cs
+using System;
+
+class CSTest
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Hello, C#");
+    }
+}
+```
+
+最后在命令行进入到该源文件所在目录，然后输入：`mcs CSTest.cs`，最后就会生成CSTest.exe可执行文件。
+
+<br />
+
+## 安装LLVM-Clang
 
 ```shell
 sudo apt-get install llvm
@@ -191,17 +286,42 @@ sudo apt-get install libdispatch-dev
 
 <br />
 
-### C语言中，在控制台中读取一行输入命令字符串
+## Git命令一般使用
 
-```c
-    char *contents = NULL;
-    size_t initLen = 0;
-    // contents最后会包含一个换行符，这也就是意味着如果用户仅输入一个回车，
-    // 那么contents中就一个换行符，长度为1。
-    ssize_t contentLength = getline(&contents, &initLen, stdin);
-    printf("Content length is: %zd, content is: %s", contentLength, contents);
-```
-以上代码只需要包含`<stdio.h>`头文件即可。这里需要注意的是，getline的第二个参数不能为空。
+- [程序员学习道路第一条，学会Git,一学就会](https://www.toutiao.com/a6694015880218542606)
+- [一篇文章，教你学会Git](https://www.toutiao.com/a6774284445873603083/)
+- [Git超实用总结，再也不怕记忆力不好了](https://www.cnblogs.com/qcloud1001/p/9796750.html)
+- [记一次git revert误操作找回](https://zhuanlan.zhihu.com/p/94922874)
+- [git checkout切换到指定commit](https://blog.csdn.net/gtLBTNq9mr3/article/details/110729551)
+- [怎么退出git bash编辑界面，怎么退出git log](https://blog.csdn.net/weixin_43290229/article/details/86094690)
+- [Git取消跟踪文件和目录](https://blog.csdn.net/qq_38301914/article/details/70198006)
+- [How To Rename a Local and Remote Git Branch](https://linuxize.com/post/how-to-rename-local-and-remote-git-branch/)
+- 丢弃当前修改的本地文件：`git checkout -- filepathname`
+- 丢弃上一次的提交：`git reset --hard origin/master`
+- `git status`：先检查一下情况
+- `git commit -a -m "xxx"`：-a表示所有修改过的文件都commit
+- `git commit -m "xxx" 1.cpp 2.cpp`：指定commit哪几个文件
+- 列出指定目录指定日期区间的所有提交，并以日期从老到新的次序排列，最后输出到指定文件：`git log  --reverse  --oneline  --since  ==2020-01-20  --until  ==2021-02-05  project/src/  >  /tmp/commit-log.txt`
+- Linux中配置git的编辑器为系统自带的GEdit编辑器：`git config --global core.editor "gedit -s"`
+- 追加上一次提交的更多提交信息：`git commit --amend`
 
 <br />
+
+## vim常用命令
+
+- ESC: 进入命令状态
+- a: 从命令状态进入编辑状态
+
+命令状态下：
+- `:q` 退出，不保存
+- `:wq` 退出，且保存
+- 强制退出并保存：`:wq!`
+
+<br />
+
+## FreeBSD相关
+
+- [NETGRAPH](https://www.freebsd.org/cgi/man.cgi?query=netgraph&sektion=4)
+- [netmap(4)](https://www.unix.com/man-page/freebsd/4/netmap/)
+- [sctp(4)](https://www.unix.com/man-page/freebsd/4/sctp/)
 
