@@ -291,6 +291,7 @@ sudo apt-get install libdispatch-dev
 - [程序员学习道路第一条，学会Git,一学就会](https://www.toutiao.com/a6694015880218542606)
 - [一篇文章，教你学会Git](https://www.toutiao.com/a6774284445873603083/)
 - [Git超实用总结，再也不怕记忆力不好了](https://www.cnblogs.com/qcloud1001/p/9796750.html)
+- [.gitignore 常用语法](https://blog.csdn.net/mengxin00100/article/details/122353917)
 - [记一次git revert误操作找回](https://zhuanlan.zhihu.com/p/94922874)
 - [git checkout切换到指定commit](https://blog.csdn.net/gtLBTNq9mr3/article/details/110729551)
 - [怎么退出git bash编辑界面，怎么退出git log](https://blog.csdn.net/weixin_43290229/article/details/86094690)
@@ -324,4 +325,5 @@ sudo apt-get install libdispatch-dev
 - [NETGRAPH](https://www.freebsd.org/cgi/man.cgi?query=netgraph&sektion=4)
 - [netmap(4)](https://www.unix.com/man-page/freebsd/4/netmap/)
 - [sctp(4)](https://www.unix.com/man-page/freebsd/4/sctp/)
+
 
