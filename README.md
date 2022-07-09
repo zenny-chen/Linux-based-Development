@@ -287,28 +287,6 @@ sudo apt-get install libdispatch-dev
 
 <br />
 
-## Git命令一般使用
-
-- [程序员学习道路第一条，学会Git,一学就会](https://www.toutiao.com/a6694015880218542606)
-- [一篇文章，教你学会Git](https://www.toutiao.com/a6774284445873603083/)
-- [Git超实用总结，再也不怕记忆力不好了](https://www.cnblogs.com/qcloud1001/p/9796750.html)
-- [.gitignore 常用语法](https://blog.csdn.net/mengxin00100/article/details/122353917)
-- [记一次git revert误操作找回](https://zhuanlan.zhihu.com/p/94922874)
-- [git checkout切换到指定commit](https://blog.csdn.net/gtLBTNq9mr3/article/details/110729551)
-- [怎么退出git bash编辑界面，怎么退出git log](https://blog.csdn.net/weixin_43290229/article/details/86094690)
-- [Git取消跟踪文件和目录](https://blog.csdn.net/qq_38301914/article/details/70198006)
-- [How To Rename a Local and Remote Git Branch](https://linuxize.com/post/how-to-rename-local-and-remote-git-branch/)
-- 丢弃当前修改的本地文件：`git checkout -- filepathname`
-- 丢弃上一次的提交：`git reset --hard origin/master`
-- `git status`：先检查一下情况
-- `git commit -a -m "xxx"`：-a表示所有修改过的文件都commit
-- `git commit -m "xxx" 1.cpp 2.cpp`：指定commit哪几个文件
-- 列出指定目录指定日期区间的所有提交，并以日期从老到新的次序排列，最后输出到指定文件：`git log  --reverse  --oneline  --since  ==2020-01-20  --until  ==2021-02-05  project/src/  >  /tmp/commit-log.txt`
-- Linux中配置git的编辑器为系统自带的GEdit编辑器：`git config --global core.editor "gedit -s"`
-- 追加或修改上一次提交的更多提交信息：`git commit --amend`，然后再执行push。
-
-<br />
-
 ## vim常用命令
 
 - ESC: 进入命令状态
