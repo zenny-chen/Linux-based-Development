@@ -16,6 +16,7 @@ Linux（主要基于Debian系）系统下的开发资料
 - [Linux系统下查看文件与磁盘空间大小](https://www.cnblogs.com/adolfmc/archive/2013/02/16/2913801.html)
 - [Linux的秘密：这才是find的正确使用姿势](https://www.toutiao.com/i6549496730935624195/)
 - [从今往后，谁再告诉你Linux上chmod -R 777解决权限，果断绝交](https://www.toutiao.com/a6811852198561972744/)
+- [Linux创建快捷方式的几种方法](https://blog.csdn.net/qq_41115033/article/details/123829766)（通常使用这种方式：**`ln -s /opt/lib/libapp.so.6  /usr/lib/libapp.so`**）
 - [漫画 | Unix/Linux 比 Windows 差远了](https://www.toutiao.com/i7044022091791729182/)
 - [apt和apt-get之间的区别解释](https://www.toutiao.com/i6734877338686718477/)
 - [Linux上如何执行java程序](https://www.cnblogs.com/wanglin2016/p/6013010.html)
