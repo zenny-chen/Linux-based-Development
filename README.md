@@ -29,6 +29,7 @@ export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
 - [linux c 编程 环境变量的操作函数](https://blog.csdn.net/q435201823/article/details/107163816)
 - [Linux连不上网解决](https://www.cnblogs.com/lbky/articles/11023246.html)
 - [Linux下实时查看GPU状态](https://blog.csdn.net/zhang_yang_43/article/details/78357458)
+- [A Step-By-Step Guide To Install CMake On Linux](https://www.linuxfordevices.com/tutorials/install-cmake-on-linux)（Linux系统安装 **CMake** 的关键命令：**`sudo sh cmake.sh --prefix=/usr/local/ --exclude-subdir`**。The above command will install cmake globally for all users to /usr/local/bin and the exclude-subdir option is to get rid of the extra directory that is produced while extracting the .tar.gz archive.）
 - [Sound recording program using Nano](https://raspberrypi.stackexchange.com/questions/15018/sound-recording-program-using-nano)
 - [Install alsa-utils on Ubuntu: sudo apt-get install alsa-utils](https://www.devmanuals.net/install/ubuntu/ubuntu-12-04-lts-precise-pangolin/install-alsa-utils.html)
 - [Sound Recording & Play on Raspberry Pi Using ALSA in C](https://stackoverflow.com/questions/38615396/sound-recording-play-on-raspberry-pi-using-alsa-in-c)
