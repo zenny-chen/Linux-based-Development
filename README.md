@@ -6,7 +6,7 @@ Linux（主要基于Debian系）系统下的开发资料
 - [GitLab CI Pipeline Stage Timeout](https://stackoverflow.com/questions/38403681/gitlab-ci-pipeline-stage-timeout)
 - [GitLab CI/CD Set job start timeout](https://forum.gitlab.com/t/set-job-start-timeout/34993)
 - [LinuxVersions](https://kernelnewbies.org/LinuxVersions)
-- Linux显示当前目录的绝对路径命令：**`pwd`**。
+- Linux显示当前目录的 **绝对路径** 命令：**`pwd`**。
 - [Linux 下载文件命令](https://blog.csdn.net/hitabc141592/article/details/7561239)
 - [Linux curl命令详解](https://www.cnblogs.com/duhuo/p/5695256.html)
 - [Linux下的tar压缩解压缩命令详解](https://www.cnblogs.com/qq78292959/archive/2011/07/06/2099427.html)
