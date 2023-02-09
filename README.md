@@ -128,6 +128,8 @@ SYNOPSIS
 - GCC默认连接静态库使用此连接选项：`-static`。
 - GAS下使用Intel语法汇编并且在寄存器前不添加`%`符号：`.intel_syntax noprefix`。
 - GCC/Clang编译器下要使用<intrin.h>，则得：`#include <x86intrin.h>`。
+- [version 'GLIBC_2.34' not found简单有效解决方法](https://blog.csdn.net/huazhang_001/article/details/128828999)
+- [linux中的ld命令及其搜索路径顺序](https://blog.csdn.net/qq_42731705/article/details/123934842)
 - [How do I call “cpuid” in Linux?](https://stackoverflow.com/questions/14266772/how-do-i-call-cpuid-in-linux)
 - [linux下常用的几个时间函数：gettimeofday和clock_gettime](https://blog.csdn.net/fchyang/article/details/81166470)（使用精确时间戳，直接使用`clock_gettime(CLOCK_MONOTONIC, &timespec);`。）
 - [Linux下的sleep()和usleep()的使用和区别](https://www.cnblogs.com/ZhaoxiCheung/p/6792734.html)
