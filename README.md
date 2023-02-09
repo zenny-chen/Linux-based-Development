@@ -130,9 +130,9 @@ SYNOPSIS
 - GCC/Clang编译器下要使用<intrin.h>，则得：`#include <x86intrin.h>`。
 - [version 'GLIBC_2.34' not found简单有效解决方法](https://blog.csdn.net/huazhang_001/article/details/128828999)
 - [linux中的ld命令及其搜索路径顺序](https://blog.csdn.net/qq_42731705/article/details/123934842)
-- [linux下动态库链接静态库问题记录](https://blog.csdn.net/hong_yu0315/article/details/128077943)（主要是这段：
+- [linux下动态库链接静态库问题记录](https://blog.csdn.net/hong_yu0315/article/details/128077943) —— 主要是以下这段：
 > msvc系列编译器会将静态库链接到动态库中去，但是在linux系统下，gcc系列编译器并不会将静态库链接至动态库中，gcc仅仅是编译了插件动态库，并没有去链接。
-）
+
 - [How do I call “cpuid” in Linux?](https://stackoverflow.com/questions/14266772/how-do-i-call-cpuid-in-linux)
 - [linux下常用的几个时间函数：gettimeofday和clock_gettime](https://blog.csdn.net/fchyang/article/details/81166470)（使用精确时间戳，直接使用`clock_gettime(CLOCK_MONOTONIC, &timespec);`。）
 - [Linux下的sleep()和usleep()的使用和区别](https://www.cnblogs.com/ZhaoxiCheung/p/6792734.html)
