@@ -28,6 +28,7 @@ Linux（主要基于Debian系）系统下的开发资料
 export PATH=$JAVA_HOME/bin:$PATH
 export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
 ```
+- [（超详细）Linux Shell 编程](https://blog.csdn.net/qq_50685659/article/details/125738428)
 - [linux常见系统环境变量](https://www.cnblogs.com/renping/p/7020354.html)
 - [linux c 编程 环境变量的操作函数](https://blog.csdn.net/q435201823/article/details/107163816)
 - [Linux连不上网解决](https://www.cnblogs.com/lbky/articles/11023246.html)
