@@ -168,6 +168,8 @@ SYNOPSIS
 - [Linux如何查看CPU信息，Linux查看CPU个数和核心数，Linux查看CPU使用率和运行位数](https://blog.csdn.net/tiiefu1212/article/details/78623132)
 - [Linux Shell脚本中获取本机ip地址方法](https://www.cnblogs.com/lidabo/p/15926304.html)
 - [获取SYSTEM()执行结果](https://blog.csdn.net/u013625451/article/details/78830104)
+- [类Unix系统中如何获取另一个程序的输出内容](https://baike.baidu.com/item/popen)
+- [使用popen执行shell命令并获取返回结果](https://www.cnblogs.com/hiawind/p/9089288.html)
 - [linux中open()函数的mode_t 含义](https://blog.csdn.net/sdhgood/article/details/39555311)（**`O_LARGEFILE`** 标志用于指示`off_t`无法容下文件大小而只能用`off64_t`）
 - [教你写第一个Linux设备驱动程序](https://www.toutiao.com/a6812972562201444878/)
 - [How do I set a software breakpoint on an ARM processor?](https://stackoverflow.com/questions/11345371/how-do-i-set-a-software-breakpoint-on-an-arm-processor)
