@@ -127,13 +127,35 @@ SYNOPSIS
 - [使程序在Linux下后台运行 （关掉终端继续让程序运行的方法）](https://www.cnblogs.com/little-ant/p/3952424.html)
 - Linux下生成动态库使用` -fPIC -shared`编译选项，并且动态库的命名规则为：lib<lib-name>.so。加载动态库时使用`export LD_LIBRARY_PATH=`导出动态库所在路径。
 - GCC默认连接静态库使用此连接选项：`-static`。
+- [如何编译静态库及将多个.a静态库合并成一个.a静态库](https://www.pianshen.com/article/77691341/)
 - GAS下使用Intel语法汇编并且在寄存器前不添加`%`符号：`.intel_syntax noprefix`。
 - GCC/Clang编译器下要使用<intrin.h>，则得：`#include <x86intrin.h>`。
+- [gcc在代码中禁止某些warning](https://www.cnblogs.com/jhj117/p/6639111.html)
+- [gcc, g++编译时消除特定警告的方法](https://blog.csdn.net/li_wen01/article/details/71171413)
+- [Suppressing Warnings in GCC and Clang](https://nelkinda.com/blog/suppress-warnings-in-gcc-and-clang/)
+- [gcc 编译 gcc warning 'variable tracking size limit exceeded' 原因及解决办法](https://blog.csdn.net/photon222/article/details/89217737)
+- [严格别名规则“-fstrict-aliasing”和“-fno-strict-aliasing”及类型双关](https://www.cnblogs.com/aquester/p/10299471.html)
+- GCC对某一函数启用`-O2`编译选项并禁用`strict-aliasing`：`__attribute__((optimize("-O2"), optimize("-fno-strict-aliasing")))`
+- GCC编译器指定结构体对齐：`-fpack-struct=n`。
+- GCC与Clang使用打包的结构体：
+```cpp
+#if __clang__
+    struct [[gnu::packed]]
+#else
+    struct __attribute__((packed))
+#endif
+    SS { long long a; int b; long long c; };
+
+    static_assert(sizeof(SS) == 20);
+```
 - [version 'GLIBC_2.34' not found简单有效解决方法](https://blog.csdn.net/huazhang_001/article/details/128828999)
 - [linux中的ld命令及其搜索路径顺序](https://blog.csdn.net/qq_42731705/article/details/123934842)
-- [linux下动态库链接静态库问题记录](https://blog.csdn.net/hong_yu0315/article/details/128077943) —— 主要是以下这段：
-> msvc系列编译器会将静态库链接到动态库中去，但是在linux系统下，gcc系列编译器并不会将静态库链接至动态库中，gcc仅仅是编译了插件动态库，并没有去链接。
-
+- [干货！gcc和g++编译器有什么区别？看完这篇就明白了](https://www.toutiao.com/article/7194762934655091252/)
+- 用GCC编译C++代码时最好使用 `g++`，否则会导致一些特定的C++函数符号找不到。如果遇到某些引用STL库的函数而引发符号找不到错误，则可尝试添加 `-lstdc++` 来解决。
+- GCC上对于静态库或动态库文件名不以`lib`作为前缀的情况下可在连接时直接用该文件名去连。比如我们要连接一个`libtest.so`和`testlib.so`，我们可以用：`gcc -ltest testlib.so -o target`。
+- GCC上对于用 **`-D`** 定义的预处理符号，如果其值包含双引号 **`"`**，则需要使用转义符 **` \ `**。比如：`-DMY_NAME=\"Smith\"`。
+- [gcc命令objdump用法----反汇编](https://blog.csdn.net/cwcwj3069/article/details/8273129)
+- [linux 强制32位编译,使用CMake强制进行32位编译的正确方法](https://blog.csdn.net/weixin_34952628/article/details/116756981)
 - [How do I call “cpuid” in Linux?](https://stackoverflow.com/questions/14266772/how-do-i-call-cpuid-in-linux)
 - [linux下常用的几个时间函数：gettimeofday和clock_gettime](https://blog.csdn.net/fchyang/article/details/81166470)（使用精确时间戳，直接使用`clock_gettime(CLOCK_MONOTONIC, &timespec);`。）
 - [Linux下的sleep()和usleep()的使用和区别](https://www.cnblogs.com/ZhaoxiCheung/p/6792734.html)
@@ -164,7 +186,92 @@ SYNOPSIS
 
 <br/>
 
-如果在Ubuntu上安装GCC或使用`sudo apt-get install build-essential`失败，则需要先执行一下`sudo apt-get update`，更新之后再执行安装命令。
+## GCC内联汇编相关技巧（Clang编译器亦与之兼容）
+
+- [gcc 内联汇编](https://blog.csdn.net/yanzhongqian/article/details/124482833)
+- [ARM64基础11:GCC内嵌汇编补充](https://blog.csdn.net/luteresa/article/details/120140887)
+- [如何在ARM aarch64中使用32位w寄存器进行GCC内联汇编？](https://cloud.tencent.com/developer/ask/sof/815815)
+
+以下为几个常用例子：
+```c
+#include <stdbool.h>
+
+// 常见的内联汇编方式
+static inline int MyARM64Sub(int a, int b)
+{
+    int result;
+    asm volatile ("sub    %w[dst], %w[src1], %w[src2]"
+        : [dst] "=r" (result)
+        : [src1] "r" (a), [src2] "r" (b));
+    return result;
+}
+
+// 只有一个输出操作数
+static inline unsigned MyGetFPCR(void)
+{
+    unsigned long long result;
+    asm volatile ("mrs    %[result], fpcr" : [result] "=r" (result));
+    return (unsigned)result;
+}
+
+// 只有一个输入操作数
+static inline void MySetFPCR(unsigned fpcrValue)
+{
+    asm volatile ("msr    fpcr, %[fpcrValue]" : : [fpcrValue] "r" ((unsigned long long)fpcrValue));
+}
+
+// 参数expected在内联汇编中既作为输入操作数又作为输出操作数
+static inline unsigned MyAtomicCAS_LSE(volatile void *dst, unsigned expected, unsigned newValue)
+{
+    asm volatile ("cas    %w[expected], %w[newValue], [%[dst]]"
+        : [expected] "+r" (expected)
+        : [newValue] "r" (newValue), [dst] "r" (dst));
+
+    return expected;
+}
+
+static inline unsigned MyLDXR(const volatile void *ptr)
+{
+    unsigned result;
+    asm volatile ("ldxr   %w[result], [%[ptr]]"
+        : [result] "=r" (result)
+        : [ptr] "r" (ptr));
+    return result;
+}
+
+// 这里为了避免对不同变量使用相同的寄存器名，而特意指定相应的寄存器
+static inline bool MySTXR(volatile void *dst, unsigned value)
+{
+    register volatile void *pDst asm("x2") = dst;
+    register unsigned srcValue asm ("w1") = value;
+    register bool result asm ("w0");
+
+    asm volatile ("stxr   %w[result], %w[src], [%[dst]]"
+        : [result] "=r" (result)
+        : [src] "r" (srcValue), [dst] "r" (pDst));
+    return result;
+}
+
+// 以上内联汇编的C函数在Android NDK平台下的测试：
+const int result = MyARM64Sub(7, 3);
+syslog(LOG_INFO, "The subtraction result: %d\n", result);
+
+volatile unsigned data = 100;
+unsigned expected = data;
+expected = MyAtomicCAS_LSE(&data, expected, expected + 10);
+syslog(LOG_INFO, "expected = %u\n", expected);
+syslog(LOG_INFO, "now data = %u\n", data);
+
+expected = MyLDXR(&data);
+expected += 1000U;
+const bool bRes = MySTXR(&data, expected);
+syslog(LOG_INFO, "bRes = %d, expected = %u\n", bRes, expected);
+syslog(LOG_INFO, "now data = %u\n", data);
+
+MySetFPCR(0x07000000U);
+expected = MyGetFPCR();
+syslog(LOG_INFO, "Current FPCR: 0x%08X\n", expected);
+```
 
 <br />
 
@@ -173,6 +280,8 @@ SYNOPSIS
 sudo apt-get update
 
 sudo apt-get install build-essential
+
+# 如果在Ubuntu上安装GCC或使用`sudo apt-get install build-essential`失败，则需要先执行一下`sudo apt-get update`，更新之后再执行安装命令。
 
 # 安装用于Objective-C的GNUstep
 sudo apt-get install gnustep
