@@ -127,6 +127,7 @@ SYNOPSIS
 - [使程序在Linux下后台运行 （关掉终端继续让程序运行的方法）](https://www.cnblogs.com/little-ant/p/3952424.html)
 - Linux下生成动态库使用` -fPIC -shared`编译选项，并且动态库的命名规则为：lib<lib-name>.so。加载动态库时使用`export LD_LIBRARY_PATH=`导出动态库所在路径。
 - GCC默认连接静态库使用此连接选项：`-static`。
+- [Linux 使用静态库注意事项](https://www.bbsmax.com/A/obzbmvVbdE/)
 - [如何编译静态库及将多个.a静态库合并成一个.a静态库](https://www.pianshen.com/article/77691341/)
 - GAS下使用Intel语法汇编并且在寄存器前不添加`%`符号：`.intel_syntax noprefix`。
 - GCC/Clang编译器下要使用<intrin.h>，则得：`#include <x86intrin.h>`。
