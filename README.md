@@ -154,6 +154,7 @@ SYNOPSIS
 - [干货！gcc和g++编译器有什么区别？看完这篇就明白了](https://www.toutiao.com/article/7194762934655091252/)
 - 用GCC编译C++代码时最好使用 `g++`，否则会导致一些特定的C++函数符号找不到。如果遇到某些引用STL库的函数而引发符号找不到错误，则可尝试添加 `-lstdc++` 来解决。
 - GCC上对于静态库或动态库文件名不以`lib`作为前缀的情况下可在连接时直接用该文件名去连。比如我们要连接一个`libtest.so`和`testlib.so`，我们可以用：`gcc -ltest testlib.so -o target`。
+- [Anatomy of Linux dynamic libraries](https://developer.ibm.com/tutorials/l-dynamic-libraries/) （The option -rdynamic is used to tell the linker to add all symbols to the dynamic symbol table (to permit backtraces with the use of dlopen). The -ldl indicates that the dllib should be linked to this program.）
 - GCC上对于用 **`-D`** 定义的预处理符号，如果其值包含双引号 **`"`**，则需要使用转义符 **` \ `**。比如：`-DMY_NAME=\"Smith\"`。
 - [gcc命令objdump用法----反汇编](https://blog.csdn.net/cwcwj3069/article/details/8273129)
 - [linux 强制32位编译,使用CMake强制进行32位编译的正确方法](https://blog.csdn.net/weixin_34952628/article/details/116756981)
