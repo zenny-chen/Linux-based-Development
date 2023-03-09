@@ -149,6 +149,7 @@ SYNOPSIS
 
     static_assert(sizeof(SS) == 20);
 ```
+- [GCC编译宏_GLIBCXX_USE_CXX11_ABI背景分析和实现原理](https://blog.csdn.net/ithiker/article/details/126447778)
 - [version 'GLIBC_2.34' not found简单有效解决方法](https://blog.csdn.net/huazhang_001/article/details/128828999)
 - [linux中的ld命令及其搜索路径顺序](https://blog.csdn.net/qq_42731705/article/details/123934842)
 - [干货！gcc和g++编译器有什么区别？看完这篇就明白了](https://www.toutiao.com/article/7194762934655091252/)
