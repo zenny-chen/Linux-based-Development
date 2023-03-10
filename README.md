@@ -125,10 +125,6 @@ SYNOPSIS
 - [Linux AIO 异步读写](https://www.cnblogs.com/standardzero/p/12552642.html)
 - [最专业的对“鸿蒙”的分析](https://www.toutiao.com/a7039879650885222951/)
 - [使程序在Linux下后台运行 （关掉终端继续让程序运行的方法）](https://www.cnblogs.com/little-ant/p/3952424.html)
-- Linux下生成动态库使用` -fPIC -shared`编译选项，并且动态库的命名规则为：lib<lib-name>.so。加载动态库时使用`export LD_LIBRARY_PATH=`导出动态库所在路径。
-- GCC默认连接静态库使用此连接选项：`-static`。
-- [Linux 使用静态库注意事项](https://www.bbsmax.com/A/obzbmvVbdE/)
-- [如何编译静态库及将多个.a静态库合并成一个.a静态库](https://www.pianshen.com/article/77691341/)
 - GAS下使用Intel语法汇编并且在寄存器前不添加`%`符号：`.intel_syntax noprefix`。
 - GCC/Clang编译器下要使用<intrin.h>，则得：`#include <x86intrin.h>`。
 - [gcc在代码中禁止某些warning](https://www.cnblogs.com/jhj117/p/6639111.html)
@@ -149,14 +145,19 @@ SYNOPSIS
 
     static_assert(sizeof(SS) == 20);
 ```
+- GCC上对于用 **`-D`** 定义的预处理符号，如果其值包含双引号 **`"`**，则需要使用转义符 **` \ `**。比如：`-DMY_NAME=\"Smith\"`。
 - [GCC编译宏_GLIBCXX_USE_CXX11_ABI背景分析和实现原理](https://blog.csdn.net/ithiker/article/details/126447778)
-- [version 'GLIBC_2.34' not found简单有效解决方法](https://blog.csdn.net/huazhang_001/article/details/128828999)
-- [linux中的ld命令及其搜索路径顺序](https://blog.csdn.net/qq_42731705/article/details/123934842)
-- [干货！gcc和g++编译器有什么区别？看完这篇就明白了](https://www.toutiao.com/article/7194762934655091252/)
+- GCC默认连接静态库使用此连接选项：`-static`。
+- [Linux 使用静态库注意事项](https://www.bbsmax.com/A/obzbmvVbdE/)
+- [如何编译静态库及将多个.a静态库合并成一个.a静态库](https://www.pianshen.com/article/77691341/)
+- Linux下生成动态库使用` -fPIC -shared`编译选项，并且动态库的命名规则为：lib<lib-name>.so。加载动态库时使用`export LD_LIBRARY_PATH=`导出动态库所在路径。
+- [动态库链接静态库防止符号污染（使用 **`-Wl,--exclude-libs,ALL`** 编译选项）](https://blog.csdn.net/u014789533/article/details/128613071)
 - 用GCC编译C++代码时最好使用 `g++`，否则会导致一些特定的C++函数符号找不到。如果遇到某些引用STL库的函数而引发符号找不到错误，则可尝试添加 `-lstdc++` 来解决。
 - GCC上对于静态库或动态库文件名不以`lib`作为前缀的情况下可在连接时直接用该文件名去连。比如我们要连接一个`libtest.so`和`testlib.so`，我们可以用：`gcc -ltest testlib.so -o target`。
 - [Anatomy of Linux dynamic libraries](https://developer.ibm.com/tutorials/l-dynamic-libraries/) （The option **`-rdynamic`** is used to tell the linker to add all symbols to the dynamic symbol table (to permit backtraces with the use of dlopen). The **`-ldl`** indicates that the dllib should be linked to this program.）
-- GCC上对于用 **`-D`** 定义的预处理符号，如果其值包含双引号 **`"`**，则需要使用转义符 **` \ `**。比如：`-DMY_NAME=\"Smith\"`。
+- [version 'GLIBC_2.34' not found简单有效解决方法](https://blog.csdn.net/huazhang_001/article/details/128828999)
+- [linux中的ld命令及其搜索路径顺序](https://blog.csdn.net/qq_42731705/article/details/123934842)
+- [干货！gcc和g++编译器有什么区别？看完这篇就明白了](https://www.toutiao.com/article/7194762934655091252/)
 - [gcc命令objdump用法----反汇编](https://blog.csdn.net/cwcwj3069/article/details/8273129)
 - [linux 强制32位编译,使用CMake强制进行32位编译的正确方法](https://blog.csdn.net/weixin_34952628/article/details/116756981)
 - [How do I call “cpuid” in Linux?](https://stackoverflow.com/questions/14266772/how-do-i-call-cpuid-in-linux)
