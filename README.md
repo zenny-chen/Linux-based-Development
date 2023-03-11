@@ -160,6 +160,7 @@ void foo(void) [[ clang::optnone ]] {  }
 - GCC上对于静态库或动态库文件名不以`lib`作为前缀的情况下可在连接时直接用该文件名去连。比如我们要连接一个`libtest.so`和`testlib.so`，我们可以用：`gcc -ltest testlib.so -o target`。
 - [Anatomy of Linux dynamic libraries](https://developer.ibm.com/tutorials/l-dynamic-libraries/) （The option **`-rdynamic`** is used to tell the linker to add all symbols to the dynamic symbol table (to permit backtraces with the use of dlopen). The **`-ldl`** indicates that the dllib should be linked to this program.）
 - [GCC的符号可见性 -fvisibility=hidden](https://blog.csdn.net/qq_38350702/article/details/106128157)
+- [What are the meanings of the columns of the symbol table displayed by **readelf**?](https://stackoverflow.com/questions/3065535/what-are-the-meanings-of-the-columns-of-the-symbol-table-displayed-by-readelf)
 - [version 'GLIBC_2.34' not found简单有效解决方法](https://blog.csdn.net/huazhang_001/article/details/128828999)
 - [linux中的ld命令及其搜索路径顺序](https://blog.csdn.net/qq_42731705/article/details/123934842)
 - [干货！gcc和g++编译器有什么区别？看完这篇就明白了](https://www.toutiao.com/article/7194762934655091252/)
