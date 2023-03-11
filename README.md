@@ -133,6 +133,11 @@ SYNOPSIS
 - [gcc 编译 gcc warning 'variable tracking size limit exceeded' 原因及解决办法](https://blog.csdn.net/photon222/article/details/89217737)
 - [严格别名规则“-fstrict-aliasing”和“-fno-strict-aliasing”及类型双关](https://www.cnblogs.com/aquester/p/10299471.html)
 - GCC对某一函数启用`-O2`编译选项并禁用`strict-aliasing`：`__attribute__((optimize("-O2"), optimize("-fno-strict-aliasing")))`
+- [Clang对指定函数禁用优化](https://clang.llvm.org/docs/AttributeReference.html#optnone)（比如：
+```cpp
+void foo(void) [[ clang::optnone ]] {  }
+```
+）
 - GCC编译器指定结构体对齐：`-fpack-struct=n`。
 - GCC与Clang使用打包的结构体：
 ```cpp
