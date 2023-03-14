@@ -155,12 +155,13 @@ void foo(void) [[ clang::optnone ]] {  }
 - [Linux 使用静态库注意事项](https://www.bbsmax.com/A/obzbmvVbdE/)
 - [如何编译静态库及将多个.a静态库合并成一个.a静态库](https://www.pianshen.com/article/77691341/)
 - Linux下生成动态库使用` -fPIC -shared`编译选项，并且动态库的命名规则为：lib<lib-name>.so。加载动态库时使用`export LD_LIBRARY_PATH=`导出动态库所在路径。
-- [动态库链接静态库防止符号污染（使用 **`-Wl,--exclude-libs,ALL`** 编译选项）](https://blog.csdn.net/u014789533/article/details/128613071)
+- [动态库链接静态库防止符号污染（使用 **`-Wl,--exclude-libs,ALL`** 连接器选项）](https://blog.csdn.net/u014789533/article/details/128613071)
 - 用GCC编译C++代码时最好使用 `g++`，否则会导致一些特定的C++函数符号找不到。如果遇到某些引用STL库的函数而引发符号找不到错误，则可尝试添加 `-lstdc++` 来解决。
 - GCC上对于静态库或动态库文件名不以`lib`作为前缀的情况下可在连接时直接用该文件名去连。比如我们要连接一个`libtest.so`和`testlib.so`，我们可以用：`gcc -ltest testlib.so -o target`。
 - [Anatomy of Linux dynamic libraries](https://developer.ibm.com/tutorials/l-dynamic-libraries/) （The option **`-rdynamic`** is used to tell the linker to add all symbols to the dynamic symbol table (to permit backtraces with the use of dlopen). The **`-ldl`** indicates that the dllib should be linked to this program.）
 - [GCC的符号可见性 -fvisibility=hidden](https://blog.csdn.net/qq_38350702/article/details/106128157)
 - [What are the meanings of the columns of the symbol table displayed by **readelf**?](https://stackoverflow.com/questions/3065535/what-are-the-meanings-of-the-columns-of-the-symbol-table-displayed-by-readelf)
+- GCC使用 **`-s`** 连接器选项将所有符号表及重定向信息从可执行文件或动态连接库中移除。
 - [version 'GLIBC_2.34' not found简单有效解决方法](https://blog.csdn.net/huazhang_001/article/details/128828999)
 - [linux中的ld命令及其搜索路径顺序](https://blog.csdn.net/qq_42731705/article/details/123934842)
 - [干货！gcc和g++编译器有什么区别？看完这篇就明白了](https://www.toutiao.com/article/7194762934655091252/)
