@@ -103,6 +103,8 @@ SYNOPSIS
 - [linux虚拟内存，内存及内存管理相关](https://blog.csdn.net/chen_jianjian/article/details/88876392)
 - [万字长文，别再说你不懂Linux内存管理了（合辑），30 张图给你安排的明明白白](https://mp.weixin.qq.com/s?__biz=MzI3ODQ3OTczMw==&mid=2247493251&idx=1&sn=10d495947c4849c6cf854b15e7f6e7c5&chksm=eb54f099dc23798fce0f5db05e080bb0830133504dcfed325c66c2dcae6f4176b36484225676&mpshare=1&scene=23&srcid=01094DqUSLSGFRKOOLtfpqsU)
 - [深入理解glibc malloc：malloc() 与 free() 原理图解](https://www.toutiao.com/i7046286983177470500/)
+- [使用 malloc_trim\(\)](https://blog.csdn.net/CaspianSea/article/details/72457221)
+- [malloc_trim\(3\) — Linux manual page](https://man7.org/linux/man-pages/man3/malloc_trim.3.html)
 - [Linux内核Page Cache和Buffer Cache关系及演化历史](https://www.toutiao.com/a6816861382776979976/)
 - [DMA，Direct IO和零拷贝](https://www.toutiao.com/i6945819523622666782/)
 - [Linux内核快速处理路径尽量多用slab而慎用kmalloc](https://blog.csdn.net/dog250/article/details/105544111)
