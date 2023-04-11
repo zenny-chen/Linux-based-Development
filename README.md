@@ -105,6 +105,7 @@ SYNOPSIS
 - [深入理解glibc malloc：malloc() 与 free() 原理图解](https://www.toutiao.com/i7046286983177470500/)
 - [使用 malloc_trim\(\)](https://blog.csdn.net/CaspianSea/article/details/72457221)
 - [malloc_trim\(3\) — Linux manual page](https://man7.org/linux/man-pages/man3/malloc_trim.3.html)
+- [malloc_usable_size\(3\) — Linux manual page](https://man7.org/linux/man-pages/man3/malloc_usable_size.3.html)
 - [Linux内核Page Cache和Buffer Cache关系及演化历史](https://www.toutiao.com/a6816861382776979976/)
 - [DMA，Direct IO和零拷贝](https://www.toutiao.com/i6945819523622666782/)
 - [Linux内核快速处理路径尽量多用slab而慎用kmalloc](https://blog.csdn.net/dog250/article/details/105544111)
