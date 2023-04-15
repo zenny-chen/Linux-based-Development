@@ -30,6 +30,8 @@ export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
 ```
 - [（超详细）Linux Shell 编程](https://blog.csdn.net/qq_50685659/article/details/125738428)
 - [Linux革命性工具，shell脚本自动化](https://www.toutiao.com/article/7187343867296203324/)
+- [Linux Shell 参数](https://wenku.baidu.com/view/ea25bd14e75c3b3567ec102de2bd960590c6d9f9.html)
+- [Linux Shell脚本中获取本机ip地址方法](https://www.cnblogs.com/lidabo/p/15926304.html)
 - [linux常见系统环境变量](https://www.cnblogs.com/renping/p/7020354.html)
 - [linux c 编程 环境变量的操作函数](https://blog.csdn.net/q435201823/article/details/107163816)
 - [Linux连不上网解决](https://www.cnblogs.com/lbky/articles/11023246.html)
@@ -182,7 +184,6 @@ void foo(void) [[ clang::optnone ]] {  }
 - [Linux系统调用--uname()函数及系统下的uname命令](http://blog.chinaunix.net/uid-8996150-id-2011653.html)
 - [Linux查看物理CPU个数、核数、逻辑CPU个数](https://www.cnblogs.com/bugutian/p/6138880.html)
 - [Linux如何查看CPU信息，Linux查看CPU个数和核心数，Linux查看CPU使用率和运行位数](https://blog.csdn.net/tiiefu1212/article/details/78623132)
-- [Linux Shell脚本中获取本机ip地址方法](https://www.cnblogs.com/lidabo/p/15926304.html)
 - [获取SYSTEM()执行结果](https://blog.csdn.net/u013625451/article/details/78830104)
 - [类Unix系统中如何获取另一个程序的输出内容](https://baike.baidu.com/item/popen)
 - [使用popen执行shell命令并获取返回结果](https://www.cnblogs.com/hiawind/p/9089288.html)
