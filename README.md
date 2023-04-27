@@ -294,37 +294,6 @@ syslog(LOG_INFO, "Current FPCR: 0x%08X\n", expected);
 
 <br />
 
-## Raspbian系统下所需要安装的开发工具
-```bash
-sudo apt-get update
-
-sudo apt-get install build-essential
-
-# 如果在Ubuntu上安装GCC或使用`sudo apt-get install build-essential`失败，则需要先执行一下`sudo apt-get update`，更新之后再执行安装命令。
-
-# 安装用于Objective-C的GNUstep
-sudo apt-get install gnustep
-sudo apt-get install gnustep-devel
-
-# 安装GTK+3
-sudo apt-get install libgtk-3-dev
-
-# 安装asound2库
-sudo apt-get install libasound2-dev
-
-# 安装alsa-utils
-sudo apt-get install alsa-utils
-
-# 安装蓝牙相关工具
-sudo apt-get install blueman
-
-# 安装bluetooth开发库
-sudo apt-get install libbluetooth-dev
-
-```
-
-<br />
-
 ## GCC使用 **`naked`** 与 **`-fomit-frame-pointer`** 优化属性来生成不依赖编译器的纯内联汇编函数
 
 ```c
@@ -364,6 +333,37 @@ int main(int argc, const char* argv[])
 
     printf("s_var = %d\n", s_var);
 }
+```
+
+<br />
+
+## Raspbian系统下所需要安装的开发工具
+```bash
+sudo apt-get update
+
+sudo apt-get install build-essential
+
+# 如果在Ubuntu上安装GCC或使用`sudo apt-get install build-essential`失败，则需要先执行一下`sudo apt-get update`，更新之后再执行安装命令。
+
+# 安装用于Objective-C的GNUstep
+sudo apt-get install gnustep
+sudo apt-get install gnustep-devel
+
+# 安装GTK+3
+sudo apt-get install libgtk-3-dev
+
+# 安装asound2库
+sudo apt-get install libasound2-dev
+
+# 安装alsa-utils
+sudo apt-get install alsa-utils
+
+# 安装蓝牙相关工具
+sudo apt-get install blueman
+
+# 安装bluetooth开发库
+sudo apt-get install libbluetooth-dev
+
 ```
 
 <br />
