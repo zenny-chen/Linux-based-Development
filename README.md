@@ -325,6 +325,49 @@ sudo apt-get install libbluetooth-dev
 
 <br />
 
+## GCC使用 **`naked`** 与 **`-fomit-frame-pointer`** 优化属性来生成不依赖编译器的纯内联汇编函数
+
+```c
+#include <stdio.h>
+
+static int s_var = 0;
+
+static void __attribute__((naked, optimize("-fomit-frame-pointer")))
+ExecInc(int *pValue,  const void *pExitAddr)
+{
+    asm(".intel_syntax noprefix \n"
+        "inc dword ptr [rdi]  \n"
+        "jmp rsi     \n"
+        ".att_syntax");
+}
+
+static void __attribute__((naked, optimize("-fomit-frame-pointer")))
+CallEntry(int *pValue, const void *pExitAddr, const void *pExecAddr)
+{
+    asm(".intel_syntax noprefix \n"
+        "jmp rdx     \n"
+        ".att_syntax");
+}
+
+static void __attribute__((naked, optimize("-fomit-frame-pointer")))
+CallExit(void)
+{
+    asm(".intel_syntax noprefix \n"
+        "ret    \n"
+        ".att_syntax");
+}
+
+int main(int argc, const char* argv[])
+{
+    while(s_var < 10)
+        CallEntry(&s_var, (void*)CallExit, (void*)ExecInc);
+
+    printf("s_var = %d\n", s_var);
+}
+```
+
+<br />
+
 ## Ubuntu下安装CUDA以及其自带驱动
 
 以下文档文档可供参考：
