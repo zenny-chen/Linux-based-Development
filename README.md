@@ -35,6 +35,7 @@ export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
 - [linux常见系统环境变量](https://www.cnblogs.com/renping/p/7020354.html)
 - [linux c 编程 环境变量的操作函数](https://blog.csdn.net/q435201823/article/details/107163816)
 - [Linux连不上网解决](https://www.cnblogs.com/lbky/articles/11023246.html)
+- Unix/Linux下如何查看DNS服务器地址：可使用命令 **`cat /etc/resolv.conf`** 或是 **`less /etc/resolv.conf`**。详细可参考：[How To Find Out What My DNS Servers Address Is](https://www.cyberciti.biz/faq/how-to-find-out-what-my-dns-servers-address-is/)
 - [Linux下实时查看GPU状态](https://blog.csdn.net/zhang_yang_43/article/details/78357458)
 - [A Step-By-Step Guide To Install CMake On Linux](https://www.linuxfordevices.com/tutorials/install-cmake-on-linux)（Linux系统安装 **CMake** 的关键命令：**`sudo sh cmake.sh --prefix=/usr/local/ --exclude-subdir`**。The above command will install cmake globally for all users to **`/usr/local/bin`** and the **`--exclude-subdir`** option is to get rid of the extra directory that is produced while extracting the .tar.gz archive.）
 - [Linux（centos）下卸载及安装cmake详细步骤](https://blog.csdn.net/qq_22159287/article/details/121916753)
