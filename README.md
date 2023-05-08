@@ -177,6 +177,28 @@ void foo(void) [[ clang::optnone ]] {  }
 - [linux 强制32位编译,使用CMake强制进行32位编译的正确方法](https://blog.csdn.net/weixin_34952628/article/details/116756981)
 - [How do I call “cpuid” in Linux?](https://stackoverflow.com/questions/14266772/how-do-i-call-cpuid-in-linux)
 - [linux下常用的几个时间函数：gettimeofday和clock_gettime](https://blog.csdn.net/fchyang/article/details/81166470)（使用精确时间戳，直接使用`clock_gettime(CLOCK_MONOTONIC, &timespec);`。）
+**`gettimeofday`** 使用例子如下：
+```c
+#include <sys/time.h>
+
+int main(void)
+{
+    struct timeval tBegin, tEnd;
+    gettimeofday(&tBegin, NULL);
+
+    int count = 0;
+        
+    for(int i = 0; i < 1000 * 1000; i++) {
+        count += i;
+    }
+        
+    gettimeofday(&tEnd, NULL);
+        
+    long deltaTime = 1000000L * (tEnd.tv_sec - tBegin.tv_sec ) + (tEnd.tv_usec - tBegin.tv_usec);
+
+    printf("Time spent: %ldus\n", deltaTime);
+}
+```
 - [Linux下的sleep()和usleep()的使用和区别](https://www.cnblogs.com/ZhaoxiCheung/p/6792734.html)
 - [Linux 获取本机IP、MAC地址用法大全](https://www.cnblogs.com/fnlingnzb-learner/p/6427786.html)
 - [C++ win32和linux获取系统剩余内存](https://blog.csdn.net/q1368232592/article/details/85157823)
