@@ -81,6 +81,7 @@ export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
 - [Linux内核中的软中断、tasklet和工作队列](http://blog.csdn.net/T146lLa128XX0x/article/details/79070798)
 - [多线程 or 多进程？](https://blog.csdn.net/zy799894671/article/details/18405033)
 - [Linux内核如何替换内核函数并调用原始函数](https://blog.csdn.net/dog250/article/details/84201114)
+- [Netflix 团队解决了 Linux 内核中的 FUSE 死锁](https://www.toutiao.com/article/7235624836679205410/)
 - [怎样Hack Linux的内核符号？](https://blog.csdn.net/sinat_30551659/article/details/107705842)
 - [How To Install LLVM and Clang on CentOS 6](https://www.vultr.com/docs/how-to-install-llvm-and-clang-on-centos-6)
 - [在Centos-5下安装Objective-C的编译环境](http://blog.csdn.net/Robincui2011/article/details/6785987)
@@ -132,8 +133,8 @@ SYNOPSIS
 - [Linux AIO 异步读写](https://www.cnblogs.com/standardzero/p/12552642.html)
 - [最专业的对“鸿蒙”的分析](https://www.toutiao.com/a7039879650885222951/)
 - [使程序在Linux下后台运行 （关掉终端继续让程序运行的方法）](https://www.cnblogs.com/little-ant/p/3952424.html)
-- GAS下使用Intel语法汇编并且在寄存器前不添加`%`符号：`.intel_syntax noprefix`。
-- GCC/Clang编译器下要使用<intrin.h>，则得：`#include <x86intrin.h>`。
+- GAS下使用Intel语法汇编并且在寄存器前不添加 `%` 符号：`.intel_syntax noprefix`。
+- GCC/Clang编译器下要使用 `<intrin.h>`，则得：`#include <x86intrin.h>`。
 - [Converting a C source code to LLVM assembly](https://www.oreilly.com/library/view/llvm-cookbook/9781785285981/ch01s04.html)
 - [gcc在代码中禁止某些warning](https://www.cnblogs.com/jhj117/p/6639111.html)
 - [gcc, g++编译时消除特定警告的方法](https://blog.csdn.net/li_wen01/article/details/71171413)
