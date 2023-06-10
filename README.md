@@ -19,6 +19,7 @@ Linux（主要基于Debian系）系统下的开发资料
 - [从今往后，谁再告诉你Linux上chmod -R 777解决权限，果断绝交](https://www.toutiao.com/a6811852198561972744/)
 - [Linux创建快捷方式的几种方法](https://blog.csdn.net/qq_41115033/article/details/123829766)（通常使用这种方式：**`sudo ln -s /opt/lib/libapp.so.6  /usr/lib/libapp.so`**）
 - [linux拷贝软连接文件](https://www.cnblogs.com/macrored/p/11753862.html)（拷贝含有软链接文件的文件夹，可以使用 **`-frL`**，使得里面所有的软链接文件变成独立的它原本所链接到的目标文件的拷贝。通常用这种方式可以将包含软链接文件的文件夹拷贝到网盘、U盘等其他存储介质。）
+- [在Linux=＞(Centos,Ubuntu)系统中如何查找最大的10个文件方法汇总](https://blog.csdn.net/qq_34246965/article/details/110038468)
 - [Ubuntu下如何用命令行运行deb安装包](https://blog.csdn.net/xxdw1992/article/details/124816245)
 - [漫画 | Unix/Linux 比 Windows 差远了](https://www.toutiao.com/i7044022091791729182/)
 - [apt和apt-get之间的区别解释](https://www.toutiao.com/i6734877338686718477/)
