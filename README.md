@@ -171,13 +171,13 @@ SYNOPSIS
 - [Anatomy of Linux dynamic libraries](https://developer.ibm.com/tutorials/l-dynamic-libraries/) （The option **`-rdynamic`** is used to tell the linker to add all symbols to the dynamic symbol table (to permit backtraces with the use of dlopen). The **`-ldl`** indicates that the dllib should be linked to this program.）
 - [GCC的符号可见性 -fvisibility=hidden](https://blog.csdn.net/qq_38350702/article/details/106128157)（它属于编译选项）
 - [使用GCC导出C++类的符号(Export symbols of C++ class with GCC)](https://www.656463.com/wenda/shiyongGCCdaochuCleidefuhao_493)（要生成可被运行时动态加载的动态库时，可使用 **`-shared -s -Wl,--export-dynamic`** 这些连接器选项）
-- [What are the meanings of the columns of the symbol table displayed by **readelf**?](https://stackoverflow.com/questions/3065535/what-are-the-meanings-of-the-columns-of-the-symbol-table-displayed-by-readelf)（具体使用时最好再加上 **`-W`**选项，以免某些符号过长而被自动截断。比如：**`readelf -W -s libdll.so`**）
+- [What are the meanings of the columns of the symbol table displayed by **readelf**?](https://stackoverflow.com/questions/3065535/what-are-the-meanings-of-the-columns-of-the-symbol-table-displayed-by-readelf)（具体使用时最好再加上 **`-W`** 选项，以免某些符号过长而被自动截断。比如：**`readelf -W -s libdll.so`**）
 - GCC使用 **`-s`** 连接器选项将所有符号表及重定向信息从可执行文件或动态连接库中移除。
 - [version 'GLIBC_2.34' not found简单有效解决方法](https://blog.csdn.net/huazhang_001/article/details/128828999)
 - [linux中的ld命令及其搜索路径顺序](https://blog.csdn.net/qq_42731705/article/details/123934842)
 - [干货！gcc和g++编译器有什么区别？看完这篇就明白了](https://www.toutiao.com/article/7194762934655091252/)
 - [记录linux 生成crash dump文件步骤](https://blog.csdn.net/dengdun6257/article/details/102283543)
-- [How can I read a crash file from `/var/crash`](https://askubuntu.com/questions/434431/how-can-i-read-a-crash-file-from-var-crash)
+- [How can I read a crash file from `/var/crash`](https://askubuntu.com/questions/434431/how-can-i-read-a-crash-file-from-var-crash)（对于比较大的 CoreDump 文件，本回答的第3条操作可能失败，可直接参考上面那篇文章对 CoreDump 的打开方式，最后再用本回答的第4条。）
 - [gcc命令objdump用法----反汇编](https://blog.csdn.net/cwcwj3069/article/details/8273129)
 - [linux 强制32位编译,使用CMake强制进行32位编译的正确方法](https://blog.csdn.net/weixin_34952628/article/details/116756981)
 - [How do I call “cpuid” in Linux?](https://stackoverflow.com/questions/14266772/how-do-i-call-cpuid-in-linux)
