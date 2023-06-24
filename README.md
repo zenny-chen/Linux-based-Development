@@ -179,6 +179,7 @@ SYNOPSIS
 - [记录linux 生成crash dump文件步骤](https://blog.csdn.net/dengdun6257/article/details/102283543)
 - [How can I read a crash file from `/var/crash`](https://askubuntu.com/questions/434431/how-can-i-read-a-crash-file-from-var-crash)（对于比较大的 CoreDump 文件，本回答的第3条操作可能失败，可直接参考上面那篇文章对 CoreDump 的打开方式，最后再用本回答的第4条。）
 - [gcc命令objdump用法----反汇编](https://blog.csdn.net/cwcwj3069/article/details/8273129)
+- [Linux环境定位C程序内存泄露以及非法访问的方法](https://blog.csdn.net/xingyeping/article/details/72828788)
 - [linux 强制32位编译,使用CMake强制进行32位编译的正确方法](https://blog.csdn.net/weixin_34952628/article/details/116756981)
 - [How do I call “cpuid” in Linux?](https://stackoverflow.com/questions/14266772/how-do-i-call-cpuid-in-linux)
 - [linux下常用的几个时间函数：gettimeofday和clock_gettime](https://blog.csdn.net/fchyang/article/details/81166470)（使用精确时间戳，直接使用`clock_gettime(CLOCK_MONOTONIC, &timespec);`。）
@@ -219,7 +220,7 @@ int main(void)
 - [linux中open()函数的mode_t 含义](https://blog.csdn.net/sdhgood/article/details/39555311)（**`O_LARGEFILE`** 标志用于指示`off_t`无法容下文件大小而只能用`off64_t`）
 - [教你写第一个Linux设备驱动程序](https://www.toutiao.com/a6812972562201444878/)
 - [How do I set a software breakpoint on an ARM processor?](https://stackoverflow.com/questions/11345371/how-do-i-set-a-software-breakpoint-on-an-arm-processor)
-- 对于不支持硬件断点的ARM Linux可使用`raise(SIGTRAP)`系统调用来触发gdb的断点调试。
+- 对于不支持硬件断点的ARM Linux可使用 `raise(SIGTRAP)` 系统调用来触发gdb的断点调试。
 - [Ubuntu系统下通过Clang编译器编写Objective-C](https://blog.csdn.net/zenny_chen/article/details/52507022)
 - Ubuntu下安装libz库：`sudo apt-get install zlib1g-dev`，然后使用`-lz`去连接。
 - Ubuntu下安装BSD库：`sudo apt-get install libbsd-dev`，然后使用`-lbsd`去连接。此外，在`<bsd/stdlib.h>`中可使用 **arc4random** 等函数。
