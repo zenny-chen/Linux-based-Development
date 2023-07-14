@@ -81,6 +81,7 @@ export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
 - [Linux共享内存使用常见陷阱与分析](https://zhuanlan.zhihu.com/p/260418383)
 - [Linux内核中的软中断、tasklet和工作队列](http://blog.csdn.net/T146lLa128XX0x/article/details/79070798)
 - [多线程 or 多进程？](https://blog.csdn.net/zy799894671/article/details/18405033)
+- [Getting Started with Intel® Threading Building Blocks \(Intel® TBB\)](https://www.intel.com/content/www/us/en/developer/articles/guide/get-started-with-tbb.html)
 - [Linux内核如何替换内核函数并调用原始函数](https://blog.csdn.net/dog250/article/details/84201114)
 - [Netflix 团队解决了 Linux 内核中的 FUSE 死锁](https://www.toutiao.com/article/7235624836679205410/)
 - [怎样Hack Linux的内核符号？](https://blog.csdn.net/sinat_30551659/article/details/107705842)
