@@ -134,6 +134,7 @@ SYNOPSIS
 - [kqueue用法简介](https://www.cnblogs.com/luminocean/p/5631336.html)
 - [使用kqueue在FreeBSD上开发高性能应用服务器](http://www.ibm.com/developerworks/cn/aix/library/1105_huangrg_kqueue/)
 - [Linux AIO 异步读写](https://www.cnblogs.com/standardzero/p/12552642.html)
+- [异步唤醒机制：**`eventfd`** 和条件变量区别](https://www.toutiao.com/article/7258483579754234408/)
 - [最专业的对“鸿蒙”的分析](https://www.toutiao.com/a7039879650885222951/)
 - [使程序在Linux下后台运行 （关掉终端继续让程序运行的方法）](https://www.cnblogs.com/little-ant/p/3952424.html)
 - GAS下使用Intel语法汇编并且在寄存器前不添加 `%` 符号：`.intel_syntax noprefix`。
