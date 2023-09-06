@@ -187,6 +187,7 @@ SYNOPSIS
 - [Linux环境定位C程序内存泄露以及非法访问的方法](https://blog.csdn.net/xingyeping/article/details/72828788)
 - [linux 强制32位编译,使用CMake强制进行32位编译的正确方法](https://blog.csdn.net/weixin_34952628/article/details/116756981)
 - [How do I call “cpuid” in Linux?](https://stackoverflow.com/questions/14266772/how-do-i-call-cpuid-in-linux)
+- [Linux下C语言如何使用定时器功能](https://www.cnblogs.com/chorm590/p/12158395.html)
 - [linux下常用的几个时间函数：gettimeofday和clock_gettime](https://blog.csdn.net/fchyang/article/details/81166470)（使用精确时间戳，直接使用`clock_gettime(CLOCK_MONOTONIC, &timespec);`。）
 **`gettimeofday`** 使用例子如下：
 ```c
