@@ -72,6 +72,7 @@ export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
 - [What are the environment variables by default?](https://unix.stackexchange.com/questions/329429/what-are-the-environment-variables-by-default)
 - [树莓派Virtual keyboard activation](https://raspberrypi.stackexchange.com/questions/41150/virtual-keyboard-activation)
 - [树莓派引脚编号说明](https://www.toutiao.com/a6746428899854385668/)
+- Ubuntu 安装 X-Window 的 Xlib 库：`sudo apt install libx11-dev`
 - [Ubuntu安装opengl es2.0和egl库](https://blog.csdn.net/qq_41006901/article/details/103260569)（先检查一下当前私有驱动是否已经包含了EGL库。比如见以下链接）
 - [Unable to use EGL without X Server on Ubuntu](https://stackoverflow.com/questions/49849033/unable-to-use-egl-without-x-server-on-ubuntu)
 - Raspbian安装OpenGL ES与EGL：`sudo apt-get install libva-egl1 libegl1-mesa-drivers gegl libgles2-mesa-dev libglfw-dev`
