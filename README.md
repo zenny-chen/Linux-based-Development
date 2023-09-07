@@ -232,6 +232,7 @@ int main(void)
 - Ubuntu下安装libz库：`sudo apt-get install zlib1g-dev`，然后使用`-lz`去连接。
 - Ubuntu下安装BSD库：`sudo apt-get install libbsd-dev`，然后使用`-lbsd`去连接。此外，在`<bsd/stdlib.h>`中可使用 **arc4random** 等函数。
 - Ubuntu下安装glib库：`sudo apt-get install libglib2.0-dev`。主要头文件为：`<glib.h>`。使用`pkg-config --cflags glib-2.0`可观察详细编译选项；使用`pkg-config --libs glib-2.0`可详细查看需要连接的库。如果我们要使用gobject库，那么将上述查看编译和连接选项的库名改为`gobject-2.0`即可。gobject库的头文件为：`<glib-object.h>`。
+- [Ubuntu安装VS Code](https://blog.csdn.net/weixin_44733606/article/details/131662272)
 - [GLib开源项目](https://gitlab.gnome.org/GNOME/glib)
 - Ubuntu下查看当前所有可安装的软件包：`dpkg -l`。
 - [Download C# Mono](https://www.mono-project.com/download/stable/#download-lin)（安装完整的Mono：`sudo apt-get install mono-complete`。安装Monodevelop IDE：`sudo apt-get install monodevelop`。不过在树莓派上无法安装Monodevelop IDE，因此直接编译C#代码使用`mcs`命令，可直接生成可执行代码。对于mcs命令，使用`-unsafe`选项可启用非安全代码。）
