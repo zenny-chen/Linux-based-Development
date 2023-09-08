@@ -217,6 +217,7 @@ int main(void)
 - [Linux下的sleep()和usleep()的使用和区别](https://www.cnblogs.com/ZhaoxiCheung/p/6792734.html)
 - [sched_yield\(2\) — Linux manual page](https://man7.org/linux/man-pages/man2/sched_yield.2.html)
 - [gcc and `cpu_relax`, smb_mb, etc.?](https://stackoverflow.com/questions/47975191/gcc-and-cpu-relax-smb-mb-etc)
+- [Spinlocks and Read-Write Locks](http://locklessinc.com/articles/locks/)
 - [Linux 获取本机IP、MAC地址用法大全](https://www.cnblogs.com/fnlingnzb-learner/p/6427786.html)
 - [C++ win32和linux获取系统剩余内存](https://blog.csdn.net/q1368232592/article/details/85157823)
 - Linux获取当前系统分发版本信息：`cat /etc/os-release`
