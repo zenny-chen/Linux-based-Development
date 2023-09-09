@@ -242,6 +242,11 @@ int main(void)
 - [Download C# Mono](https://www.mono-project.com/download/stable/#download-lin)（安装完整的Mono：`sudo apt-get install mono-complete`。安装Monodevelop IDE：`sudo apt-get install monodevelop`。不过在树莓派上无法安装Monodevelop IDE，因此直接编译C#代码使用`mcs`命令，可直接生成可执行代码。对于mcs命令，使用`-unsafe`选项可启用非安全代码。）
 - [.net、mono和C#](https://www.cnblogs.com/kekec/p/7237156.html)
 - [.NET Core3.0开发Liunx桌面应用程序主要是依靠GTK](https://www.cnblogs.com/kgxk/p/11875769.html)
+- Ubuntu 上卸载CUDA ToolKit：
+```shell
+cd /usr/local/cuda/bin/
+sudo ./cuda-uninstaller
+```
 - [Nsight Eclipse Plugins Edition Getting Started Guide](https://docs.nvidia.com/cuda/nsight-eclipse-plugins-guide/index.html)
 - [人工智能开发必须掌握的那些Linux指令（高级篇）](https://mp.weixin.qq.com/s/k3XuvGMV71gmDhhhLmL23w)
 
