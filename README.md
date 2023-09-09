@@ -247,7 +247,7 @@ int main(void)
 cd /usr/local/cuda/bin/
 sudo ./cuda-uninstaller
 ```
-- [Nsight Eclipse Plugins Edition Getting Started Guide](https://docs.nvidia.com/cuda/nsight-eclipse-plugins-guide/index.html)
+- [Nsight Eclipse Plugins Edition Getting Started Guide](https://docs.nvidia.com/cuda/nsight-eclipse-plugins-guide/index.html)（打开Eclipse，选择 Help，再选择 Install New Software… ，点击 Add 按钮，点击 Archive... 按钮，选择 /usr/local/cuda/ 目录中的 `nsightee_plugins` 中的 zip 文件）
 - [人工智能开发必须掌握的那些Linux指令（高级篇）](https://mp.weixin.qq.com/s/k3XuvGMV71gmDhhhLmL23w)
 
 <br/>
