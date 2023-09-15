@@ -232,6 +232,7 @@ int main(void)
 - [教你写第一个Linux设备驱动程序](https://www.toutiao.com/a6812972562201444878/)
 - [How do I set a software breakpoint on an ARM processor?](https://stackoverflow.com/questions/11345371/how-do-i-set-a-software-breakpoint-on-an-arm-processor)
 - 对于不支持硬件断点的ARM Linux可使用 `raise(SIGTRAP)` 系统调用来触发gdb的断点调试。
+- [通过篡改cred结构体实现提权利用](https://www.toutiao.com/article/7278957821289333283/)
 - [Ubuntu系统下通过Clang编译器编写Objective-C](https://blog.csdn.net/zenny_chen/article/details/52507022)
 - Ubuntu下安装libz库：`sudo apt-get install zlib1g-dev`，然后使用`-lz`去连接。
 - Ubuntu下安装BSD库：`sudo apt-get install libbsd-dev`，然后使用`-lbsd`去连接。此外，在`<bsd/stdlib.h>`中可使用 **arc4random** 等函数。
