@@ -47,6 +47,7 @@ export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
 - [Sound Recording & Play on Raspberry Pi Using ALSA in C](https://stackoverflow.com/questions/38615396/sound-recording-play-on-raspberry-pi-using-alsa-in-c)
 - [使用ALSA检查声卡驱动](https://www.alsa-project.org/wiki/SoundcardTesting)（在Linux下，**alsamixer** 工具在 `/usr/bin/alsamixer`下，使用F6可切换声卡。也可以使用 `arecord -l` 命令来列出支持麦克风声卡的驱动。）
 - [【Linux&音频】Alsa音频编程【精华】](https://www.cnblogs.com/lifan3a/articles/5481993.html)
+- [ALSA（高级Linux声音架构）浅析](https://mp.weixin.qq.com/s?__biz=MzUxMjEyNDgyNw==&mid=2247512379&idx=1&sn=8d9d4c609bfc1901a4613f39b198ee5a)
 - [教程】树莓派设置3.5mm接口输出音频](https://www.jianshu.com/p/674145fe98fa)
 - [树莓派更换软件源](https://www.toutiao.com/a6796581937096950283/)
 - [树莓派搭建视频监控平台](https://www.toutiao.com/a6847285154025570829/)
