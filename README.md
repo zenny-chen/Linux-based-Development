@@ -190,6 +190,7 @@ SYNOPSIS
 - [How can I read a crash file from `/var/crash`](https://askubuntu.com/questions/434431/how-can-i-read-a-crash-file-from-var-crash)（对于比较大的 CoreDump 文件，本回答的第3条操作可能失败，可直接参考上面那篇文章对 CoreDump 的打开方式，最后再用本回答的第4条。）
 - [gcc命令objdump用法----反汇编](https://blog.csdn.net/cwcwj3069/article/details/8273129)
 - [Linux环境定位C程序内存泄露以及非法访问的方法](https://blog.csdn.net/xingyeping/article/details/72828788)
+- [Bytehound - a memory profiler for Linux](https://github.com/koute/bytehound)
 - [linux 强制32位编译,使用CMake强制进行32位编译的正确方法](https://blog.csdn.net/weixin_34952628/article/details/116756981)
 - [How do I call “cpuid” in Linux?](https://stackoverflow.com/questions/14266772/how-do-i-call-cpuid-in-linux)
 - [Linux下C语言如何使用定时器功能](https://www.cnblogs.com/chorm590/p/12158395.html)
