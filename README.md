@@ -3,6 +3,26 @@ Linux（主要基于Debian系）系统下的开发资料
 
 <br />
 
+## Contents
+
+- [Resource List](#resource_list)
+- [GCC内联汇编相关技巧（Clang编译器亦与之兼容）](#gcc_inline_assembly)
+- [GCC使用 **`naked`** 与 **`-fomit-frame-pointer`** 优化属性来生成不依赖编译器的纯内联汇编函数](#gcc_naked_fomit-frame-pointer)
+- [Raspbian系统下所需要安装的开发工具](#raspbian_utilities)
+- [Ubuntu下安装CUDA以及其自带驱动](#ubuntu_cuda)
+- [CentOS下安装CUDA驱动](#centos_cuda)
+- [GNUstep编译选项](#gnustep_compile)
+- [GTK+下载安装及编程指南资料汇总](#gtkplus_resource)
+- [C\# mono的使用](#csharp_mono)
+- [安装LLVM-Clang](#install_llvm-clang)
+- [vim常用命令](#vim_commands)
+- [FreeBSD相关](#freebsd_resource)
+
+<br />
+
+<a name="resource_list" id="resource_list"></a>
+## Resource List
+
 - [GitLab CI Pipeline Stage Timeout](https://stackoverflow.com/questions/38403681/gitlab-ci-pipeline-stage-timeout)
 - [GitLab CI/CD Set job start timeout](https://forum.gitlab.com/t/set-job-start-timeout/34993)
 - [LinuxVersions](https://kernelnewbies.org/LinuxVersions)
@@ -257,6 +277,7 @@ sudo ./cuda-uninstaller
 
 <br/>
 
+<a name="gcc_inline_assembly" id="gcc_inline_assembly"></a>
 ## GCC内联汇编相关技巧（Clang编译器亦与之兼容）
 
 - [gcc 内联汇编](https://blog.csdn.net/yanzhongqian/article/details/124482833)
@@ -346,6 +367,7 @@ syslog(LOG_INFO, "Current FPCR: 0x%08X\n", expected);
 
 <br />
 
+<a name="gcc_naked_fomit-frame-pointer" id="gcc_naked_fomit-frame-pointer"></a>
 ## GCC使用 **`naked`** 与 **`-fomit-frame-pointer`** 优化属性来生成不依赖编译器的纯内联汇编函数
 
 ```c
@@ -389,6 +411,7 @@ int main(int argc, const char* argv[])
 
 <br />
 
+<a name="raspbian_utilities" id="raspbian_utilities"></a>
 ## Raspbian系统下所需要安装的开发工具
 ```bash
 sudo apt-get update
@@ -420,6 +443,7 @@ sudo apt-get install libbluetooth-dev
 
 <br />
 
+<a name="ubuntu_cuda" id="ubuntu_cuda"></a>
 ## Ubuntu下安装CUDA以及其自带驱动
 
 以下文档文档可供参考：
@@ -445,6 +469,7 @@ sudo dpkg --list | grep nvidia-*
 
 <br />
 
+<a name="centos_cuda" id="centos_cuda"></a>
 ## CentOS下安装CUDA驱动
 
 1. 准备环境设置：
@@ -466,6 +491,7 @@ bash /mnt/andy/soft-all-for-linux/2xianka-install/NVIDIA-Linux-x86_64-390.48.run
 
 <br />
 
+<a name="gnustep_compile" id="gnustep_compile"></a>
 ## GNUstep编译选项
 
 我们通过执行以下命令来观察Objective-C编译时所需要的编译选项：`gnustep-config --objc-flags`    
@@ -479,10 +505,57 @@ gcc test.m -std=gnu11 -Os  -MMD -MP -DGNUSTEP -DGNUSTEP_BASE_LIBRARY=1 -DGNU_RUN
 
 <br />
 
-## GTK+ 3编译选项
+<a name="gtkplus_resource" id="gtkplus_resource"></a>
+## GTK+下载安装及编程指南资料汇总
+
+- GTK+官方指南：http://zetcode.com/tutorials/gtktutorial/
+- GTK+官方指南的中文翻译：http://zetcode.com/tutorials/gtktutorial/chinese/
+- GTK+的Wiki网址：http://en.wikipedia.org/wiki/GTK%2B
+- GTK+的下载安装：http://zhidao.baidu.com/question/323664703.html ; http://blog.csdn.net/ouyangzhan/article/details/5734832
+- GTK+中使用2D图形库时用的是GDK。这个是其官方地址：http://developer.gnome.org/gdk3/stable/
+- 而GDK底层用的是Cairo库，要想了解这个这个库的话可以访问这个地址：http://cairographics.org/documentation/
+
+#### 在Ubuntu下要下载安装GTK+执行以下步骤：
+
+1. sudo apt-get install gnome-core-devel
+1. sudo apt-get install libgtk*
+
+如果 `gnome-core-devel` 命令由于Linux版本问题无法执行，可直接运行 `install libgtk*`，这个会将 `pkg-config` 在内的所有与 gtk 相关的库安装进去。
+然后，我们可以在控制台输入：`pkg-config --cflags --libs gtk+-3.0` 来查看gtk+3.0所需要包含的所有头文件以及库的路径。
+
+#### 基于Eclipse的IDE来开发GTK+3.0需要设置头文件路径和库的路径：
+
+##### 头文件路径需要以下这些：
+
+- `/usr/include/glib-2.0/`
+- `/usr/include/atk-1.0/`
+- `/usr/include/gdk-pixbuf-2.0/`
+- `/usr/include/cairo/`
+- `/usr/include/pango-1.0/`
+- （64位）`/usr/lib/x86_64-linux-gnu/glib-2.0/include/`
+- （32位）`/usr/lib/i386-linux-gnu/glib-2.0/include/`
+- `/usr/include/gtk-3.0/`
+
+##### 库路径需要包含：
+
+-（64位）/usr/lib/x86_64-linux-gnu/
+- （32位）`/usr/lib/i386-linux-gnu/`
+
+##### 所需要的库有：
+
+- `gtk-3`
+- `gobject-2.0`
+- `pangocairo-1.0`
+- `gio-2.0`
+- `atk-1.0`
+- `gdk-3`
+- `glib-2.0`
+
+注意，Linux下的库文件名是前缀加lib然后再跟库名，再是 **.a** 或 **.so** 结尾。
+
+#### GTK+ 3编译选项
 
 查看当前环境的GTK+ 3编译选项：`pkg-config --cflags --libs gtk+-3.0`
-
 
 整理之后：
 ```bash
@@ -492,6 +565,7 @@ gcc main.c -std=gnu11 -I/usr/include/glib-2.0/ -I/usr/include/atk-1.0/ -I/usr/in
 
 <br />
 
+<a name="csharp_mono" id="csharp_mono"></a>
 ## C\# mono的使用
 
 先创建一个csharp文件名，比如：**`CSTest.cs`**。然后输入以下代码：
@@ -512,6 +586,7 @@ class CSTest
 
 <br />
 
+<a name="install_llvm-clang" id="install_llvm-clang"></a>
 ## 安装LLVM-Clang
 
 ```shell
@@ -525,6 +600,7 @@ sudo apt-get install libdispatch-dev
 
 <br />
 
+<a name="vim_commands" id="vim_commands"></a>
 ## vim常用命令
 
 - ESC: 进入命令状态
@@ -537,6 +613,7 @@ sudo apt-get install libdispatch-dev
 
 <br />
 
+<a name="freebsd_resource" id="freebsd_resource"></a>
 ## FreeBSD相关
 
 - [NETGRAPH](https://www.freebsd.org/cgi/man.cgi?query=netgraph&sektion=4)
