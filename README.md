@@ -166,6 +166,23 @@ SYNOPSIS
 - [使程序在Linux下后台运行 （关掉终端继续让程序运行的方法）](https://www.cnblogs.com/little-ant/p/3952424.html)
 - GAS下使用Intel语法汇编并且在寄存器前不添加 `%` 符号：`.intel_syntax noprefix`。
 - GCC/Clang编译器下要使用 `<intrin.h>`，则得：`#include <x86intrin.h>`。
+- [How do I call “cpuid” in Linux?](https://stackoverflow.com/questions/14266772/how-do-i-call-cpuid-in-linux)
+```c
+#include <cpuid.h>
+
+// Return highest supported input value for cpuid instruction.
+// @param ext can be either 0x0 or 0x8000000 to return highest supported value for basic or extended cpuid information.
+// Function returns 0 if cpuid is not supported or whatever cpuid returns in eax register.
+// @sig If sig pointer is non-null, then first four bytes of the signature (as found in ebx register) are returned in location pointed by sig.
+unsigned int __get_cpuid_max (unsigned int __ext, unsigned int *__sig);
+
+// Return cpuid data for requested cpuid level, as found in returned eax, ebx, ecx and edx registers.
+// The function checks if cpuid is supported and returns 1 for valid cpuid information, or 0 for unsupported cpuid level.
+// All pointers are required to be non-null.
+int __get_cpuid (unsigned int __level,
+    unsigned int *__eax, unsigned int *__ebx,
+    unsigned int *__ecx, unsigned int *__edx);
+```
 - [Converting a C source code to LLVM assembly](https://www.oreilly.com/library/view/llvm-cookbook/9781785285981/ch01s04.html)
 - [gcc在代码中禁止某些warning](https://www.cnblogs.com/jhj117/p/6639111.html)
 - [gcc, g++编译时消除特定警告的方法](https://blog.csdn.net/li_wen01/article/details/71171413)
@@ -212,7 +229,6 @@ SYNOPSIS
 - [Linux环境定位C程序内存泄露以及非法访问的方法](https://blog.csdn.net/xingyeping/article/details/72828788)
 - [Bytehound - a memory profiler for Linux](https://github.com/koute/bytehound)
 - [linux 强制32位编译,使用CMake强制进行32位编译的正确方法](https://blog.csdn.net/weixin_34952628/article/details/116756981)
-- [How do I call “cpuid” in Linux?](https://stackoverflow.com/questions/14266772/how-do-i-call-cpuid-in-linux)
 - [Linux下C语言如何使用定时器功能](https://www.cnblogs.com/chorm590/p/12158395.html)
 - [linux下常用的几个时间函数：gettimeofday和clock_gettime](https://blog.csdn.net/fchyang/article/details/81166470)（使用精确时间戳，直接使用`clock_gettime(CLOCK_MONOTONIC, &timespec);`。）
 **`gettimeofday`** 使用例子如下：
