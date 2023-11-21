@@ -56,7 +56,7 @@ export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
 - [Linux Shell脚本中获取本机ip地址方法](https://www.cnblogs.com/lidabo/p/15926304.html)
 - [linux常见系统环境变量](https://www.cnblogs.com/renping/p/7020354.html)
 - [linux c 编程 环境变量的操作函数](https://blog.csdn.net/q435201823/article/details/107163816)
-- Linux 上将控制台执行命令的输出重定向转存到某一文件：`<command> | tee /tmp/log.txt`。如果想把 **`stderr`** 重定向到 **`stdout`**：`<command> 2>&1 | tee /tmp/log.txt`；如果此条命令产生歧义重定向，则尝试使用：`<command> &> /tmp/file.log`。
+- Linux 上将控制台执行命令的输出重定向转存到某一文件：`<command> | tee /tmp/log.txt`。如果想把 **`stderr`** 重定向到 **`stdout`**：`<command> 2>&1 | tee /tmp/log.txt`；如果此条命令产生歧义重定向，则尝试使用：`<command> >& /tmp/file.log`。
 - [Linux连不上网解决](https://www.cnblogs.com/lbky/articles/11023246.html)
 - Unix/Linux下如何查看DNS服务器地址：可使用命令 **`cat /etc/resolv.conf`** 或是 **`less /etc/resolv.conf`**。详细可参考：[How To Find Out What My DNS Servers Address Is](https://www.cyberciti.biz/faq/how-to-find-out-what-my-dns-servers-address-is/)
 - [Linux下实时查看GPU状态](https://blog.csdn.net/zhang_yang_43/article/details/78357458)
