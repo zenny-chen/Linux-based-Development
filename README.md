@@ -132,6 +132,7 @@ SYNOPSIS
 ```
 - [浅谈mmap介绍](https://www.toutiao.com/a6756789193474572808/)
 - [linux库函数mmap\(\)原理及用法详解](https://blog.csdn.net/qq_41687938/article/details/119901916)
+- [3 万字 + 40 张图 ｜ 拆解 mmap 内存映射的本质！](https://www.toutiao.com/article/7340927008223822348/)
 - [在Linux中利用mmap模拟Windows的VirtualAlloc](https://blog.csdn.net/cjfeii/article/details/9122279)
 - [深入理解 Linux 内核--jemalloc 引起的 TLB shootdown 及优化](https://www.toutiao.com/a6801053138380915211/)
 - [Memory Allocation Guide](https://www.kernel.org/doc/html/latest/core-api/memory-allocation.html)
