@@ -63,6 +63,9 @@ export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
 - [A Step-By-Step Guide To Install CMake On Linux](https://www.linuxfordevices.com/tutorials/install-cmake-on-linux)（Linux系统安装 **CMake** 的关键命令：**`sudo sh cmake.sh --prefix=/usr/local/ --exclude-subdir`**。The above command will install cmake globally for all users to **`/usr/local/bin`** and the **`--exclude-subdir`** option is to get rid of the extra directory that is produced while extracting the .tar.gz archive.）
 - [Linux（centos）下卸载及安装cmake详细步骤](https://blog.csdn.net/qq_22159287/article/details/121916753)
 - [linux下卸载旧版本cmake安装新版本cmake](https://blog.csdn.net/qq_40164094/article/details/120196560)
+- [linux环境下基于VSCode配置多目录C/C++编译调试环境](https://blog.csdn.net/qq_51482778/article/details/137018621)
+- [Linux环境使用VSCode调试简单C++代码](https://zhuanlan.zhihu.com/p/618040277)
+- [Ubuntu下VScode代码字体设置——monospace（等宽字体）](https://blog.csdn.net/xuw_xy/article/details/116101147)
 - [Sound recording program using Nano](https://raspberrypi.stackexchange.com/questions/15018/sound-recording-program-using-nano)
 - [Install alsa-utils on Ubuntu: sudo apt-get install alsa-utils](https://www.devmanuals.net/install/ubuntu/ubuntu-12-04-lts-precise-pangolin/install-alsa-utils.html)
 - [Sound Recording & Play on Raspberry Pi Using ALSA in C](https://stackoverflow.com/questions/38615396/sound-recording-play-on-raspberry-pi-using-alsa-in-c)
