@@ -132,6 +132,7 @@ SYNOPSIS
 */
        ssize_t sendfile(int out_fd, int in_fd, off_t *offset, size_t count);
 ```
+- [DMA，Direct IO和零拷贝](https://www.toutiao.com/i6945819523622666782/)
 - [浅谈mmap介绍](https://www.toutiao.com/a6756789193474572808/)
 - [linux库函数mmap\(\)原理及用法详解](https://blog.csdn.net/qq_41687938/article/details/119901916)
 - [3 万字 + 40 张图 ｜ 拆解 mmap 内存映射的本质！](https://www.toutiao.com/article/7340927008223822348/)
@@ -146,8 +147,9 @@ SYNOPSIS
 - [malloc_trim\(3\) — Linux manual page](https://man7.org/linux/man-pages/man3/malloc_trim.3.html)
 - [malloc_usable_size\(3\) — Linux manual page](https://man7.org/linux/man-pages/man3/malloc_usable_size.3.html)
 - [Linux内核Page Cache和Buffer Cache关系及演化历史](https://www.toutiao.com/a6816861382776979976/)
-- [DMA，Direct IO和零拷贝](https://www.toutiao.com/i6945819523622666782/)
 - [Linux内核快速处理路径尽量多用slab而慎用kmalloc](https://blog.csdn.net/dog250/article/details/105544111)
+- [Linux内存管理：NUMA技术详解（非一致内存访问架构）](https://blog.csdn.net/Rong_Toa/article/details/109137312)
+- [Is there a canonical programmatic way to query for the set of cores belonging to a NUMA node?](https://stackoverflow.com/questions/51031674/is-there-a-canonical-programmatic-way-to-query-for-the-set-of-cores-belonging-to)
 - [聊聊文件IO](https://www.toutiao.com/a6700806648274878987)
 - [存储进阶：怎么才能保证 IO 数据的安全？](https://www.toutiao.com/i6959376691781190151/)
 - [分钟搞懂Linux中直接I/O原理](https://www.toutiao.com/a6701654059910169091/)
