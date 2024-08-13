@@ -154,6 +154,7 @@ SYNOPSIS
 - [Linux内存管理：NUMA技术详解（非一致内存访问架构）](https://blog.csdn.net/Rong_Toa/article/details/109137312)
 - [Is there a canonical programmatic way to query for the set of cores belonging to a NUMA node?](https://stackoverflow.com/questions/51031674/is-there-a-canonical-programmatic-way-to-query-for-the-set-of-cores-belonging-to)
 - [CPU_SET(3) — Linux manual page](https://www.man7.org/linux/man-pages/man3/CPU_SET.3.html)
+- 获得当前的 **CPU ID** 可以使用：[sched_getcpu](https://www.man7.org/linux/man-pages/man3/sched_getcpu.3.html)
 - [libnuma详解(A NUMA API for LINUX)](https://blog.csdn.net/qq_40379678/article/details/107814666)
 - [numactl](https://github.com/numactl/numactl)
 - [numa(3) — Linux manual page](https://www.man7.org/linux/man-pages/man3/numa.3.html)
