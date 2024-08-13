@@ -280,6 +280,7 @@ int main(void)
 - Linux获取当前系统分发版本信息：`cat /etc/os-release`
 - [Linux下获取内核版本号的函数](https://blog.csdn.net/ly890700/article/details/53540653)
 - [Linux系统调用--uname()函数及系统下的uname命令](http://blog.chinaunix.net/uid-8996150-id-2011653.html)
+- Linux系统下使用 C API 获得当前逻辑处理器的总个数可使用：[**get_nprocs**](https://www.man7.org/linux/man-pages/man3/get_nprocs_conf.3.html)
 - [Linux查看物理CPU个数、核数、逻辑CPU个数](https://www.cnblogs.com/bugutian/p/6138880.html)
 - [Linux如何查看CPU信息，Linux查看CPU个数和核心数，Linux查看CPU使用率和运行位数](https://blog.csdn.net/tiiefu1212/article/details/78623132)
 - [获取SYSTEM()执行结果](https://blog.csdn.net/u013625451/article/details/78830104)
