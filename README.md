@@ -158,6 +158,7 @@ SYNOPSIS
 - [libnuma详解(A NUMA API for LINUX)](https://blog.csdn.net/qq_40379678/article/details/107814666)
 - [libnuma 及底层实现](https://blog.csdn.net/phone1126/article/details/134194067)
 - [numactl](https://github.com/numactl/numactl)：**libnuma**
+- Ubuntu 安装 **libnuma**：**`sudo apt-get install libnuma-dev`**
 - [numa(3) — Linux manual page](https://www.man7.org/linux/man-pages/man3/numa.3.html)
 - [聊聊文件IO](https://www.toutiao.com/a6700806648274878987)
 - [存储进阶：怎么才能保证 IO 数据的安全？](https://www.toutiao.com/i6959376691781190151/)
