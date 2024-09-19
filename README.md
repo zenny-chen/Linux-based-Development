@@ -1,4 +1,4 @@
-# Linux-based Development
+z# Linux-based Development
 Linux（主要基于Debian系）系统下的开发资料
 
 <br />
@@ -275,6 +275,7 @@ int main(void)
 - [Linux下C语言获取目录中的文件列表](https://www.cnblogs.com/dgwblog/p/12158373.html)
 - [操作系统的中打开文件的最大句柄数](https://blog.csdn.net/qq_26685237/article/details/106771340)
 - [Linux下的sleep()和usleep()的使用和区别](https://www.cnblogs.com/ZhaoxiCheung/p/6792734.html)
+- **pthread** 获得当前线程句柄：[**pthread_self**](https://www.man7.org/linux/man-pages/man3/pthread_self.3.html)
 - [pthread_cond_init](https://www.man7.org/linux/man-pages/man3/pthread_cond_init.3.html)
 - [sched_yield\(2\) — Linux manual page](https://man7.org/linux/man-pages/man2/sched_yield.2.html)
 - [gcc and `cpu_relax`, smb_mb, etc.?](https://stackoverflow.com/questions/47975191/gcc-and-cpu-relax-smb-mb-etc)
