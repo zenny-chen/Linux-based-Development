@@ -1,4 +1,4 @@
-z# Linux-based Development
+# Linux-based Development
 Linux（主要基于Debian系）系统下的开发资料
 
 <br />
@@ -171,6 +171,7 @@ SYNOPSIS
 - [6种epoll的设计，让你吊打面试官，而且他不能还嘴](https://www.toutiao.com/i7009187407606088223/)
 - [epoll 在 IO 密集时为什么效率不高](https://www.toutiao.com/video/7382411285457011240/)
 - [非阻塞 I/O 和多路复用+select、poll、epoll模型详解](https://www.toutiao.com/i6554223409138500110)
+- [sendfile 和 epoll](https://blog.csdn.net/amaowolf/article/details/7418792)
 - [io_submit：Linux内核新加入的epoll替代方案](https://www.toutiao.com/a6809889593286984206/)
 - [AIO 的新归宿：io_uring](https://zhuanlan.zhihu.com/p/62682475)
 - [io_uring只适用于存储IO？大错特错](https://www.toutiao.com/i6884987457641644551/)
