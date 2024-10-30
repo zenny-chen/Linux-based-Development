@@ -23,6 +23,7 @@ Linux（主要基于Debian系）系统下的开发资料
 <a name="resource_list" id="resource_list"></a>
 ## Resource List
 
+- [ChinaLinuxKernel-CLK](https://github.com/ChinaLinuxKernel/CLK)
 - [GitLab CI Pipeline Stage Timeout](https://stackoverflow.com/questions/38403681/gitlab-ci-pipeline-stage-timeout)
 - [GitLab CI/CD Set job start timeout](https://forum.gitlab.com/t/set-job-start-timeout/34993)
 - [LinuxVersions](https://kernelnewbies.org/LinuxVersions)
