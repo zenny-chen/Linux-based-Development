@@ -168,6 +168,88 @@ SYNOPSIS
 - [高级程序员进阶：了解Linux I/O 调度器，优化系统性能](https://www.toutiao.com/a6735373272432509452/)
 - [C语言IPC函数指南汇总整理](https://www.toutiao.com/article/7397021219326902824/)
 - [Linux网络编程-socket编程](https://blog.csdn.net/weixin_73625390/article/details/130956912)
+- Linux 为 socket 设置读写超时：
+
+```c
+        int connectSock = socket(AF_INET, SOCK_STREAM, 0);
+        if (connectSock < 0)
+        {
+            fprintf(stderr, "socket failed with error: %d\n", errno);
+            return;
+        }
+        // setting for 7 seconds timeout
+        const struct timeval timeout { .tv_sec = 7, .tv_usec = 0 };
+
+        // Set receive timeout
+        int result = setsockopt(connectSock, SOL_SOCKET, SO_RCVTIMEO, &timeout, (socklen_t)sizeof(timeout));
+        if (result < 0)
+        {
+            fprintf(stderr, "setsockopt for receive timeout failed with error: %d\n", errno);
+            break;
+        }
+
+        // Set send timeout
+        result = setsockopt(connectSock, SOL_SOCKET, SO_SNDTIMEO, &timeout, (socklen_t)sizeof(timeout));
+        if (result < 0)
+        {
+            fprintf(stderr, "setsockopt for send timeout failed with error: %d\n", errno);
+            break;
+        }
+```
+
+- Linux 使用 **`getaddrinfo`** 获取IP地址：
+
+```c
+#include <stdio.h>
+#include <errno.h>
+
+#include <unistd.h>
+#include <sys/types.h>
+#include <sys/time.h>
+#include <sys/socket.h>
+#include <fcntl.h>
+#include <arpa/inet.h>
+#include <netdb.h>
+
+static const char* const IP_ADDRESS = "127.0.0.1";
+static const char* const PORT_NUMBER = "5678";
+
+static void ClientTest(void)
+{
+    struct addrinfo hints { .ai_family = AF_INET, .ai_socktype = SOCK_STREAM, .ai_protocol = IPPROTO_TCP };
+    struct addrinfo *resAddrInfo = NULL;
+    int result = getaddrinfo(IP_ADDRESS, PORT_NUMBER, &hints, &resAddrInfo);
+    if(result != 0)
+    {
+        fprintf(stderr, "getaddrinfo failed with error: %s\n", gai_strerror(result));
+        return;
+    }
+
+    // TODO: Insert client socket connection code here...
+    int connectSock = socket(AF_INET, SOCK_STREAM, 0);
+    if (connectSock < 0)
+    {
+        fprintf(stderr, "socket failed with error: %d\n", errno);
+        return;
+    }
+
+    result = connect(connectSock, resAddrInfo->ai_addr, resAddrInfo->ai_addrlen);
+    if (result < 0)
+    {
+        fprintf(stderr, "connect failed with error: %d\n", errno);
+        if(errno == EINPROGRESS) {
+            fprintf(stderr, "The connection request has been initialized but is still in progress!\n");
+        }
+        return;
+    }
+
+    // Release the IP address info object
+    if(resAddrInfo != NULL) {
+        freeaddrinfo(resAddrInfo);
+    }
+}
+```
+
 - [epoll原理简介](https://www.toutiao.com/a6701457609444033031)
 - [如果这篇文章说不清epoll的本质，那就过来掐死我吧！](https://www.toutiao.com/a6683264188661367309)
 - [高并发高吞吐IO秘密武器——epoll池化技术](https://www.toutiao.com/i7008441343617794563/)
