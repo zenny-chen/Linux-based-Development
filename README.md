@@ -167,6 +167,7 @@ SYNOPSIS
 - [分钟搞懂Linux中直接I/O原理](https://www.toutiao.com/a6701654059910169091/)
 - [高级程序员进阶：了解Linux I/O 调度器，优化系统性能](https://www.toutiao.com/a6735373272432509452/)
 - [C语言IPC函数指南汇总整理](https://www.toutiao.com/article/7397021219326902824/)
+- [Linux网络编程-socket编程](https://blog.csdn.net/weixin_73625390/article/details/130956912)
 - [epoll原理简介](https://www.toutiao.com/a6701457609444033031)
 - [如果这篇文章说不清epoll的本质，那就过来掐死我吧！](https://www.toutiao.com/a6683264188661367309)
 - [高并发高吞吐IO秘密武器——epoll池化技术](https://www.toutiao.com/i7008441343617794563/)
