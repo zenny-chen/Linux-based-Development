@@ -562,7 +562,7 @@ static char s_currIPAddress[16];
 
 static bool FetchCurrentIPv4Address(void)
 {
-    char buffer[256]{};
+    char buffer[256] = { };
     int fds[2];
     pipe(fds);
     int backupFD = dup(STDOUT_FILENO);
