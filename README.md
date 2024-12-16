@@ -250,6 +250,12 @@ static void ClientTest(void)
 }
 ```
 
+- Linux系统下获取当前机器IPv4地址的 shell 命令：
+
+```shell
+ip addr show | grep 'inet ' | awk '{print $2}' | cut -d/ -f1 | grep -v "127.0.0.1"
+```
+
 - [epoll原理简介](https://www.toutiao.com/a6701457609444033031)
 - [如果这篇文章说不清epoll的本质，那就过来掐死我吧！](https://www.toutiao.com/a6683264188661367309)
 - [高并发高吞吐IO秘密武器——epoll池化技术](https://www.toutiao.com/i7008441343617794563/)
@@ -536,6 +542,55 @@ int main(int argc, const char* argv[])
 ```
 
 <br />
+
+## Linux 系统下获取当前机器的IPv4地址
+
+```c
+#include <stdio.h>
+#include <stdbool.h>
+
+#include <unistd.h>
+#include <sys/types.h>
+#include <sys/time.h>
+#include <sys/socket.h>
+#include <fcntl.h>
+#include <arpa/inet.h>
+#include <netdb.h>
+#include <poll.h>
+
+static char s_currIPAddress[16];
+
+static bool FetchCurrentIPv4Address(void)
+{
+    char buffer[256]{};
+    int fds[2];
+    pipe(fds);
+    int backupFD = dup(STDOUT_FILENO);
+    dup2(fds[1], STDOUT_FILENO);
+
+    system("ip addr show | grep 'inet ' | awk '{print $2}' | cut -d/ -f1 | grep -v \"127.0.0.1\"");
+
+    read(fds[0], buffer, sizeof(buffer));
+
+    dup2(backupFD, STDOUT_FILENO);
+
+    const size_t ipAddrLen = strlen(buffer);
+    for(size_t i = 0; i < ipAddrLen; ++i)
+    {
+        if((buffer[i] < '0' || buffer[i] > '9') && buffer[i] != '.')
+        {
+            buffer[i] = '\0';
+            break;
+        }
+    }
+
+    strcpy(s_currIPAddress, buffer);
+
+    printf("Current IPv4 address: %s\n", s_currIPAddress);
+
+    return true;
+}
+```
 
 <a name="raspbian_utilities" id="raspbian_utilities"></a>
 ## Raspbian系统下所需要安装的开发工具
