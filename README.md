@@ -262,6 +262,7 @@ ip addr show | grep 'inet ' | awk '{print $2}' | cut -d/ -f1 | grep -v "127.0.0.
 - [6种epoll的设计，让你吊打面试官，而且他不能还嘴](https://www.toutiao.com/i7009187407606088223/)
 - [epoll 在 IO 密集时为什么效率不高](https://www.toutiao.com/video/7382411285457011240/)
 - [非阻塞 I/O 和多路复用+select、poll、epoll模型详解](https://www.toutiao.com/i6554223409138500110)
+- [腾讯面试：请描述 select、poll、epoll 这三种技术的执行原理](https://www.toutiao.com/article/7427350508605669897/)
 - [sendfile 和 epoll](https://blog.csdn.net/amaowolf/article/details/7418792)
 - [io_submit：Linux内核新加入的epoll替代方案](https://www.toutiao.com/a6809889593286984206/)
 - [AIO 的新归宿：io_uring](https://zhuanlan.zhihu.com/p/62682475)
