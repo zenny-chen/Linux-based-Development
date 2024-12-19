@@ -621,6 +621,20 @@ sudo apt-get install blueman
 # 安装bluetooth开发库
 sudo apt-get install libbluetooth-dev
 
+# 安装 autoconf
+sudo apt install autoconf
+
+# 安装 automake
+sudo apt install automake
+
+# 安装 M4
+sudo apt install m4
+
+# 安装 libtool
+sudo apt install libtool
+
+# 安装 makeinfo 相关工具
+sudo apt install texinfo
 ```
 
 <br />
