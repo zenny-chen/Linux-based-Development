@@ -124,7 +124,7 @@ export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
 - [How To Install LLVM and Clang on CentOS 6](https://www.vultr.com/docs/how-to-install-llvm-and-clang-on-centos-6)
 - [在Centos-5下安装Objective-C的编译环境](http://blog.csdn.net/Robincui2011/article/details/6785987)
 - [浅谈 Linux下的零拷贝机制](https://www.toutiao.com/i6462135845481611790/)
-- [零拷贝(zero copy)技术你真的懂吗？什么时候需要用到内存映射？](https://www.toutiao.com/a6810663802636337677/)
+- [零拷贝(zero copy)技术你真的懂吗？什么时候需要用到内存映射？](https://www.modb.pro/db/23696)
 - [Linux——sendfile零拷贝高效率发送文件](https://blog.csdn.net/lemonchi/article/details/81484152)。sendfile高效传输文件，无需内核态到用户态，用户态到内核态copy数据。
 ```c
 /**
