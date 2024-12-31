@@ -616,7 +616,7 @@ static bool FetchCurrentIPv4Address(char dstIPAddr[16])
 #include <netdb.h>
 #include <poll.h>
 
-static bool FetchCurrentIPv4Address(char dstIPAddr[16])
+static bool FetchCurrentMulticastIPv4Address(char dstIPAddr[16])
 {
     char buffer[256] = { };
     int fds[2];
