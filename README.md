@@ -250,10 +250,16 @@ static void ClientTest(void)
 }
 ```
 
-- Linux系统下获取当前机器IPv4地址的 shell 命令：
+- Linux系统下获取当前机器 IPv4 地址的 shell 命令：
 
 ```shell
 ip addr show | grep 'inet ' | awk '{print $2}' | cut -d/ -f1 | grep -v "127.0.0.1"
+```
+
+- Linux系统下获取当前机器 Multicast IPv4 地址的 shell 命令：
+
+```shell
+ip maddr show | grep 'inet ' | awk '{print $2}' | cut -d/ -f1 | grep -v "224.0.0.1"
 ```
 
 - [epoll原理简介](https://www.toutiao.com/a6701457609444033031)
