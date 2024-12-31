@@ -8,6 +8,8 @@ Linux（主要基于Debian系）系统下的开发资料
 - [Resource List](#resource_list)
 - [GCC内联汇编相关技巧（Clang编译器亦与之兼容）](#gcc_inline_assembly)
 - [GCC使用 **`naked`** 与 **`-fomit-frame-pointer`** 优化属性来生成不依赖编译器的纯内联汇编函数](#gcc_naked_fomit-frame-pointer)
+- [Linux 系统下获取当前机器的IPv4地址](#fetch_ipv4_address)
+- [Linux 系统下获取当前机器的 Multicast IPv4 地址](#fetch_multicast_ipv4_address)
 - [Raspbian系统下所需要安装的开发工具](#raspbian_utilities)
 - [Ubuntu下安装CUDA以及其自带驱动](#ubuntu_cuda)
 - [CentOS下安装CUDA驱动](#centos_cuda)
@@ -550,7 +552,8 @@ int main(int argc, const char* argv[])
 
 <br />
 
-## Linux 系统下获取当前机器的IPv4地址
+<a name="fetch_ipv4_address" id="fetch_ipv4_address"></a>
+## Linux 系统下获取当前机器的 IPv4 地址
 
 ```c
 #include <stdio.h>
@@ -565,9 +568,7 @@ int main(int argc, const char* argv[])
 #include <netdb.h>
 #include <poll.h>
 
-static char s_currIPAddress[16];
-
-static bool FetchCurrentIPv4Address(void)
+static bool FetchCurrentIPv4Address(char dstIPAddr[16])
 {
     char buffer[256] = { };
     int fds[2];
@@ -591,9 +592,55 @@ static bool FetchCurrentIPv4Address(void)
         }
     }
 
-    strcpy(s_currIPAddress, buffer);
+    strcpy(dstIPAddr, buffer);
 
-    printf("Current IPv4 address: %s\n", s_currIPAddress);
+    return true;
+}
+```
+
+<br />
+
+<a name="fetch_multicast_ipv4_address" id="fetch_multicast_ipv4_address"></a>
+## Linux 系统下获取当前机器的 Multicast IPv4 地址
+
+```c
+#include <stdio.h>
+#include <stdbool.h>
+
+#include <unistd.h>
+#include <sys/types.h>
+#include <sys/time.h>
+#include <sys/socket.h>
+#include <fcntl.h>
+#include <arpa/inet.h>
+#include <netdb.h>
+#include <poll.h>
+
+static bool FetchCurrentIPv4Address(char dstIPAddr[16])
+{
+    char buffer[256] = { };
+    int fds[2];
+    pipe(fds);
+    int backupFD = dup(STDOUT_FILENO);
+    dup2(fds[1], STDOUT_FILENO);
+
+    system("ip maddr show | grep 'inet ' | awk '{print $2}' | cut -d/ -f1 | grep -v \"224.0.0.1\"");
+
+    read(fds[0], buffer, sizeof(buffer));
+
+    dup2(backupFD, STDOUT_FILENO);
+
+    const size_t ipAddrLen = strlen(buffer);
+    for(size_t i = 0; i < ipAddrLen; ++i)
+    {
+        if((buffer[i] < '0' || buffer[i] > '9') && buffer[i] != '.')
+        {
+            buffer[i] = '\0';
+            break;
+        }
+    }
+
+    strcpy(dstIPAddr, buffer);
 
     return true;
 }
