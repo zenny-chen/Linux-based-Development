@@ -264,6 +264,7 @@ ip addr show | grep 'inet ' | awk '{print $2}' | cut -d/ -f1 | grep -v "127.0.0.
 ip maddr show | grep 'inet ' | awk '{print $2}' | cut -d/ -f1 | grep -v "224.0.0.1"
 ```
 
+- [linux 网络协议.之UDP Socket通信，单播，组播，广播（四）](https://blog.csdn.net/rjszcb/article/details/121557382)
 - [epoll原理简介](https://www.toutiao.com/a6701457609444033031)
 - [如果这篇文章说不清epoll的本质，那就过来掐死我吧！](https://www.toutiao.com/a6683264188661367309)
 - [高并发高吞吐IO秘密武器——epoll池化技术](https://www.toutiao.com/i7008441343617794563/)
