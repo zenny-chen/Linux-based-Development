@@ -342,6 +342,7 @@ int __get_cpuid (unsigned int __level,
 - [What are the meanings of the columns of the symbol table displayed by **readelf**?](https://stackoverflow.com/questions/3065535/what-are-the-meanings-of-the-columns-of-the-symbol-table-displayed-by-readelf)（具体使用时最好再加上 **`-W`** 选项，以免某些符号过长而被自动截断。比如：**`readelf -W -s libdll.so`**）
 - GCC使用 **`-s`** 连接器选项将所有符号表及重定向信息从可执行文件或动态连接库中移除。
 - [version 'GLIBC_2.34' not found简单有效解决方法](https://blog.csdn.net/huazhang_001/article/details/128828999)
+- 用 cmake 将 yaml 静态库打包到libcis.so 这个动态库后，加载这个libcis.so 这个动态库 出现 `undefined symbol: _ZTIN4YAML13BadConversionE` 这个问题怎么解决：这通常是因为链接顺序不正确导致的。确保在CMakeLists.txt中正确设置了链接顺序。确保在生成libcis.so动态库时，将yaml静态库放在链接命令的末尾。
 - [linux中的ld命令及其搜索路径顺序](https://blog.csdn.net/qq_42731705/article/details/123934842)
 - [干货！gcc和g++编译器有什么区别？看完这篇就明白了](https://www.toutiao.com/article/7194762934655091252/)
 - [记录linux 生成crash dump文件步骤](https://blog.csdn.net/dengdun6257/article/details/102283543)
