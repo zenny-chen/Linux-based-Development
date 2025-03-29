@@ -375,6 +375,9 @@ int main(void)
     printf("Time spent: %ldus\n", deltaTime);
 }
 ```
+
+![gcc_option_order](images/gcc_option_order.jpg)
+
 - [Linux下C语言获取目录中的文件列表](https://www.cnblogs.com/dgwblog/p/12158373.html)
 - [操作系统的中打开文件的最大句柄数](https://blog.csdn.net/qq_26685237/article/details/106771340)
 - [Linux下的sleep()和usleep()的使用和区别](https://www.cnblogs.com/ZhaoxiCheung/p/6792734.html)
