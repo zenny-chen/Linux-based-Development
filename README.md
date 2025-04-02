@@ -33,7 +33,8 @@ Linux（主要基于Debian系）系统下的开发资料
 - [Linux 下载文件命令](https://blog.csdn.net/hitabc141592/article/details/7561239)
 - [Linux curl命令详解](https://www.cnblogs.com/duhuo/p/5695256.html)
 - [Linux下的tar压缩解压缩命令详解](https://www.cnblogs.com/qq78292959/archive/2011/07/06/2099427.html)
-- Linux下使用zip来压缩文件夹：`zip -r dst_file.zip src_folder_path`
+- Linux下使用 zip 来压缩文件夹：`zip -r dst_file.zip src_folder_path`。
+- Linux下使用 unzip 来解压文件：`unzip src_file.zip -d dst_folder_path`。
 - [Linux下的mv命令](https://www.cnblogs.com/peida/archive/2012/10/27/2743022.html)
 - [vi 常用命令行](https://www.cnblogs.com/sunormoon/archive/2012/02/10/2345326.html)（文件保存退出一般使用`:x`命令）
 - [Linux文件查找命令](https://blog.csdn.net/qq_27517377/article/details/78870293)
