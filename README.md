@@ -36,6 +36,7 @@ Linux（主要基于Debian系）系统下的开发资料
 - Linux下使用 zip 来压缩文件夹：`zip -r dst_file.zip src_folder_path`。
 - Linux下使用 unzip 来解压文件：`unzip src_file.zip -d dst_folder_path`。
 - [Linux下的mv命令](https://www.cnblogs.com/peida/archive/2012/10/27/2743022.html)
+- Linux 下查看当前目录每个顶层子目录的空间占用大小：`du -h --max-depth=1 ./`
 - [vi 常用命令行](https://www.cnblogs.com/sunormoon/archive/2012/02/10/2345326.html)（文件保存退出一般使用`:x`命令）
 - [Linux文件查找命令](https://blog.csdn.net/qq_27517377/article/details/78870293)
 - [Linux系统下查看文件与磁盘空间大小](https://www.cnblogs.com/adolfmc/archive/2013/02/16/2913801.html)
