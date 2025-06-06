@@ -717,7 +717,7 @@ sudo apt-get --purge remove "*nvidia*"
 sudo dpkg --list | grep nvidia-*
 ```
 2. 由于安装NV显卡驱动过程中不能使用X Window界面，因此我们必须进入命令行，关闭图形窗口界面。
-首先按下`Ctrl + Alt + F1`进入命令行模式，然后分别输入用户名和密码。
+首先按下`Ctrl + Alt + F1`进入命令行模式，或者是在控制台输入 `systemctl stop gdm` 命令来关闭图形服务，然后分别输入用户名和密码。
 3. 然后关闭X Server服务：`sudo stop lightdm`
 4. `sudo init 3`
 5. 重新输入用户名和密码。
