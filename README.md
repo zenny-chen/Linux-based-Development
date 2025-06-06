@@ -726,6 +726,8 @@ sudo dpkg --list | grep nvidia-*
 
 如果安装过程中遇到内核编译失败，则很可能是因为当前所使用的 GCC 版本与构建当前系统内核的 GCC 版本不一致所导致的（通常而言，当前用的 GCC 版本老于内核构建所使用的 GCC 版本），那么需要将当前 GCC 版本更新到与内核构建时所使用的 GCC 版本一致才行。
 
+详细可参考：[ubuntu22.04安装NVIDIA显卡驱动出错“Warning: Compiler version check failed”](https://blog.csdn.net/pkyang2004/article/details/148420144)
+
 <br />
 
 <a name="centos_cuda" id="centos_cuda"></a>
