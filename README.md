@@ -71,6 +71,7 @@ export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
 - [linux环境下基于VSCode配置多目录C/C++编译调试环境](https://blog.csdn.net/qq_51482778/article/details/137018621)
 - [Linux环境使用VSCode调试简单C++代码](https://zhuanlan.zhihu.com/p/618040277)
 - [Ubuntu下VScode代码字体设置——monospace（等宽字体）](https://blog.csdn.net/xuw_xy/article/details/116101147)
+- VS Code 在 Debug Console 中以十六进制观察某一变量的值，在 Debug Console 底下的输入框中输入：`-exec print /x <variable-name>`
 - [Sound recording program using Nano](https://raspberrypi.stackexchange.com/questions/15018/sound-recording-program-using-nano)
 - [Install alsa-utils on Ubuntu: sudo apt-get install alsa-utils](https://www.devmanuals.net/install/ubuntu/ubuntu-12-04-lts-precise-pangolin/install-alsa-utils.html)
 - [Sound Recording & Play on Raspberry Pi Using ALSA in C](https://stackoverflow.com/questions/38615396/sound-recording-play-on-raspberry-pi-using-alsa-in-c)
