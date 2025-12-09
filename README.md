@@ -119,6 +119,7 @@ export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
 - [共享内存才是实现进程间通信最简单也是最直接的方法](https://www.toutiao.com/a6736813277818389006/)
 - [Linux共享内存使用常见陷阱与分析](https://zhuanlan.zhihu.com/p/260418383)
 - [Linux内核中的软中断、tasklet和工作队列](http://blog.csdn.net/T146lLa128XX0x/article/details/79070798)
+- [Linux kernel中断系统架构及应用](https://mp.weixin.qq.com/s?__biz=Mzg2MDE3Nzg0OQ==&mid=2247484062&idx=1&sn=33bbeb2f8664c0f6f9521dc2f3305268)
 - [zpoline: system call hook for Linux](https://github.com/yasukata/zpoline/tree/master)
 - [Linus Torvalds掷下重锤：Linux 6.11中的可扩展调度程序sched_ext](https://www.toutiao.com/article/7379416523910808075/)（**DSQ**: dispatch queues）
 - [多线程 or 多进程？](https://blog.csdn.net/zy799894671/article/details/18405033)
