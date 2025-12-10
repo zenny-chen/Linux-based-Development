@@ -158,6 +158,7 @@ SYNOPSIS
 - [malloc_trim\(3\) — Linux manual page](https://man7.org/linux/man-pages/man3/malloc_trim.3.html)
 - [malloc_usable_size\(3\) — Linux manual page](https://man7.org/linux/man-pages/man3/malloc_usable_size.3.html)
 - [Linux内核Page Cache和Buffer Cache关系及演化历史](https://www.toutiao.com/a6816861382776979976/)
+- [Linux Buffer Cache深度调优：让你的程序运行更高效](https://mp.weixin.qq.com/s?__biz=Mzg4NDQ0OTI4Ng==&mid=2247493787&idx=1&sn=4aa595925b97e18859ccd27cabf3bea9)
 - [Linux内核快速处理路径尽量多用slab而慎用kmalloc](https://blog.csdn.net/dog250/article/details/105544111)
 - [Linux内存管理：NUMA技术详解（非一致内存访问架构）](https://blog.csdn.net/Rong_Toa/article/details/109137312)
 - [Is there a canonical programmatic way to query for the set of cores belonging to a NUMA node?](https://stackoverflow.com/questions/51031674/is-there-a-canonical-programmatic-way-to-query-for-the-set-of-cores-belonging-to)
