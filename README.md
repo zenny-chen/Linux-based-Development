@@ -159,7 +159,7 @@ SYNOPSIS
 - [使用 malloc_trim\(\)](https://blog.csdn.net/CaspianSea/article/details/72457221)
 - [malloc_trim\(3\) — Linux manual page](https://man7.org/linux/man-pages/man3/malloc_trim.3.html)
 - [malloc_usable_size\(3\) — Linux manual page](https://man7.org/linux/man-pages/man3/malloc_usable_size.3.html)
-- [Linux内核Page Cache和Buffer Cache关系及演化历史](https://www.toutiao.com/a6816861382776979976/)
+- [Linux内核Page Cache和Buffer Cache关系及演化历史](https://www.cnblogs.com/Chary/p/18112921)
 - [一文读懂：Page Cache与Buffer Cache核心原理](https://mp.weixin.qq.com/s?__biz=Mzg4NDQ0OTI4Ng==&mid=2247493853&idx=1&sn=5c63c61630b8559a7ad7e92e8b2226ce)
 - [Linux Buffer Cache深度调优：让你的程序运行更高效](https://mp.weixin.qq.com/s?__biz=Mzg4NDQ0OTI4Ng==&mid=2247493787&idx=1&sn=4aa595925b97e18859ccd27cabf3bea9)
 - [Linux内核快速处理路径尽量多用slab而慎用kmalloc](https://blog.csdn.net/dog250/article/details/105544111)
