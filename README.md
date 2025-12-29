@@ -118,6 +118,7 @@ export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
 - [Linux下的进程间通信：共享存储](https://www.toutiao.com/a6688140435799409160)
 - [共享内存才是实现进程间通信最简单也是最直接的方法](https://www.toutiao.com/a6736813277818389006/)
 - [Linux共享内存使用常见陷阱与分析](https://zhuanlan.zhihu.com/p/260418383)
+- [Linux用户栈全面解析：线程私有的内存“战场”](https://mp.weixin.qq.com/s?__biz=Mzg4NDQ0OTI4Ng==&mid=2247493901&idx=1&sn=5cdad570b82ad76f6d20ff7989116972)
 - [Linux内核内存布局：为何关乎系统稳定？](https://mp.weixin.qq.com/s?__biz=Mzg4NDQ0OTI4Ng==&mid=2247493818&idx=1&sn=d2d35d943738af933953de42e756044b)
 - [Linux 内核中常见地址的设计原理及其API使用](https://mp.weixin.qq.com/s?__biz=Mzg2MDE3Nzg0OQ==&mid=2247484114&idx=1&sn=36f010fe943772d9a7e3602b0abb958e)
 - [Linux内核中的软中断、tasklet和工作队列](http://blog.csdn.net/T146lLa128XX0x/article/details/79070798)
