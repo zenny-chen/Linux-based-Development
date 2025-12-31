@@ -123,6 +123,7 @@ export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
 - [Linux 内核中常见地址的设计原理及其API使用](https://mp.weixin.qq.com/s?__biz=Mzg2MDE3Nzg0OQ==&mid=2247484114&idx=1&sn=36f010fe943772d9a7e3602b0abb958e)
 - [Linux内核中的软中断、tasklet和工作队列](http://blog.csdn.net/T146lLa128XX0x/article/details/79070798)
 - [Linux kernel中断系统架构及应用](https://mp.weixin.qq.com/s?__biz=Mzg2MDE3Nzg0OQ==&mid=2247484062&idx=1&sn=33bbeb2f8664c0f6f9521dc2f3305268)
+- [Linux中断栈的实现机制：从内核源码角度拆解](https://mp.weixin.qq.com/s?__biz=Mzg4NDQ0OTI4Ng==&mid=2247493911&idx=1&sn=2aa42c2a51149635d9e6b9ae000d065d)
 - [zpoline: system call hook for Linux](https://github.com/yasukata/zpoline/tree/master)
 - [Linus Torvalds掷下重锤：Linux 6.11中的可扩展调度程序sched_ext](https://www.toutiao.com/article/7379416523910808075/)（**DSQ**: dispatch queues）
 - [多线程 or 多进程？](https://blog.csdn.net/zy799894671/article/details/18405033)
