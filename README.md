@@ -165,10 +165,11 @@ SYNOPSIS
 - [一文读懂：Page Cache与Buffer Cache核心原理](https://mp.weixin.qq.com/s?__biz=Mzg4NDQ0OTI4Ng==&mid=2247493853&idx=1&sn=5c63c61630b8559a7ad7e92e8b2226ce)
 - [Linux Buffer Cache深度调优：让你的程序运行更高效](https://mp.weixin.qq.com/s?__biz=Mzg4NDQ0OTI4Ng==&mid=2247493787&idx=1&sn=4aa595925b97e18859ccd27cabf3bea9)
 - [Linux内核快速处理路径尽量多用slab而慎用kmalloc](https://blog.csdn.net/dog250/article/details/105544111)
-- [Linux内存管理：NUMA技术详解（非一致内存访问架构）](https://blog.csdn.net/Rong_Toa/article/details/109137312)
-- [Is there a canonical programmatic way to query for the set of cores belonging to a NUMA node?](https://stackoverflow.com/questions/51031674/is-there-a-canonical-programmatic-way-to-query-for-the-set-of-cores-belonging-to)
 - [CPU_SET(3) — Linux manual page](https://www.man7.org/linux/man-pages/man3/CPU_SET.3.html)
 - 获得当前的 **CPU ID** 可以使用：[sched_getcpu](https://www.man7.org/linux/man-pages/man3/sched_getcpu.3.html)
+- [解锁Linux性能优化：CPU亲和性绑定全解析](https://mp.weixin.qq.com/s?__biz=Mzg4NDQ0OTI4Ng==&mid=2247493954&idx=1&sn=e467ffdf67b805c46b9344727d374c35)
+- [Linux内存管理：NUMA技术详解（非一致内存访问架构）](https://blog.csdn.net/Rong_Toa/article/details/109137312)
+- [Is there a canonical programmatic way to query for the set of cores belonging to a NUMA node?](https://stackoverflow.com/questions/51031674/is-there-a-canonical-programmatic-way-to-query-for-the-set-of-cores-belonging-to)
 - [libnuma详解(A NUMA API for LINUX)](https://blog.csdn.net/qq_40379678/article/details/107814666)
 - [libnuma 及底层实现](https://blog.csdn.net/phone1126/article/details/134194067)
 - [numactl](https://github.com/numactl/numactl)：**libnuma**
