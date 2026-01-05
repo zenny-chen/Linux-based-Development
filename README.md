@@ -116,6 +116,7 @@ export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
 - [Welcome to the Raspberry Pi Documentation](https://github.com/raspberrypi/documentation)
 - [Linux BSP实战课（clock 驱动篇）：时钟子系统的实现](https://www.toutiao.com/article/7306328442440892964/)
 - [Linux下的进程间通信：共享存储](https://www.toutiao.com/a6688140435799409160)
+- [深入理解Linux共享内存：从映射原理到底层实现](https://mp.weixin.qq.com/s?__biz=Mzg4NDQ0OTI4Ng==&mid=2247493959&idx=1&sn=7b06a7c3346a285e4dd931ec2434e5d6)
 - [共享内存才是实现进程间通信最简单也是最直接的方法](https://www.toutiao.com/a6736813277818389006/)
 - [Linux共享内存使用常见陷阱与分析](https://zhuanlan.zhihu.com/p/260418383)
 - [Linux用户栈全面解析：线程私有的内存“战场”](https://mp.weixin.qq.com/s?__biz=Mzg4NDQ0OTI4Ng==&mid=2247493901&idx=1&sn=5cdad570b82ad76f6d20ff7989116972)
