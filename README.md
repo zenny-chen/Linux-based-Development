@@ -411,6 +411,7 @@ int main(void)
 - [使用popen执行shell命令并获取返回结果](https://www.cnblogs.com/hiawind/p/9089288.html)
 - [linux中open()函数的mode_t 含义](https://blog.csdn.net/sdhgood/article/details/39555311)（**`O_LARGEFILE`** 标志用于指示`off_t`无法容下文件大小而只能用`off64_t`）
 - [教你写第一个Linux设备驱动程序](https://www.toutiao.com/a6812972562201444878/)
+- [Linux动态调试：如何让 dev_dbg 在运行时重启？](https://mp.weixin.qq.com/s?__biz=Mzg4NDQ0OTI4Ng==&mid=2247493987&idx=1&sn=8a7dde12f3b1a3830da12131ae85c3b0)
 - [How do I set a software breakpoint on an ARM processor?](https://stackoverflow.com/questions/11345371/how-do-i-set-a-software-breakpoint-on-an-arm-processor)
 - 对于不支持硬件断点的ARM Linux可使用 `raise(SIGTRAP)` 系统调用来触发gdb的断点调试。
 - [通过篡改cred结构体实现提权利用](https://www.toutiao.com/article/7278957821289333283/)
