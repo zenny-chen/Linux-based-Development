@@ -115,6 +115,7 @@ export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
 - [Raspbian下在EGL环境中捕获键盘按键响应事件](https://github.com/AndrewFromMelbourne/raspidmx/blob/master/common/key.c)（Linux下获得鼠标事件可参考Raspbian系统下`/opt/vc/src/hello_pi/hello_triangle2`这一demo。）
 - [Welcome to the Raspberry Pi Documentation](https://github.com/raspberrypi/documentation)
 - [Linux BSP实战课（clock 驱动篇）：时钟子系统的实现](https://www.toutiao.com/article/7306328442440892964/)
+- [Graphics: DRM Scheuler 架构及软件调度工作流程](https://mp.weixin.qq.com/s?__biz=Mzg2MDE3Nzg0OQ==&mid=2247484633&idx=1&sn=0951ef290c70870da622ea24f4bc0d1c)
 - [Linux下的进程间通信：共享存储](https://www.toutiao.com/a6688140435799409160)
 - [深入理解Linux共享内存：从映射原理到底层实现](https://mp.weixin.qq.com/s?__biz=Mzg4NDQ0OTI4Ng==&mid=2247493959&idx=1&sn=7b06a7c3346a285e4dd931ec2434e5d6)
 - [共享内存才是实现进程间通信最简单也是最直接的方法](https://www.toutiao.com/a6736813277818389006/)
