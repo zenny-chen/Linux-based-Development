@@ -47,6 +47,10 @@ Linux（主要基于Debian系）系统下的开发资料
 - [在Linux=＞(Centos,Ubuntu)系统中如何查找最大的10个文件方法汇总](https://blog.csdn.net/qq_34246965/article/details/110038468)
 - Linux下SSH命令远程连接服务器：`ssh username@server_ip_address`。比如：`ssh admin@192.168.1.100`。退出登录使用 **`exit`** 命令。
 - [Ubuntu下如何用命令行运行deb安装包](https://blog.csdn.net/xxdw1992/article/details/124816245)
+- Ubuntu系统下安装 **.deb** 安装包：
+  - 可以使用 `sudo apt install /path/to/package_name.deb`
+  - 或是 `sudo dpkg -i /path/to/package_name.deb`
+  - 如果出现依赖错误，执行：`sudo apt install -f`
 - [漫画 | Unix/Linux 比 Windows 差远了](https://www.toutiao.com/i7044022091791729182/)
 - [apt和apt-get之间的区别解释](https://www.toutiao.com/i6734877338686718477/)
 - [Linux上如何执行java程序](https://www.cnblogs.com/wanglin2016/p/6013010.html)
