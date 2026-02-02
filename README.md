@@ -296,7 +296,7 @@ ip maddr show | grep 'inet ' | awk '{print $2}' | cut -d/ -f1 | grep -v "224.0.0
 - [AIO 的新归宿：io_uring](https://zhuanlan.zhihu.com/p/62682475)
 - [io_uring只适用于存储IO？大错特错](https://www.toutiao.com/i6884987457641644551/)
 - [图文详解：Linux epoll和io_uring到底谁更牛？](https://mp.weixin.qq.com/s?__biz=MzkyNDIyNzU4Mg==&mid=2247486713&idx=1&sn=01bd30174afc3e0e0c165d5c36f938a7)
-- [io_uring vs epoll，谁在网络编程领域更胜一筹？](https://www.toutiao.com/i7045101452641124877/)
+- [io_uring vs epoll，谁在网络编程领域更胜一筹？](https://zhuanlan.zhihu.com/p/445997236)
 - [Linux下全新的异步I/O：io_uring详解](https://www.toutiao.com/i7011043732220805668/)
 - [linux异步IO编程实例分析](https://www.toutiao.com/a6875582313590325774/)
 - [kqueue用法简介](https://www.cnblogs.com/luminocean/p/5631336.html)
