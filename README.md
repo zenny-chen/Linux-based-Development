@@ -120,6 +120,7 @@ export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
 - [Welcome to the Raspberry Pi Documentation](https://github.com/raspberrypi/documentation)
 - [Linux BSP实战课（clock 驱动篇）：时钟子系统的实现](https://www.toutiao.com/article/7306328442440892964/)
 - [Graphics: DRM Scheuler 架构及软件调度工作流程](https://mp.weixin.qq.com/s?__biz=Mzg2MDE3Nzg0OQ==&mid=2247484633&idx=1&sn=0951ef290c70870da622ea24f4bc0d1c)
+- [Linux Mesa 3D 图形库框架详解](https://mp.weixin.qq.com/s?__biz=MzYyMjQ1OTM4Mw==&mid=2247486423&idx=1&sn=9dfba34d8d05f225222f3749b03aa4c5)
 - [Linux HMM（异构内存管理）工作机制及软件实现流程](https://mp.weixin.qq.com/s?__biz=Mzg2MDE3Nzg0OQ==&mid=2247484678&idx=1&sn=1f1457dd520f6dd84a23ea2ee46a823a)
 - [Linux下的进程间通信：共享存储](https://www.toutiao.com/a6688140435799409160)
 - [深入理解Linux共享内存：从映射原理到底层实现](https://mp.weixin.qq.com/s?__biz=Mzg4NDQ0OTI4Ng==&mid=2247493959&idx=1&sn=7b06a7c3346a285e4dd931ec2434e5d6)
