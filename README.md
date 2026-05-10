@@ -141,12 +141,14 @@ export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
 - [Linux内核如何替换内核函数并调用原始函数](https://blog.csdn.net/dog250/article/details/84201114)
 - [Netflix 团队解决了 Linux 内核中的 FUSE 死锁](https://www.toutiao.com/article/7235624836679205410/)
 - [内核死锁调试方法与解决方案](https://mp.weixin.qq.com/s?__biz=Mzg2MDE3Nzg0OQ==&mid=2247484690&idx=1&sn=634c896e5a4da9b1fd4ec891799b2112)
+- [被Linux内核用C写的kfifo无锁设计惊艳到了~](https://www.toutiao.com/article/7637737642033037876/)
 - [怎样Hack Linux的内核符号？](https://blog.csdn.net/sinat_30551659/article/details/107705842)
 - [How To Install LLVM and Clang on CentOS 6](https://www.vultr.com/docs/how-to-install-llvm-and-clang-on-centos-6)
 - [在Centos-5下安装Objective-C的编译环境](http://blog.csdn.net/Robincui2011/article/details/6785987)
 - [浅谈 Linux下的零拷贝机制](https://www.toutiao.com/i6462135845481611790/)
 - [零拷贝(zero copy)技术你真的懂吗？什么时候需要用到内存映射？](https://www.modb.pro/db/23696)
 - [Linux——sendfile零拷贝高效率发送文件](https://blog.csdn.net/lemonchi/article/details/81484152)。sendfile高效传输文件，无需内核态到用户态，用户态到内核态copy数据。
+
 ```c
 /**
 NAME
