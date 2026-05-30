@@ -764,7 +764,7 @@ sudo apt install libglfw3-dev libglm-dev
 sudo apt install libglew-dev
 ```
 
-5. 这些 GLFW 以及 GL 库都会默认安装在 `/usr/include`、`/usr/lib/` 目录下，因此应用程序在编写编译脚本的时候不需要额外的引入 `-I` 和 `-L` 去指定头文件及库文件的搜索目录。只需要直接连接 `-lGL` 以及 `-lglfw` 即可。
+5. 这些 GLFW 以及 GL 库都会默认安装在 `/usr/include/`、`/usr/lib/` 目录下，因此应用程序在编写编译脚本的时候不需要额外引入 `-I` 和 `-L` 去指定头文件及库文件的搜索目录。只需要直接连接 `-lGL` 以及 `-lglfw` 即可。
 
 <br />
 
