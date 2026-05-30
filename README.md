@@ -11,6 +11,7 @@ Linux（主要基于Debian系）系统下的开发资料
 - [Linux 系统下获取当前机器的IPv4地址](#fetch_ipv4_address)
 - [Linux 系统下获取当前机器的 Multicast IPv4 地址](#fetch_multicast_ipv4_address)
 - [Raspbian系统下所需要安装的开发工具](#raspbian_utilities)
+- [Ubuntu 下安装 GLFW 来编写 OpenGL 应用程序](#ubuntu_glfw)
 - [Ubuntu下安装CUDA以及其自带驱动](#ubuntu_cuda)
 - [CentOS下安装CUDA驱动](#centos_cuda)
 - [GNUstep编译选项](#gnustep_compile)
@@ -722,6 +723,48 @@ sudo apt install libtool
 # 安装 makeinfo 相关工具
 sudo apt install texinfo
 ```
+
+<br />
+
+<a name="ubuntu_glfw" id="ubuntu_glfw"></a>
+## Ubuntu 下安装 GLFW 来编写 OpenGL 应用程序
+
+1. 先确认你的硬件和驱动支持 OpenGL 4.5。打开终端，运行：
+
+```bash
+glxinfo | grep "OpenGL"
+```
+
+2. 如果提示 glxinfo 未找到，则安装：
+
+```bash
+sudo apt install mesa-utils
+```
+
+3. 查看输出中的 “OpenGL core profile version string”，确保版本号大于等于 4.5。如果版本较低，你需要安装或更新显卡驱动：
+
+  - NVIDIA 显卡建议使用官方闭源驱动（例如通过 sudo apt install nvidia-driver-535 或更高版本）。
+  - AMD 显卡可使用开源 Mesa 驱动（Ubuntu 20.04 及以上已内置支持 4.5 的版本，也可以安装闭源 AMDGPU-PRO 驱动）。
+  - Intel 集成显卡同样依赖 Mesa，升级系统或使用更新的内核/Mesa 版本一般都能获得 4.5 支持。
+
+确认硬件和驱动就绪后，继续下一步。
+
+4. 安装构建工具和必要的开发库：
+
+```bash
+sudo apt update
+
+# 如果 cmake 和 pkg-config 没有安装，则需要安装；
+# cmake 可以通过 cmake --version 来确认；
+# pkg-config 可以通过 pkg-config --version 来确认
+sudo apt install build-essential cmake pkg-config
+sudo apt install libglfw3-dev libglm-dev
+
+# GLFW 用来创建窗口和 OpenGL 上下文，GLM 提供数学库。如果你打算使用 GLEW 加载 OpenGL 函数，还需要：
+sudo apt install libglew-dev
+```
+
+5. 这些 GLFW 以及 GL 库都会默认安装在 `/usr/include`、`/usr/lib/` 目录下，因此应用程序在编写编译脚本的时候不需要额外的引入 `-I` 和 `-L` 去指定头文件及库文件的搜索目录。只需要直接连接 `-lGL` 以及 `-lglfw` 即可。
 
 <br />
 
